@@ -1,0 +1,66 @@
+{
+  "ModId": "p4g64.calendarPack",
+  "ModName": "Calendar Pack",
+  "ModAuthor": "Tekka, Rudiger",
+  "ModVersion": "1.1.0",
+  "ModDescription": "This mod allows you to replace the Persona 3 calendar in Yu\u0027s bedroom with a high-quality custom variant. Rep your favourite Persona or Shin Megami Tensei game in style!",
+  "ModDll": "p4g64.calendarPack.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/p4g64.calendarPack.dll",
+  "ModR2RManagedDll64": "x64/p4g64.calendarPack.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [
+    "Texture"
+  ],
+  "CanUnload": false,
+  "HasExports": false,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "p4g64.calendarPack.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "crifs.v2.hook": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
+        },
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GameBanana": {
+      "ItemType": "Mod",
+      "ItemId": 471852
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "crifs.v2.hook"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": "https://gamebanana.com/mods/471852"
+}

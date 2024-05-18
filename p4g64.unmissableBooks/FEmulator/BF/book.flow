@@ -1,0 +1,273 @@
+import("book.msg");
+
+void book_greet_hook()
+{
+    int var0;
+    var0 = 0;
+    
+    if ( FUNCTION_0089() )
+    {
+        
+        if ( GET_FIELD_MAJOR() == 11 )
+        {
+            
+            if ( ( CHECK_TIME_SPAN( 8, 24, 3, 31 ) == 1 ) && ( BIT_CHK( 6202 ) == 0 ) )
+            {
+                BIT_ON( 6202 );
+                var0 = ( var0 + 1 );
+                
+                if ( var0 == 1 )
+                {
+                    EVT_FUNCTION_002E( 11 );
+                    OPEN_MSG_WIN();
+                    
+                    if ( GET_ITEM( 1269 ) == 0 )
+                    {
+                        MSG( BSHOP_ARRIVE_01 );
+                    }
+                    else 
+                    {
+                        MSG( BSHOP_ARRIVE_ALREADY_OWN );
+                    }
+
+                    CLOSE_MSG_WIN();
+                }
+
+            }
+            else if ( ( CHECK_TIME_SPAN( 8, 24, 3, 31 ) == 1 ) && ( BIT_CHK( 6202 ) == 0 ) )
+            {
+                BIT_ON( 6202 );
+                var0 = ( var0 + 1 );
+                
+                if ( var0 == 1 )
+                {
+                    EVT_FUNCTION_002E( 13 );
+                    OPEN_MSG_WIN();
+                    
+                    if ( GET_ITEM( 1271 ) == 0 )
+                    {
+                        MSG( BSHOP_ARRIVE_01 );
+                    }
+                    else 
+                    {
+                        MSG( BSHOP_ARRIVE_ALREADY_OWN );
+                    }
+
+                    CLOSE_MSG_WIN();
+                }
+
+            }
+
+            
+            if ( ( CHECK_TIME_SPAN( 8, 4, 8, 23 ) == 1 ) && ( BIT_CHK( 6201 ) == 0 ) )
+            {
+                BIT_ON( 6201 );
+                var0 = ( var0 + 1 );
+                
+                if ( var0 == 1 )
+                {
+                    EVT_FUNCTION_002E( 17 );
+                    OPEN_MSG_WIN();
+                    
+                    if ( GET_ITEM( 1275 ) == 0 )
+                    {
+                        MSG( BSHOP_ARRIVE_01 );
+                    }
+                    else 
+                    {
+                        MSG( BSHOP_ARRIVE_ALREADY_OWN );
+                    }
+
+                    CLOSE_MSG_WIN();
+                }
+
+            }
+
+            
+            if ( ( CHECK_TIME_SPAN( 6, 11, 8, 3 ) == 1 ) && ( BIT_CHK( 6200 ) == 0 ) )
+            {
+                BIT_ON( 6200 );
+                var0 = ( var0 + 1 );
+                
+                if ( var0 == 1 )
+                {
+                    EVT_FUNCTION_002E( 0x10 );
+                    OPEN_MSG_WIN();
+                    
+                    if ( GET_ITEM( 1274 ) == 0 )
+                    {
+                        MSG( BSHOP_ARRIVE_01 );
+                    }
+                    else 
+                    {
+                        MSG( BSHOP_ARRIVE_ALREADY_OWN );
+                    }
+
+                    CLOSE_MSG_WIN();
+                }
+
+            }
+
+        }
+        else if ( ( CHECK_TIME_SPAN( 11, 1, 3, 31 ) == 1 ) && ( BIT_CHK( 3484 ) == 0 ) )
+        {
+            BIT_ON( 3484 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 10 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 10, 12, 10, 31 ) == 1 ) && ( BIT_CHK( 3483 ) == 0 ) )
+        {
+            BIT_ON( 3483 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 5 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 9, 20, 10, 11 ) == 1 ) && ( BIT_CHK( 3482 ) == 0 ) )
+        {
+            BIT_ON( 3482 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 9 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 8, 24, 9, 19 ) == 1 ) && ( BIT_CHK( 3481 ) == 0 ) )
+        {
+            BIT_ON( 3481 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 4 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 8, 4, 8, 23 ) == 1 ) && ( BIT_CHK( 3480 ) == 0 ) )
+        {
+            BIT_ON( 3480 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 8 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 7, 15, 8, 3 ) == 1 ) && ( BIT_CHK( 3479 ) == 0 ) )
+        {
+            BIT_ON( 3479 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 3 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 6, 28, 7, 14 ) == 1 ) && ( BIT_CHK( 3478 ) == 0 ) )
+        {
+            BIT_ON( 3478 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 7 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 6, 11, 6, 27 ) == 1 ) && ( BIT_CHK( 3477 ) == 0 ) )
+        {
+            BIT_ON( 3477 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 2 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 5, 6, 5, 29 ) == 1 ) && ( BIT_CHK( 3476 ) == 0 ) )
+        {
+            BIT_ON( 3476 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 6 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+        
+        if ( ( CHECK_TIME_SPAN( 4, 20, 5, 5 ) == 1 ) && ( BIT_CHK( 3475 ) == 0 ) )
+        {
+            BIT_ON( 3475 );
+            var0 = ( var0 + 1 );
+            
+            if ( var0 == 1 )
+            {
+                EVT_FUNCTION_002E( 1 );
+                OPEN_MSG_WIN();
+                MSG( BSHOP_ARRIVE_01 );
+                CLOSE_MSG_WIN();
+            }
+
+        }
+
+    }
+
+}

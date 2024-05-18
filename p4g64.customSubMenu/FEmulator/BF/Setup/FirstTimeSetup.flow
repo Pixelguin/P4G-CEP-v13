@@ -1,0 +1,291 @@
+import("FirstTimeSetup.msg");
+
+void FirstTimeSetup()
+{
+	//Introduction
+	OPEN_MSG_WIN();
+	HELP_MSG(SquareMenuConfig);
+	CLOSE_MSG_WIN();
+
+	//Marks first time setup as complete
+	BIT_ON(6320);
+
+	//Set all menu option values to 0
+	for (int i = 0; i < 8; i++)
+	{
+		BIT_OFF(6321 + i);
+	}
+
+	// Set second group of menu options to 0
+	for (int i = 0; i < 3; i++)
+	{
+		BIT_OFF(6340 + i);
+	}
+
+	//Enable "Options" in menu for later configuration
+	BIT_ON(6329);
+
+	//Set all dungeon option values to 0
+	for (int i = 0; i < 4; i++)
+	{
+		BIT_OFF(6330 + i);
+	}
+
+	TurnOnRecommended();
+
+	//Toggle options until done
+	MenuOptions();
+}
+
+void TurnOnRecommended()
+{
+    BIT_ON(6320); //Disable First Time Setup
+    BIT_OFF(6321); //Mod Menu
+    BIT_ON(6322); // QuickTravelPlus
+    BIT_ON(6323); // MobileCalendar
+    BIT_ON(6324); // DungeonOptions
+    BIT_ON(6325); // Find a Friend
+    BIT_ON(5678); // Spoiler-free find a friend
+    BIT_OFF(6326); // Save Anywhere
+    BIT_OFF(6327); // Game over skip
+    BIT_OFF(6328); //Reap-Balanced Encounters
+    BIT_ON(6330); //Enable Fox (DungeonOptions)
+    BIT_ON(6331); //Enable Floor Select (DungeonOptions)
+    BIT_ON(6332); //Enable Goho-M (DungeonOptions)
+    BIT_ON(6333); //Enable Organize Party (DungeonOptions)
+    BIT_ON(6334); //Enable Default Direct Commands
+}
+
+void MenuOptions()
+{
+	//First time setup for Custom Square Menu
+	if (!BIT_CHK(6320))
+	{
+		FirstTimeSetup();
+	}
+	else
+	{
+		//Toggle options until done
+		bool done = false;
+		int pageNum = 0;
+		int mask = 0;
+		while (!done)
+		{
+			//Set message variables
+			for (int i = 0; i < 8; i++)
+			{
+				SET_MSG_VAR(i, 619 + BIT_CHK(6321 + i), 6);
+			}
+			SET_MSG_VAR(8, 619 + BIT_CHK(6334), 6); // Default to direct commands
+			SET_MSG_VAR(9, 619 + BIT_CHK(6341), 6);
+			SET_MSG_VAR(10, 619 + BIT_CHK(6342), 6);
+
+			SEL_CHK_PAD(14, 18);
+			SEL_CHK_PAD(15, 18);
+
+			if (!pageNum)
+			{
+				mask = 1504;
+				if(!ModMenuShown())
+				{
+					// Hide mod menu option
+					mask += 1;
+					// Show save anywhere on first page
+					mask -= 32;
+				}
+				SEL_CHK_PAD(10, 9);
+				SEL_CHK_PAD(11, 9);
+				SEL_CHK_PAD(5, 9);
+				SEL_CHK_PAD(7, 9);
+			}
+			else
+			{
+				mask = 543;
+				if(!ModMenuShown())
+				{
+					// Hide save anywhere on second page
+					mask += 32;
+				}
+				SEL_CHK_PAD(10, 10);
+				SEL_CHK_PAD(11, 10);
+				SEL_CHK_PAD(5, 10);
+				SEL_CHK_PAD(7, 10);
+			}
+
+			//Toggle selection or read more about it
+			int selection = ADV_SEL(SquareMenuOptions_Text + pageNum, SquareMenuOptions, mask);
+			if (selection < 9)
+			{
+				ToggleOption(ModMenu_About, 6321, selection, false);
+			}
+			else if (selection == 9 || selection == 10)
+			{
+				pageNum = !pageNum;
+			}
+			else
+			{
+				done = true;
+				if (!ModMenuEnabled())
+				{
+					OPEN_MSG_WIN();
+					MSG(OptionsWarning);
+					CLOSE_MSG_WIN();
+				}
+			}
+		}
+	}
+}
+
+bool ToggleOption(int startMsg, int startFlag, int selection, bool subOption)
+{
+	OPEN_MSG_WIN();
+	MSG(startMsg + selection);
+	SEL_CHK_PAD(14, 2);
+	int sel = SEL(ToggleMenu);
+	switch (sel)
+	{
+	case 0: //on
+		if (selection == 8)
+			BIT_ON(6334);
+		else
+			BIT_ON(startFlag + selection);
+		if (selection == 3 && !subOption)
+		{
+			CLOSE_MSG_WIN();
+			DungeonOptionsToggle();
+		}
+		else if (selection == 4)
+		{
+			CLOSE_MSG_WIN();
+			FindAFriendOptionsToggle();
+		}
+		break;
+	case 1: //off
+		if (selection == 8)
+			BIT_OFF(6334);
+		else
+			BIT_OFF(startFlag + selection);
+		if (selection == 3 && !subOption)
+		{
+			BIT_OFF(6330);
+			BIT_OFF(6331);
+			BIT_OFF(6332);
+			BIT_OFF(6333);
+		}
+		else if (selection == 9)
+		{
+			BIT_OFF(6350);
+			BIT_OFF(6351);
+			BIT_OFF(6352);
+			BIT_OFF(6353);
+		}
+		break;
+	case 2: //back
+		break;
+	}
+	CLOSE_MSG_WIN();
+	return sel;
+}
+
+void FindAFriendOptionsToggle()
+{
+	//Toggle options until done
+	bool done = false;
+	while (!done)
+	{
+		//Set message variables for menu options
+		SET_MSG_VAR(0, 619 + BIT_CHK(5678), 6);
+		SET_MSG_VAR(1, 619 + BIT_CHK(6340), 6);
+		SEL_CHK_PAD(14, 2);
+		SEL_CHK_PAD(15, 2);
+		//Toggle selection or read more about it
+		int selection = ADV_SEL(FindAFriendOptions_Text, FindAFriendOptions, 0);
+		if (selection == 0)
+		{
+			OPEN_MSG_WIN();
+			MSG(SPOILER_TOGGLE);
+			SEL_CHK_PAD(14, 1);
+			int sel = SEL(ToggleMenu);
+			if (sel == 0)
+				BIT_ON(5678);
+			else if (sel == 1)
+				BIT_OFF(5678);
+			CLOSE_MSG_WIN();
+		}
+		else
+		{
+			done = true;
+		}
+	}
+}
+
+void DungeonOptionsToggle()
+{
+	//Toggle options until done
+	bool done = false;
+	while (!done)
+	{
+		//Set message variables for menu options
+		for (int i = 0; i < 4; i++)
+		{
+			SET_MSG_VAR(i, 619 + BIT_CHK(6330 + i), 6);
+		}
+		SEL_CHK_PAD(14, 4);
+		SEL_CHK_PAD(15, 4);
+		//Toggle selection or read more about it
+		int selection = ADV_SEL(DungeonOptions_Text, DungeonOptions, 0);
+		if (selection != 4)
+		{
+			bool optionSel = ToggleOption(ShowFox_About, 6330, selection, true);
+			// If show fox was selected
+			if (selection == 0)
+			{
+				// Reset fox uses goho-m flag if call fox was turned off
+				if (optionSel == 1)
+				{
+					BIT_OFF(6360);
+				}
+				else if (optionSel == 0)
+				{
+					bool done2 = false;
+					while (!done2)
+					{
+						// If call fox was turned on show selection for whether calling the fox should us a goho-m
+						SET_MSG_VAR(0, 620 - BIT_CHK(6360), 6);
+						SEL_CHK_PAD(14, 1);
+						SEL_CHK_PAD(15, 1);
+						OPEN_MSG_WIN();
+						int foxSel = ADV_SEL(ShowFoxOptions_Text, ShowFoxOptions, 0);
+						// Toggle the option
+						if (foxSel == 0)
+						{
+							SET_MSG_VAR(2, 790, 1);
+							SET_MSG_VAR(3, 2099, 1);
+							OPEN_MSG_WIN();
+							MSG(ShowFox_GohoM);
+							SEL_CHK_PAD(14, 2);
+							SEL_CHK_PAD(15, 2);
+							int gohomSel = SEL(ToggleMenu);
+							//
+							if (gohomSel == 0)
+							{
+								BIT_OFF(6360);
+							}
+							else if (gohomSel == 1)
+							{
+								BIT_ON(6360);
+							}
+						} else {
+							done2 = true;
+						}
+						CLOSE_MSG_WIN();
+					}
+				}
+			}
+		}
+		else
+		{
+			done = true;
+		}
+	}
+}

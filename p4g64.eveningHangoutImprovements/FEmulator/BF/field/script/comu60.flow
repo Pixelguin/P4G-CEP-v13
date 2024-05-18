@@ -1,0 +1,606 @@
+import("nightHangouts.msg");
+
+void SCR_NIGHT_NPC_ENGEKI_hook()
+{
+    int var15;
+    int var16;
+    int var12;
+    int var13;
+    int var14;
+    int var19;
+    int var22;
+    int var20;
+    int var21;
+    int var25;
+    int var26;
+    int var27;
+    int var24;
+    int var28;
+    int var17;
+    int var18;
+    int slId;
+    int var30;
+    int var23;
+    int selectedChoice;
+    var15 = 237;
+    var16 = GET_CNT( var15 );
+    var12 = 62;
+    var13 = 1;
+    var14 = 508;
+    var19 = 2;
+    var22 = 0x20;
+    var20 = 36;
+    var21 = 39;
+    var25 = 45;
+    var26 = 49;
+    var27 = 40;
+    var24 = 53;
+    
+    if ( var16 >= 10 )
+    {
+        var28 = ( ( var16 / 10 ) * 10 );
+    }
+    else 
+    {
+        var28 = 0;
+    }
+
+    var17 = ( var16 - var28 );
+    var18 = ( var16 / 10 );
+    
+    if ( var18 >= 10 )
+    {
+        var18 = ( var18 - 10 );
+    }
+
+    slId = EVT_FUNCTION_0022( 25 );
+    
+    if ( ( GET_SL_LEVEL( 25 ) >= 10 ) && ( EVT_FUNCTION_0002( 26 ) == 0 ) )
+    {
+        var30 = 20;
+    }
+    else if ( GET_SL_LEVEL( EVT_FUNCTION_0022( 25 ) ) >= 10 )
+    {
+        var30 = 10;
+    }
+    else 
+    {
+        var30 = GET_SL_LEVEL( EVT_FUNCTION_0022( 25 ) );
+    }
+
+    
+    if ( var30 >= 10 )
+    {
+        var22 = 0x20;
+        var20 = 36;
+    }
+    else if ( var30 >= 5 )
+    {
+        var22 = 37;
+        var20 = 38;
+    }
+    else 
+    {
+        var22 = 0x20;
+        var20 = 36;
+    }
+
+    
+    if ( var30 == 20 )
+    {
+        
+        if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+        {
+            var23 = 95;
+        }
+        else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+        {
+            var23 = 96;
+        }
+        else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+        {
+            var23 = 97;
+        }
+        else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+        {
+            var23 = 98;
+        }
+        else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+        {
+            var23 = 99;
+        }
+        else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+        {
+            var23 = 100;
+        }
+        else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+        {
+            var23 = 101;
+        }
+        else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+        {
+            var23 = 102;
+        }
+        else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+        {
+            var23 = 103;
+        }
+        else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+        {
+            var23 = 105;
+        }
+        else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+        {
+            var23 = 106;
+        }
+        else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+        {
+            var23 = 107;
+        }
+        else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+        {
+            var23 = 95;
+        }
+
+    }
+    else if ( var30 == 10 )
+    {
+        
+        if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+        {
+            var23 = 82;
+        }
+        else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+        {
+            var23 = 83;
+        }
+        else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+        {
+            var23 = 84;
+        }
+        else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+        {
+            var23 = 85;
+        }
+        else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+        {
+            var23 = 86;
+        }
+        else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+        {
+            var23 = 87;
+        }
+        else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+        {
+            var23 = 88;
+        }
+        else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+        {
+            var23 = 89;
+        }
+        else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+        {
+            var23 = 90;
+        }
+        else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+        {
+            var23 = 92;
+        }
+        else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+        {
+            var23 = 93;
+        }
+        else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+        {
+            var23 = 94;
+        }
+        else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+        {
+            var23 = 82;
+        }
+
+    }
+    else if ( var30 >= 5 )
+    {
+        
+        if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+        {
+            var23 = 69;
+        }
+        else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+        {
+            var23 = 70;
+        }
+        else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+        {
+            var23 = 71;
+        }
+        else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+        {
+            var23 = 72;
+        }
+        else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+        {
+            var23 = 73;
+        }
+        else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+        {
+            var23 = 74;
+        }
+        else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+        {
+            var23 = 75;
+        }
+        else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+        {
+            var23 = 76;
+        }
+        else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+        {
+            var23 = 77;
+        }
+        else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+        {
+            var23 = 79;
+        }
+        else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+        {
+            var23 = 80;
+        }
+        else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+        {
+            var23 = 81;
+        }
+        else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+        {
+            var23 = 69;
+        }
+
+    }
+    else if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+    {
+        var23 = 56;
+    }
+    else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+    {
+        var23 = 57;
+    }
+    else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+    {
+        var23 = 58;
+    }
+    else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+    {
+        var23 = 59;
+    }
+    else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+    {
+        var23 = 60;
+    }
+    else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+    {
+        var23 = 61;
+    }
+    else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+    {
+        var23 = 62;
+    }
+    else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+    {
+        var23 = 63;
+    }
+    else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+    {
+        var23 = 0x40;
+    }
+    else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+    {
+        var23 = 66;
+    }
+    else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+    {
+        var23 = 67;
+    }
+    else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+    {
+        var23 = 68;
+    }
+    else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+    {
+        var23 = 56;
+    }
+    else 
+    {
+        var23 = 56;
+    }
+
+    
+    if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+    {
+        
+        if ( ( var30 < 5 ) || ( var30 >= 10 ) )
+        {
+            var22 = 33;
+        }
+
+    }
+
+    
+    if ( ( CHECK_TIME_SPAN( 12, 8, 12, 24 ) == 1 ) && ( BIT_CHK( 23 ) == 0 ) )
+    {
+        
+        if ( var30 == 20 )
+        {
+            var23 = 104;
+        }
+        else if ( var30 == 10 )
+        {
+            var23 = 91;
+        }
+        else if ( var30 >= 5 )
+        {
+            var23 = 78;
+        }
+        else 
+        {
+            var23 = 65;
+        }
+
+        
+        if ( ( var30 < 5 ) || ( var30 >= 10 ) )
+        {
+            
+            if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+            {
+                var22 = 35;
+            }
+            else 
+            {
+                var22 = 34;
+            }
+
+        }
+
+    }
+
+    
+    if ( var30 >= 10 )
+    {
+        var26 = 48;
+        var26 = 52;
+    }
+    else if ( ( var30 <= 9 ) && ( var30 >= 5 ) )
+    {
+        
+        if ( ( ( ( var23 == 74 ) || ( var23 == 77 ) ) || ( var23 == 80 ) ) || ( var23 == 81 ) )
+        {
+            var25 = 47;
+            var26 = 51;
+        }
+        else 
+        {
+            var25 = 46;
+            var26 = 50;
+        }
+
+    }
+
+    
+    if ( var30 >= 10 )
+    {
+        var24 = 55;
+    }
+    else if ( var30 >= 5 )
+    {
+        var24 = 54;
+    }
+    else 
+    {
+        var24 = 53;
+    }
+
+    
+    if ( CHECK_TIME_SPAN( 7, 26, 8, 31 ) == 1 )
+    {
+        
+        if ( var25 == 45 )
+        {
+            var25 = 108;
+        }
+        else if ( var25 == 46 )
+        {
+            var25 = 109;
+        }
+        else if ( var25 == 47 )
+        {
+            var25 = 110;
+        }
+        else if ( var25 == 48 )
+        {
+            var25 = 111;
+        }
+
+        
+        if ( var26 == 49 )
+        {
+            var26 = 112;
+        }
+        else if ( var26 == 50 )
+        {
+            var26 = 113;
+        }
+        else if ( var26 == 51 )
+        {
+            var26 = 114;
+        }
+        else if ( var26 == 52 )
+        {
+            var26 = 115;
+        }
+
+        
+        if ( var23 == 56 )
+        {
+            var23 = 119;
+        }
+        else if ( var23 == 69 )
+        {
+            var23 = 120;
+        }
+        else if ( var23 == 82 )
+        {
+            var23 = 121;
+        }
+        else if ( var23 == 95 )
+        {
+            var23 = 122;
+        }
+
+        
+        if ( var23 == 60 )
+        {
+            var23 = 123;
+        }
+        else if ( var23 == 73 )
+        {
+            var23 = 124;
+        }
+        else if ( var23 == 86 )
+        {
+            var23 = 125;
+        }
+        else if ( var23 == 99 )
+        {
+            var23 = 126;
+        }
+
+        
+        if ( var24 == 53 )
+        {
+            var24 = 116;
+        }
+        else if ( var24 == 54 )
+        {
+            var24 = 117;
+        }
+        else if ( var24 == 55 )
+        {
+            var24 = 118;
+        }
+        else if ( var24 == 55 )
+        {
+            var24 = 118;
+        }
+
+    }
+
+    OPEN_MSG_WIN();
+    
+    if ( var17 == 0 )
+    {
+        var16 = GET_CNT( var15 );
+        SET_CNT( var15, ( var16 + 1 ) );
+        MSG( var23 );
+    }
+    else 
+    {
+        MSG( var24 );
+    }
+
+    
+    if ( BIT_CHK( 3199 ) == 0 )
+    {
+        BIT_ON(6381);
+        BIT_ON( 3199 );
+        CLOSE_MSG_WIN();
+        HELP_MSG( NightHangoutHelp );
+        OPEN_MSG_WIN();
+    }
+
+    // Chat help message
+    if(!BIT_CHK(6381))
+    {
+        BIT_ON(6381);
+        CLOSE_MSG_WIN();
+        HELP_MSG( ChatHelp );
+        OPEN_MSG_WIN();
+    }
+
+    MSG( var22 );
+    
+    if ( ( GET_SL_LEVEL( slId ) < 10 ) && ( EVT_FUNCTION_0019( slId ) != 0 ) )
+    {
+        EVT_FUNCTION_0013( slId );
+        MSG( var19 );
+    }
+    else if ( GET_SL_LEVEL( slId ) == 10 )
+    {
+        MSG( BU1_NIGHT_TALK_POINT_MAX );
+        
+        if ( ( var18 >= 2 ) && ( var16 >= 100 ) )
+        {
+            MSG( BU1_NIGHT_TALK_POINT_MAX_3 );
+        }
+        else 
+        {
+            MSG( BU1_NIGHT_TALK_POINT_MAX_2 );
+        }
+
+    }
+    
+    EVT_FUNCTION_0013( slId );
+    if(CHECK_IF_SL_LVLUP(slId))
+        MSG(NightWaitSuggestion);
+    MSG( var20 );
+    SEL_CHK_PAD( 14, 2 );
+    selectedChoice = SEL( HangoutSel );
+    CLOSE_MSG_WIN();
+    
+    if ( selectedChoice <= 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( var25 );
+        CLOSE_MSG_WIN();
+        EVT_FUNCTION_0016( EVT_FUNCTION_0022( 25 ) );
+        // Don't give sl points if you're chatting
+        if( selectedChoice == 0 ) 
+            EVT_FUNCTION_0031( EVT_FUNCTION_0022( 25 ), 5, var12 );
+        EVT_FUNCTION_0016( 0 );
+        OPEN_MSG_WIN();
+        MSG( var27 );
+        CLOSE_MSG_WIN();
+        FADE( 1, 20 );
+        FADE_SYNC();
+        if(selectedChoice == 1) {
+            BIT_OFF(2184); // Despawn yumi
+            BIT_ON(6380); // Turn on chatting flag
+        }
+        CALL_EVENT( 845, var14, 0 );
+        BIT_ON( 4076 );
+        BIT_OFF( 2571 );
+        BIT_OFF(6380); // Turn off chatting flag
+
+        if ( BIT_CHK( 3206 ) == 1)
+        {
+            var16 = GET_CNT( var15 );
+            SET_CNT( var15, ( var16 - 1 ) );
+            CALL_FIELD( 8, 2, 0, 0 );
+        } 
+        else if(selectedChoice == 1) 
+        {
+            CALL_FIELD( 8, 2, 0, 0 );
+        }
+        else 
+        {
+            commu_yoru();
+        }
+
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        MSG( var26 );
+        CLOSE_MSG_WIN();
+    }
+
+}

@@ -1,0 +1,66 @@
+void f028_002_init_hook()
+{
+    int var1;
+    int var2;
+    
+    if ( FLD_FUNCTION_0000() == 0 )
+    {
+        
+        if ( BIT_CHK( 3857 ) == 1 )
+        {
+            BIT_OFF( 3859 );
+        }
+        else 
+        {
+            BIT_ON( 3859 );
+        }
+
+    }
+    else if ( FLD_FUNCTION_0000() == 1 )
+    {
+        
+        if ( BIT_CHK( 3858 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10241, 0 );
+            FLD_FUNCTION_0007( 10243, 0 );
+            FLD_FUNCTION_0007( 10244, 1 );
+            FLD_FUNCTION_0007( 10246, 1 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10241, 1 );
+            FLD_FUNCTION_0007( 10243, 1 );
+            FLD_FUNCTION_0007( 10244, 0 );
+            FLD_FUNCTION_0007( 10246, 0 );
+        }
+
+    }
+    else if ( FLD_FUNCTION_0000() == 2 )
+    {
+        // Spawn save butterfly
+        var1 = LOAD_FIELD_OBJECT( -1, 102 );
+        var2 = FLD_FUNCTION_000F( var1 );
+        FLD_FUNCTION_000C( var2, 8 );
+        FLD_FUNCTION_0007( var2, 1 );
+        
+        if ( ( CHECK_TIME_SPAN( 4, 1, 11, 20 ) == 1 ) || ( BIT_CHK( 3856 ) == 1 ) )
+        {
+            BIT_ON( 3840 );
+        }
+        else 
+        {
+            BIT_OFF( 3840 );
+            FLD_FUNCTION_0008( 10242, 2, 0, 0, 10 );
+            FLD_FUNCTION_0009( 10242 );
+            FLD_FUNCTION_0010( 10247, 0 );
+        }
+
+        
+        if ( BIT_CHK( 3856 ) == 1 )
+        {
+            BIT_ON( 3842 );
+        }
+
+    }
+
+}

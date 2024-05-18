@@ -1,0 +1,614 @@
+import("funkyQuiz.msg");
+
+// Function for funky quiz kid
+void NPC_07_hook()
+{
+    int var17;
+    int var18;
+    int var19;
+    int var29;
+    int var20;
+    int var21;
+    int var22;
+    int var23;
+    int var30;
+    int var24;
+    int var25;
+    int var26;
+    int var27;
+    int var31;
+    int var32;
+    int var28;
+    OPEN_MSG_WIN();
+
+    if (CHECK_TIME_SPAN(4, 0x10, 2, 29))
+    {
+
+        if ((((BIT_CHK(278) == 1) && (BIT_CHK(342) == 0)) && (BIT_CHK(206) == 0)) && (BIT_CHK(1000) == 0))
+        {
+            MSG(MSG_NPC_07_QUEST00_0_4);
+            SEL_CHK_PAD(14, 1);
+            var17 = SEL(0x80);
+
+            if (var17 == 0)
+            {
+                BIT_ON(1000);
+                MSG(MSG_NPC_07_QUEST00_0);
+            quiz1_0:
+                MSG(MSG_NPC_07_QUEST00_0_1);
+                MSG(MSG_NPC_07_QUEST00_0_2);
+                var18 = SEL(QUIZ_1);
+
+                if (var18 == 0)
+                {
+                    MSG(MSG_NPC_07_QUEST00_0_2_1);
+                    var19 = SEL(134);
+
+                    if (var19 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST00_0_3);
+                        var29 = GET_ITEM((768 + 65));
+                        var29 = (var29 + 3);
+                        SET_ITEM((768 + 65), var29);
+                        CLOSE_MSG_WIN();
+                        COMPLETE_QUEST(23);
+                        BIT_ON(206);
+                    }
+                    else
+                    {
+                        MSG(MSG_NPC_07_QUEST02_0);
+                    }
+                }
+                else if (var18 == 0)
+                {
+                    MSG(MSG_NPC_07_QUEST00_0_2_1);
+                    SEL(134);
+                    MSG(MSG_NPC_07_QUEST02_0);
+                }
+                else
+                {
+                    goto quiz1_0;
+                }
+            }
+            else
+            {
+                MSG(MSG_NPC_07_QUEST00_1);
+            }
+        }
+        else if ((((BIT_CHK(278) == 0) && (BIT_CHK(342) == 0)) && (BIT_CHK(206) == 0)) && (BIT_CHK(1000) == 0))
+        {
+            MSG(MSG_NPC_07_QUEST00);
+            SEL_CHK_PAD(14, 1);
+            var17 = SEL(0x80);
+
+            if (var17 == 0)
+            {
+                BIT_ON(1000);
+                CLOSE_MSG_WIN();
+                ACCEPT_QUEST(23);
+                OPEN_MSG_WIN();
+                MSG(MSG_NPC_07_QUEST00_0);
+            quiz1_1:
+                MSG(MSG_NPC_07_QUEST00_0_1);
+                MSG(MSG_NPC_07_QUEST00_0_2);
+                var18 = SEL(QUIZ_1);
+
+                if (var18 == 0)
+                {
+                    MSG(MSG_NPC_07_QUEST00_0_2_1);
+                    var19 = SEL(134);
+
+                    if (var19 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST00_0_3);
+                        var29 = GET_ITEM((768 + 65));
+                        var29 = (var29 + 3);
+                        SET_ITEM((768 + 65), var29);
+                        BIT_ON(206);
+                        CLOSE_MSG_WIN();
+                        COMPLETE_QUEST(23);
+                        return;
+                    }
+                    else
+                    {
+                        MSG(MSG_NPC_07_QUEST02_0);
+                    }
+                }
+                else if (var18 == 1)
+                {
+                    MSG(MSG_NPC_07_QUEST00_0_2_1);
+                    SEL(134);
+                    MSG(MSG_NPC_07_QUEST02_0);
+                }
+                else
+                {
+                    goto quiz1_1;
+                }
+            }
+            else
+            {
+                MSG(MSG_NPC_07_QUEST00_1);
+            }
+        }
+        else if (((CHECK_TIME_SPAN(4, 0x10, 7, 26) && (BIT_CHK(278) == 1)) && (BIT_CHK(342) == 1)) && (BIT_CHK(206) == 1))
+        {
+            MSG(MSG_NPC_07_QUEST02_1);
+        }
+        else if (((CHECK_TIME_SPAN(7, 27, 2, 29) && (BIT_CHK(342) == 1)) && (BIT_CHK(366) == 0)) && (BIT_CHK(1000) == 0))
+        {
+
+            if (BIT_CHK(1000) == 1)
+            {
+                MSG(MSG_NPC_07_QUEST_ONCE_A_);
+            }
+            else if (((BIT_CHK(302) == 1) && (BIT_CHK(366) == 0)) && (BIT_CHK(254) == 0))
+            {
+                MSG(MSG_NPC_07_QUEST00_0_4);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(166);
+
+                if (var17 == 0)
+                {
+                    BIT_ON(1000);
+                    MSG(MSG_NPC_07_QUEST03_0);
+                quiz2_0:
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_1);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_2);
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_3);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_4);
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_5);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    var20 = SEL(QUIZ_2_0);
+
+                    if (var20 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST03_5_1);
+                        SEL(151);
+                        MSG(MSG_NPC_07_QUEST03_7);
+                    }
+                    else if (var20 == 0)
+                    {
+                        MSG(MSG_NPC_07_QUEST03_5_1);
+                        var21 = SEL(151);
+
+                        if (var21 == 1)
+                        {
+                            MSG(MSG_NPC_07_QUEST03_6);
+                        quiz2_4:
+                            MSG(MSG_NPC_07_QUEST03_8);
+                            FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_9);
+                            FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                            FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_10);
+                            FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_11);
+                            MSG(MSG_NPC_07_QUEST03_12);
+                            var22 = SEL(QUIZ_2_1);
+
+                            if (var22 == 0)
+                            {
+                                MSG(MSG_NPC_07_QUEST03_12_1);
+                                SEL(161);
+                                MSG(MSG_NPC_07_QUEST03_14);
+                            }
+                            else if (var22 == 1)
+                            {
+                                MSG(MSG_NPC_07_QUEST03_12_1);
+                                var23 = SEL(161);
+
+                                if (var23 == 1)
+                                {
+                                    MSG(MSG_NPC_07_QUEST03_13);
+                                    var30 = GET_ITEM((768 + 12));
+                                    var30 = (var30 + 1);
+                                    SET_ITEM((768 + 12), var30);
+                                    CLOSE_MSG_WIN();
+                                    COMPLETE_QUEST(47);
+                                    return;
+                                }
+                                else
+                                {
+                                    MSG(MSG_NPC_07_QUEST03_14);
+                                }
+                            }
+                            else
+                            {
+                                goto quiz2_4;
+                            }
+                        }
+                        else
+                        {
+                            MSG(MSG_NPC_07_QUEST03_7);
+                        }
+                    }
+                    else
+                    {
+                        goto quiz2_0;
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST03_0_0);
+                }
+            }
+            else if (((BIT_CHK(302) == 0) && (BIT_CHK(366) == 0)) && (BIT_CHK(254) == 0))
+            {
+                MSG(MSG_NPC_07_QUEST03);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(141);
+
+                if (var17 == 0)
+                {
+                    BIT_ON(1000);
+                    CLOSE_MSG_WIN();
+                    ACCEPT_QUEST(47);
+                    OPEN_MSG_WIN();
+                    MSG(MSG_NPC_07_QUEST03_0);
+                quiz2_1:
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_1);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_2);
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_3);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_4);
+                    FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                    MSG(MSG_NPC_07_QUEST03_5);
+                    FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                    var20 = SEL(QUIZ_2_0);
+
+                    if (var20 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST03_5_1);
+                        SEL(151);
+                        MSG(MSG_NPC_07_QUEST03_7);
+                    }
+                    else if (var20 == 0)
+                    {
+                        MSG(MSG_NPC_07_QUEST03_5_1);
+                        var21 = SEL(151);
+
+                        if (var21 == 1)
+                        {
+                            MSG(MSG_NPC_07_QUEST03_6);
+                        quiz2_2:
+                            MSG(MSG_NPC_07_QUEST03_8);
+                            FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_9);
+                            FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                            FLD_FUNCTION_0008(3079, 3, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_10);
+                            FLD_FUNCTION_0008(3079, 0, 1, 10, 1.00f);
+                            MSG(MSG_NPC_07_QUEST03_11);
+                            MSG(MSG_NPC_07_QUEST03_12);
+                            var22 = SEL(QUIZ_2_1);
+
+                            if (var22 == 0)
+                            {
+                                MSG(MSG_NPC_07_QUEST03_12_1);
+                                SEL(161);
+                                MSG(MSG_NPC_07_QUEST03_14);
+                            }
+                            else if (var22 == 1)
+                            {
+                                MSG(MSG_NPC_07_QUEST03_12_1);
+                                var23 = SEL(161);
+
+                                if (var23 == 1)
+                                {
+                                    MSG(MSG_NPC_07_QUEST03_13);
+                                    var30 = GET_ITEM((768 + 12));
+                                    var30 = (var30 + 1);
+                                    SET_ITEM((768 + 12), var30);
+                                    CLOSE_MSG_WIN();
+                                    COMPLETE_QUEST(47);
+                                    return;
+                                }
+                                else
+                                {
+                                    MSG(MSG_NPC_07_QUEST03_14);
+                                }
+                            }
+                            else
+                            {
+                                goto quiz2_2;
+                            }
+                        }
+                        else
+                        {
+                            MSG(MSG_NPC_07_QUEST03_7);
+                        }
+                    }
+                    else
+                    {
+                        goto quiz2_1;
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST03_0_0);
+                }
+            }
+        }
+        else if (((CHECK_TIME_SPAN(7, 27, 11, 11) && (BIT_CHK(302) == 1)) && (BIT_CHK(366) == 1)) && (BIT_CHK(206) == 1))
+        {
+            MSG(MSG_NPC_07_QUEST03_15);
+        }
+        else if (((CHECK_TIME_SPAN(11, 12, 2, 29) && (BIT_CHK(366) == 1)) && (BIT_CHK(369) == 0)) && (BIT_CHK(1000) == 0))
+        {
+
+            if (BIT_CHK(1000) == 1)
+            {
+                MSG(MSG_NPC_07_QUEST_ONCE_A_);
+            }
+            else if ((BIT_CHK(305) == 1) && (BIT_CHK(369) == 0))
+            {
+                MSG(MSG_NPC_07_QUEST00_0_4);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(166);
+
+                if (var17 == 0)
+                {
+                    BIT_ON(1000);
+                    MSG(MSG_NPC_07_QUEST04_0_FIRST);
+                quiz3_0:
+                    MSG(MSG_NPC_07_QUEST04_0_REST);
+                    var24 = SEL(QUIZ_3);
+
+                    if (var24 == 0)
+                    {
+                        MSG(MSG_NPC_07_QUEST04_0_01);
+                        SEL(170);
+                        MSG(MSG_NPC_07_QUEST04_0_0);
+                    }
+                    else if (var24 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST04_0_01);
+                        var25 = SEL(170);
+
+                        if (var25 == 2)
+                        {
+                            MSG(MSG_NPC_07_QUEST04_0_1);
+                            MSG(MSG_NPC_07_QUEST04_3_FIRST);
+                        quiz3_2:
+                            MSG(MSG_NPC_07_QUEST04_3_REST);
+                            var26 = SEL(QUIZ_3_1);
+
+                            if ((var26 == 0) || (var26 == 1))
+                            {
+                                MSG(MSG_NPC_07_QUEST04_3_0);
+                            }
+                            else if (var26 == 3)
+                            {
+                                goto quiz3_2;
+                            }
+                            else
+                            {
+                                MSG(MSG_NPC_07_QUEST04_3_1);
+                                MSG(MSG_NPC_07_QUEST04_4_FIRST);
+                            quiz3_4:
+                                MSG(MSG_NPC_07_QUEST04_4_REST);
+                                var27 = SEL(QUIZ_3_2);
+
+                                if ((var27 == 0) || (var27 == 2))
+                                {
+                                    MSG(MSG_NPC_07_QUEST04_4_0);
+                                }
+                                else if (var27 == 3)
+                                {
+                                    goto quiz3_4;
+                                }
+                                else
+                                {
+                                    MSG(MSG_NPC_07_QUEST04_4_1);
+                                    var31 = GET_ITEM((768 + 22));
+                                    var31 = (var31 + 1);
+                                    SET_ITEM((768 + 22), var31);
+                                    BIT_ON(254);
+                                    CLOSE_MSG_WIN();
+                                    COMPLETE_QUEST(50);
+                                    return;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MSG(MSG_NPC_07_QUEST04_0_0);
+                        }
+                    }
+                    else
+                    {
+                        goto quiz3_0;
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST04_1);
+                }
+            }
+            else if (((BIT_CHK(305) == 0) && (BIT_CHK(369) == 0)) && (BIT_CHK(1000) == 0))
+            {
+                MSG(MSG_NPC_07_QUEST04);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(166);
+
+                if (var17 == 0)
+                {
+                    BIT_ON(1000);
+                    CLOSE_MSG_WIN();
+                    ACCEPT_QUEST(50);
+                    OPEN_MSG_WIN();
+                    MSG(MSG_NPC_07_QUEST04_0_FIRST);
+                quiz3_1:
+                    MSG(MSG_NPC_07_QUEST04_0_REST);
+                    var24 = SEL(QUIZ_3);
+
+                    if (var24 == 0)
+                    {
+                        MSG(MSG_NPC_07_QUEST04_0_01);
+                        SEL(170);
+                        MSG(MSG_NPC_07_QUEST04_0_0);
+                    }
+                    else if (var24 == 1)
+                    {
+                        MSG(MSG_NPC_07_QUEST04_0_01);
+                        var25 = SEL(170);
+
+                        if (var25 == 2)
+                        {
+                            MSG(MSG_NPC_07_QUEST04_0_1);
+                            MSG(MSG_NPC_07_QUEST04_3_FIRST);
+                        quiz3_3:
+                            MSG(MSG_NPC_07_QUEST04_3_REST);
+                            var26 = SEL(QUIZ_3_1);
+
+                            if ((var26 == 0) || (var26 == 1))
+                            {
+                                MSG(MSG_NPC_07_QUEST04_3_0);
+                            }
+                            else if (var26 == 3)
+                            {
+                                goto quiz3_3;
+                            }
+                            else
+                            {
+                                MSG(MSG_NPC_07_QUEST04_3_1);
+                                MSG(MSG_NPC_07_QUEST04_4_FIRST);
+                            quiz3_5:
+                                MSG(MSG_NPC_07_QUEST04_4_REST);
+                                var27 = SEL(QUIZ_3_2);
+
+                                if ((var27 == 0) || (var27 == 2))
+                                {
+                                    MSG(MSG_NPC_07_QUEST04_4_0);
+                                }
+                                else if (var27 == 3)
+                                {
+                                    goto quiz3_5;
+                                }
+                                else
+                                {
+                                    MSG(MSG_NPC_07_QUEST04_4_1);
+                                    var31 = GET_ITEM((768 + 13));
+                                    var31 = (var31 + 1);
+                                    SET_ITEM((768 + 13), var31);
+                                    BIT_ON(254);
+                                    CLOSE_MSG_WIN();
+                                    COMPLETE_QUEST(50);
+                                    return;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            MSG(MSG_NPC_07_QUEST04_0_0);
+                        }
+                    }
+                    else
+                    {
+                        goto quiz3_1;
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST04_1);
+                }
+            }
+        }
+        else if ((((CHECK_TIME_SPAN(11, 12, 1, 9) == 1) && (BIT_CHK(305) == 1)) && (BIT_CHK(369) == 1)) && (BIT_CHK(254) == 1))
+        {
+            MSG(MSG_NPC_07_QUEST04_2);
+        }
+        else if (((CHECK_TIME_SPAN(1, 10, 2, 29) && (BIT_CHK(369) == 1)) && (BIT_CHK(380) == 0)) && (BIT_CHK(1000) == 0))
+        {
+            var32 = (768 + 14);
+
+            if (BIT_CHK(316) == 0)
+            {
+                MSG(MSG_NPC_07_QUEST05_000);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(185);
+
+                if (var17 == 0)
+                {
+                    CLOSE_MSG_WIN();
+                    ACCEPT_QUEST(56);
+                    OPEN_MSG_WIN();
+                    MSG(MSG_NPC_07_QUEST05_020);
+                    var28 = SEL(187);
+
+                    if (var28 == 1)
+                    {
+                        SET_MSG_VAR(0, var32, 1);
+                        SET_ITEM(var32, (GET_ITEM(var32) + 3));
+                        MSG(MSG_NPC_07_QUEST05_040);
+                        MSG(MSG_NPC_07_QUEST05_050);
+                        CLOSE_MSG_WIN();
+                        COMPLETE_QUEST(56);
+                        OPEN_MSG_WIN();
+                        MSG(MSG_NPC_07_QUEST05_100);
+                    }
+                    else
+                    {
+                        BIT_ON(1000);
+                        MSG(MSG_NPC_07_QUEST05_060);
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST05_021);
+                }
+            }
+            else
+            {
+                MSG(MSG_NPC_07_QUEST05_000);
+                SEL_CHK_PAD(14, 1);
+                var17 = SEL(185);
+
+                if (var17 == 0)
+                {
+                    MSG(MSG_NPC_07_QUEST05_020);
+                    var28 = SEL(187);
+
+                    if (var28 == 1)
+                    {
+                        SET_MSG_VAR(0, var32, 1);
+                        SET_ITEM(var32, (GET_ITEM(var32) + 3));
+                        MSG(MSG_NPC_07_QUEST05_040);
+                        MSG(MSG_NPC_07_QUEST05_050);
+                        CLOSE_MSG_WIN();
+                        COMPLETE_QUEST(56);
+                        OPEN_MSG_WIN();
+                        MSG(MSG_NPC_07_QUEST05_100);
+                    }
+                    else
+                    {
+                        BIT_ON(1000);
+                        MSG(MSG_NPC_07_QUEST05_060);
+                    }
+                }
+                else
+                {
+                    MSG(MSG_NPC_07_QUEST05_021);
+                }
+            }
+        }
+        else if (BIT_CHK(1000) == 1)
+        {
+            MSG(MSG_NPC_07_QUEST_ONCE_A_);
+        }
+        else
+        {
+            MSG(MSG_NPC_07_QUEST05_100);
+        }
+    }
+
+    CLOSE_MSG_WIN();
+}

@@ -1,0 +1,55 @@
+{
+  "ModId": "p4g64.hiddenFieldNames",
+  "ModName": "Hidden Field Names",
+  "ModAuthor": "AnimatedSwine37",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Hides the field name when a text box is open.",
+  "ModDll": "",
+  "ModIcon": "Hidden Field Names Icon.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "p4g64.hiddenFieldNames.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GameBanana": {
+      "ItemType": "Mod",
+      "ItemId": 489980
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "p4gpc.inaba"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": "https://gamebanana.com/mods/489980"
+}

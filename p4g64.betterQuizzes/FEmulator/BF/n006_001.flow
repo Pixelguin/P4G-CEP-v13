@@ -1,0 +1,131 @@
+import("kashiwagiQuiz.msg");
+
+void scr_npc_kashiwagi_q_59_hook()
+{
+    int var14;
+    OPEN_MSG_WIN();
+    MSG(sVar10);
+    var14 = SEL(262);
+
+    if (var14 != 2)
+    {
+        BIT_ON(6542);
+        MSG(MSG_NPC_KASHIWAGI_QUEST__8);
+    }
+    else
+    {
+        bool repeated = false;
+    kashiwagi_q59:
+        if (repeated)
+            MSG(KSAHIWAGI_QUEST_3_REPEATED);
+        else
+            MSG(sVar11);
+
+        BIT_ON(6543);
+        // Added can you repeat that
+        var14 = SEL(SEL_NPC_KASHIWAGI_QUEST_3);
+
+        if (var14 == 1)
+        {
+            SET_ITEM((1792 + 79), 1);
+            SET_MSG_VAR(0, (1792 + 79), 1);
+            MSG(MSG_NPC_KASHIWAGI_QUEST__13);
+            CLOSE_MSG_WIN();
+            NS_PLAY_EXPRESSION(12, 24);
+            OPEN_MSG_WIN();
+            MSG(MSG_NPC_KASHIWAGI_QUEST__14);
+            CLOSE_MSG_WIN();
+            OPEN_MSG_WIN();
+            MSG(MSG_NPC_KASHIWAGI_QUEST__15);
+            CLOSE_MSG_WIN();
+            COMPLETE_QUEST(54);
+            OPEN_MSG_WIN();
+            MSG(MSG_NPC_KASHIWAGI_QUEST__16);
+        }
+        else if (var14 == 3)
+        {
+            repeated = true;
+            goto kashiwagi_q59;
+        }
+        else
+        {
+            BIT_ON(6542);
+            MSG(MSG_NPC_KASHIWAGI_QUEST__12);
+        }
+    }
+}
+
+void scr_npc_kashiwagi_q_74_hook()
+{
+    int messageIndex;
+    int selIndex;
+    int correctSel;
+    int selectedOption;
+    SET_CNT(218, 0);
+_319:
+
+    if (1)
+    {
+
+        if (GET_CNT(218) == 0)
+        {
+            messageIndex = 305;
+            selIndex = SEL_NPC_KASHIWAGI_QUEST_7;
+            correctSel = 1;
+        }
+        else if (GET_CNT(218) == 10)
+        {
+            messageIndex = 307;
+            selIndex = 308;
+            correctSel = 2;
+        }
+        else
+        {
+            messageIndex = 309;
+            selIndex = 310;
+            correctSel = 1;
+        }
+
+        kashiwagi_q74:
+        MSG(messageIndex);
+        selectedOption = SEL(selIndex);
+
+        if (selectedOption == correctSel)
+        {
+            SET_CNT(218, (GET_CNT(218) + 10));
+
+            if (GET_CNT(218) >= 30)
+            {
+                SET_ITEM((1792 + 55), 1);
+                SET_MSG_VAR(0, (1792 + 55), 1);
+                MSG(MSG_NPC_KASHIWAGI_QUEST__48);
+                CLOSE_MSG_WIN();
+                OPEN_MSG_WIN();
+                MSG(MSG_NPC_KASHIWAGI_QUEST__49);
+                CLOSE_MSG_WIN();
+                COMPLETE_QUEST(69);
+                OPEN_MSG_WIN();
+                MSG(MSG_NPC_KASHIWAGI_QUEST__50);
+                goto _320;
+            }
+            else
+            {
+                MSG(MSG_NPC_KASHIWAGI_QUEST__47);
+            }
+        }
+        else if (selIndex == SEL_NPC_KASHIWAGI_QUEST_7 && selectedOption == 3)
+        {
+            // Repeat that for the first question
+            goto kashiwagi_q74;
+        }
+        else
+        {
+            MSG(MSG_NPC_KASHIWAGI_QUEST__46);
+            goto _320;
+        }
+
+        goto _319;
+    }
+
+_320:
+}

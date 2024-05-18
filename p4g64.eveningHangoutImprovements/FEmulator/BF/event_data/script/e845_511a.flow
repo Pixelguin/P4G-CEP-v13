@@ -1,0 +1,166 @@
+import("ai.msg");
+
+void EVE_MES_EBI_hook()
+{
+    int var32;
+    int var31;
+    int msg;
+    int var30;
+    
+    if ( BIT_CHK( 2388 ) == 1 )
+    {
+        
+        if ( BIT_CHK( 1558 ) == 1 )
+        {
+            var32 = 2;
+        }
+        else 
+        {
+            var32 = 1;
+        }
+
+    }
+    else if ( ( GET_SL_LEVEL( 21 ) >= 6 ) || ( EVT_FUNCTION_0002( 22 ) == 1 ) )
+    {
+        var32 = 3;
+    }
+    else 
+    {
+        var32 = 0;
+    }
+
+    var31 = EVT_FUNCTION_0022( 21 );
+    msg = 0;
+    var30 = 1;
+    
+    if ( ( ( ( CHECK_TIME_SPAN( 12, 1, 12, 23 ) == 1 ) && ( BIT_CHK( 23 ) == 1 ) ) && ( GET_CNT( 239 ) < 100 ) ) && ( var32 == 2 ) )
+    {
+        msg = 12;
+    }
+
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+        
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var31 ) == 1 )
+    {
+        MSG( var30 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+void EVE_END_SYSMES_EBI_hook()
+{
+    int var59;
+    int endMsg;
+    
+    if ( BIT_CHK( 2388 ) == 1 )
+    {
+        
+        if ( BIT_CHK( 1558 ) == 1 )
+        {
+            var59 = 2;
+        }
+        else 
+        {
+            var59 = 1;
+        }
+
+    }
+    else if ( ( GET_SL_LEVEL( 21 ) >= 6 ) || ( EVT_FUNCTION_0002( 22 ) == 1 ) )
+    {
+        var59 = 3;
+    }
+    else 
+    {
+        var59 = 0;
+    }
+
+    
+    if ( BIT_CHK( 2571 ) == 1 )
+    {
+        endMsg = 6;
+    }
+    else if ( var59 == 1 )
+    {
+        endMsg = 3;
+    }
+    else if ( var59 == 2 )
+    {
+        endMsg = 4;
+    }
+    else if ( var59 == 3 )
+    {
+        endMsg = 5;
+    }
+    else 
+    {
+        endMsg = 2;
+    }
+
+    if(BIT_CHK(6380))
+        endMsg = ChatEnd;
+
+    OPEN_MSG_WIN();
+    MSG( endMsg );
+    CLOSE_MSG_WIN();
+}
+
+
+void COMMUNITY_POINT_EBI_hook()
+{    
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var60;
+    int slId;
+    int var62;
+    int var65;
+    int var63;
+    int var66;
+    int pointsGained;
+    var60 = 1;
+    slId = EVT_FUNCTION_0022( 21 );
+    var62 = 22;
+    var65 = 239;
+    var63 = 900;
+    var66 = GET_CNT( var65 );
+    
+    if ( var66 >= 2000 )
+    {
+        pointsGained = 15;
+        SET_CNT( var65, ( var66 - 2000 ) );
+    }
+    else if ( var66 >= 1000 )
+    {
+        pointsGained = 10;
+        SET_CNT( var65, ( var66 - 1000 ) );
+    }
+    else 
+    {
+        pointsGained = 5;
+    }
+
+    if ( var60 == 0)
+    {
+        EVT_FUNCTION_0016( slId );
+        EVT_FUNCTION_0031( slId, pointsGained, var63 );
+    }
+    else if ( EVT_FUNCTION_0002( slId ) == 1 )
+    {
+        EVT_FUNCTION_0016( slId );
+        EVT_FUNCTION_0031( slId, pointsGained, var63 );
+    }
+    else if ( EVT_FUNCTION_0002( var62 ) == 1 )
+    {
+        EVT_FUNCTION_0016( var62 );
+        EVT_FUNCTION_0031( var62, pointsGained, var63 );
+    }
+
+    EVT_FUNCTION_0016( 0 );
+}

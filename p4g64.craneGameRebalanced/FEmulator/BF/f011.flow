@@ -1,0 +1,445 @@
+// Variables
+// ---------
+// day 	= Current in-game date.
+// attemptsToday 	= ???
+// proficiency	= Your 'proficiency' at the crane game, as you play it increases as signified by MSG_CITY_UFO_GET_RATEUP_x. Probably increases probability of getting stuff
+// var15	= ???
+// doubleDay	= If true (1), current in-game date ends in 0, 2 or 6 (e.g. the 10th, 12th, 16th - a day when you can play twice per attempt).
+// attemptsRemaining	= Number of crane game attempts remaining. Typically 0, 1 or 2.
+// miracleDay	= If true (1), current in-game date is the 30th (a Miracle Day with boosted chance of winning).
+// var10	= ???
+// prize1	= ???
+// prize2	= ???
+// prize3	= ???
+// var7		= Index. 0 = first option (yes, play the crane game), 1 = second (no, don't play).
+// canPlayAgain	= If true (1), status is set "as available to play again". 0 = you can't play again.
+// attemptFailed	= If true (1), attempt was a failure. If false (0), they win a prize.
+// randomNum2	= ???
+// rng		= A random number generated between 1 and 99.
+
+import( "f011hook.msg" );
+
+void ufo_catcher_hook()
+{
+    int day;
+    int attemptsToday;
+    int proficiency;
+    int var15;
+    int doubleDay;
+    int attemptsRemaining;
+    int miracleDay;
+    int var10;
+    int prize1;
+    int prize2;
+    int prize3;
+    int var7;
+    int canPlayAgain;
+    int attemptFailed;
+    int randomNum2;
+    int rng;
+    int wonPrize;
+    day = GET_DAY_OF_MONTH();
+    attemptsToday = GET_CNT(224);
+    proficiency = GET_CNT(182);
+    // bit id (((0) + (1024)) + (2048)) + (380) = 3452
+    // bit id (((0) + (1024)) + (2048)) + (381) = 3453
+    // bit id (((0) + (1024)) + (2048)) + (382) = 3454
+    // bit id (((0) + (1024)) + (2048)) + (383) = 3455
+
+    if (proficiency == 0)
+    {
+        SET_CNT(228, 5);
+        BIT_OFF((((0 + 0x0400) + 0x0800) + 380));
+        BIT_OFF((((0 + 0x0400) + 0x0800) + 381));
+        BIT_OFF((((0 + 0x0400) + 0x0800) + 382));
+        BIT_OFF((((0 + 0x0400) + 0x0800) + 383));
+    }
+
+    var15 = GET_CNT(228);
+    // bit id ((0) + (1024)) + (514) = 1538
+    // bit id ((0) + (1024)) + (520) = 1544
+    // bit id ((0) + (1024)) + (518) = 1542
+    // bit id ((0) + (1024)) + (527) = 1551
+    // bit id (((0) + (1024)) + (2048)) + (336) = 3408
+    // bit id (((0) + (1024)) + (2048)) + (379) = 3451
+    // bit id (((0) + (1024)) + (2048)) + (379) = 3451
+    // bit id (((0) + (1024)) + (2048)) + (379) = 3451
+    // bit id (((0) + (1024)) + (2048)) + (383) = 3455
+    // bit id (((0) + (1024)) + (2048)) + (382) = 3454
+    // bit id (((0) + (1024)) + (2048)) + (381) = 3453
+    // bit id (((0) + (1024)) + (2048)) + (380) = 3452
+    // bit id (((0) + (1024)) + (2048)) + (383) = 3455
+    // bit id (((0) + (1024)) + (2048)) + (383) = 3455
+    // bit id (((0) + (1024)) + (2048)) + (382) = 3454
+    // bit id (((0) + (1024)) + (2048)) + (382) = 3454
+    // bit id (((0) + (1024)) + (2048)) + (381) = 3453
+    // bit id (((0) + (1024)) + (2048)) + (381) = 3453
+    // bit id (((0) + (1024)) + (2048)) + (380) = 3452
+    // bit id (((0) + (1024)) + (2048)) + (380) = 3452
+
+    if (BIT_CHK(((0 + 0x0400) + 514)) == 1)
+    {
+        commu_gojitu();
+        return;
+    }
+    else if (BIT_CHK(((0 + 0x0400) + 520)) == 1)
+    {
+        MSG( ``0213_STOP`` );
+        return;
+    }
+    else if (BIT_CHK(((0 + 0x0400) + 518)) == 1)
+    {
+        commu_newyear();
+        return;
+    }
+    else if (BIT_CHK(((0 + 0x0400) + 527)) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG( ``1205_STOP`` );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (BIT_CHK((((0 + 0x0400) + 0x0800) + 336)) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG(MSG_CITY_UFO_NANPA);
+        CLOSE_MSG_WIN();
+        return;
+    }
+    // else if (((((((((day == 2) || (day == 12)) || (day == 22)) || (day == 6)) || (day == 0x10)) || (day == 26)) || (day == 10)) || (day == 20)) || (day == 30))
+    // {
+    //     doubleDay = 1;
+    //     attemptsRemaining = 2;
+    // }
+    // else
+    // {
+    //     doubleDay = 0;
+    //     attemptsRemaining = 1;
+    // }
+
+    // if (day == 30)
+    // {
+    //     miracleDay = 1;
+    //     var15 = (var15 + 20);
+    // }
+    // else
+    // {
+    //     miracleDay = 0;
+    // }
+    else 
+    {
+        // Set it to always be both a miracle and double day
+        miracleDay = 1;
+        attemptsRemaining = 2;
+        doubleDay = 1;
+    }
+
+    OPEN_MSG_WIN();
+
+    if (attemptsToday >= 100)
+    {
+        MSG(MSG_CITY_UFO_GET_FIG);
+        return;
+    }
+    else if ((CHECK_TIME_SPAN(6, 1, 7, 26) == 1) && (GET_ITEM((0x0800 + 8)) == 1))
+    {
+        SET_MSG_VAR(0, (0x0800 + 8), 5);
+        MSG(MSG_CITY_UFO_GET_FIG_FRO);
+        return;
+    }
+    else if ((CHECK_TIME_SPAN(7, 27, 9, 11) == 1) && (GET_ITEM((0x0800 + 11)) == 1))
+    {
+        SET_MSG_VAR(0, (0x0800 + 11), 5);
+        MSG(MSG_CITY_UFO_GET_FIG_RAN);
+        return;
+    }
+    else if ((CHECK_TIME_SPAN(9, 12, 11, 5) == 1) && (GET_ITEM((0x0800 + 12)) == 1))
+    {
+        SET_MSG_VAR(0, (0x0800 + 12), 5);
+        MSG(MSG_CITY_UFO_GET_FIG_NEK);
+        return;
+    }
+    else if ((CHECK_TIME_SPAN(11, 6, 12, 31) == 1) && (GET_ITEM((0x0800 + 10)) == 1))
+    {
+        SET_MSG_VAR(0, (0x0800 + 10), 5);
+        MSG(MSG_CITY_UFO_GET_FIG_KIN);
+        return;
+    }
+    else if ((CHECK_TIME_SPAN(1, 1, 2, 29) == 1) && (GET_ITEM((0x0800 + 9)) == 1))
+    {
+        MSG(MSG_CITY_UFO_GET_FIG_JAA);
+        return;
+    }
+    else if (((doubleDay == 0) && (attemptsToday >= 5)) || ((doubleDay == 1) && (attemptsToday >= 10)))
+    {
+        MSG(MSG_CITY_UFO_NEXTDAY);
+        return;
+    }
+    else if (GET_ITEM((0x0800 + 8)) == 0)
+    {
+        var10 = (0x0800 + 8);
+        prize1 = (768 + 40);
+        prize2 = (768 + 41);
+        prize3 = (768 + 51);
+    }
+    else if (GET_ITEM((0x0800 + 11)) == 0)
+    {
+        var10 = (0x0800 + 11);
+        prize1 = (768 + 38);
+        prize2 = (768 + 39);
+        prize3 = (768 + 49);
+    }
+    else if (GET_ITEM((0x0800 + 12)) == 0)
+    {
+        var10 = (0x0800 + 12);
+        prize1 = (768 + 44);
+        prize2 = (768 + 45);
+        prize3 = (768 + 33);
+    }
+    else if (GET_ITEM((0x0800 + 10)) == 0)
+    {
+        var10 = (0x0800 + 10);
+        prize1 = (768 + 40);
+        prize2 = (768 + 41);
+        prize3 = (768 + 35);
+    }
+    else if (GET_ITEM((0x0800 + 9)) == 0)
+    {
+        var10 = (0x0800 + 9);
+        prize1 = (768 + 40);
+        prize2 = (768 + 39);
+        prize3 = (768 + 34);
+    }
+
+    SET_MSG_VAR(1, 500, 0);
+    SET_MSG_VAR(2, var10, 1);
+    MSG(MSG_CITY_UFO_INFO_FIG);
+
+    if (BIT_CHK((((0 + 0x0400) + 0x0800) + 379)) == 1)
+    {
+        BIT_OFF((((0 + 0x0400) + 0x0800) + 379));
+        MSG(MSG_CITY_UFO_NEW_INFO);
+    }
+
+    SET_MSG_VAR(20, ADD_YEN(0), 0);
+
+    if (miracleDay == 1)
+    {
+        MSG(UFO_PLAY);
+    }
+    else if (doubleDay == 1)
+    {
+        MSG(MSG_CITY_UFO_PLAY_SERVIC);
+    }
+    else
+    {
+        MSG(MSG_CITY_UFO_PLAY_NORMAL);
+    }
+
+    SEL_CHK_PAD(14, 1);
+    var7 = SEL(70);
+
+    if (var7 == 0)
+    {
+
+        if (ADD_YEN(0) < 500)
+        {
+            MSG(MSG_CITY_UFO_NOMONEY);
+        }
+        else
+        {
+            CLOSE_MSG_WIN();
+            ADD_YEN(-500);
+            canPlayAgain = 0;
+            attemptFailed = 0;
+            randomNum2 = 0;
+        _183:
+
+            if (attemptsRemaining > 0)
+            {
+                bool attemptDone = 0;
+                proficiency = (proficiency + 1);
+                attemptsToday = (attemptsToday + 1);
+
+                if (((((proficiency == 1) || (proficiency == 9)) || (proficiency == 17)) || (proficiency == 25)) || (proficiency == 29))
+                {
+                    randomNum2 = RNG(3);
+                    SET_CNT(226, (proficiency + randomNum2));
+                }
+
+                if ((((miracleDay == 1) && (proficiency >= 5)) && (proficiency <= 8)) && (GET_CNT(227) < 5))
+                {
+                    randomNum2 = RNG((5 - proficiency));
+                    SET_CNT(227, (proficiency + randomNum2));
+                }
+                else if ((((miracleDay == 1) && (proficiency >= 13)) && (proficiency <= 0x10)) && (GET_CNT(227) < 13))
+                {
+                    randomNum2 = RNG((0x10 - proficiency));
+                    SET_CNT(227, (proficiency + randomNum2));
+                }
+                else if ((((miracleDay == 1) && (proficiency >= 21)) && (proficiency <= 24)) && (GET_CNT(227) < 21))
+                {
+                    randomNum2 = RNG((24 - proficiency));
+                    SET_CNT(227, (proficiency + randomNum2));
+                }
+
+                if (((proficiency != GET_CNT(226)) && (proficiency != GET_CNT(227))) && (canPlayAgain == 0))
+                {
+
+                    if ((doubleDay == 1) && (attemptsRemaining == 1))
+                    {
+                        PLAY_SOUNDEFFECT(767);
+                        WAIT(10);
+                    }
+                    else
+                    {
+                        PLAY_SOUNDEFFECT(746);
+                        WAIT(40);
+                    }
+
+                    OPEN_MSG_WIN();
+                    MSG(MSG_CITY_UFO_WAITTING);
+                    MSG(MSG_CITY_UFO_NONE);
+                    attemptDone = 1;
+                }
+                // When this happens the sound effect is blank so just play the one that actually makes sound
+                // else if ((doubleDay == 1) && (attemptsRemaining == 1))
+                // {
+                //     PLAY_SOUNDEFFECT(766);
+                //     WAIT(20);
+                // }
+                else
+                {
+                    PLAY_SOUNDEFFECT(745);
+                    WAIT(40);
+                }
+
+                if(!attemptDone) {
+                    rng = RNG(99);
+
+                    if (((rng <= var15) || (proficiency >= 29)) || (canPlayAgain == 1))
+                    {
+
+                        if ((doubleDay == 1) && (attemptsRemaining == 2))
+                        {
+                            canPlayAgain = 1;
+                        }
+                        else
+                        {
+                            canPlayAgain = 0;
+                            attemptFailed = 0;
+                            proficiency = 0;
+                            SET_CNT(182, 0);
+                            SET_CNT(226, 0);
+                            SET_CNT(227, 0);
+                            SET_CNT(228, 5);
+                            BIT_ON((((0 + 0x0400) + 0x0800) + 379));
+                            attemptsToday = (attemptsToday + 100);
+                            wonPrize = var10;
+                        }
+                    }
+                    else
+                    {
+                        attemptFailed = 1;
+                    }
+
+                    if ((attemptFailed == 1) || (canPlayAgain == 1))
+                    {
+                        rng = RNG(99);
+
+                        if (rng < 60)
+                        {
+                            wonPrize = prize1;
+                        }
+                        else if (rng < 90)
+                        {
+                            wonPrize = prize2;
+                        }
+                        else
+                        {
+                            wonPrize = prize3;
+                        }
+                    }
+
+                    SET_MSG_VAR(0, wonPrize, 1);
+                    OPEN_MSG_WIN();
+                    MSG(MSG_CITY_UFO_WAITTING);
+                    CLOSE_MSG_WIN();
+                    WAIT(20);
+                    OPEN_MSG_WIN();
+
+                    if ((attemptFailed == 0) && (canPlayAgain == 0))
+                    {
+
+                        if (BIT_CHK((((0 + 0x0400) + 0x0800) + 383)) == 1)
+                        {
+                            MSG(MSG_CITY_UFO_GET_FIG_04);
+                        }
+                        else if (BIT_CHK((((0 + 0x0400) + 0x0800) + 382)) == 1)
+                        {
+                            MSG(MSG_CITY_UFO_GET_FIG_03);
+                        }
+                        else if (BIT_CHK((((0 + 0x0400) + 0x0800) + 381)) == 1)
+                        {
+                            MSG(MSG_CITY_UFO_GET_FIG_02);
+                        }
+                        else if (BIT_CHK((((0 + 0x0400) + 0x0800) + 380)) == 1)
+                        {
+                            MSG(MSG_CITY_UFO_GET_FIG_01);
+                        }
+                        else
+                        {
+                            MSG(MSG_CITY_UFO_GET_FIG_00);
+                        }
+                    }
+
+                    PLAY_SOUNDEFFECT(1006);
+                    MSG(MSG_CITY_UFO_GET_ITEM);
+                    SET_ITEM(wonPrize, (GET_ITEM(wonPrize) + 1));
+
+                    if ((attemptFailed == 1) || (canPlayAgain == 1))
+                    {
+
+                        if ((proficiency >= 25) && (BIT_CHK((((0 + 0x0400) + 0x0800) + 383)) == 0))
+                        {
+                            BIT_ON((((0 + 0x0400) + 0x0800) + 383));
+                            MSG(MSG_CITY_UFO_GET_RATEUP__4);
+                            SET_CNT(228, (GET_CNT(228) + 5));
+                        }
+                        else if ((proficiency >= 17) && (BIT_CHK((((0 + 0x0400) + 0x0800) + 382)) == 0))
+                        {
+                            BIT_ON((((0 + 0x0400) + 0x0800) + 382));
+                            MSG(MSG_CITY_UFO_GET_RATEUP__3);
+                            SET_CNT(228, (GET_CNT(228) + 5));
+                        }
+                        else if ((proficiency >= 9) && (BIT_CHK((((0 + 0x0400) + 0x0800) + 381)) == 0))
+                        {
+                            BIT_ON((((0 + 0x0400) + 0x0800) + 381));
+                            MSG(MSG_CITY_UFO_GET_RATEUP__2);
+                            SET_CNT(228, (GET_CNT(228) + 5));
+                        }
+                        else if ((proficiency >= 1) && (BIT_CHK((((0 + 0x0400) + 0x0800) + 380)) == 0))
+                        {
+                            BIT_ON((((0 + 0x0400) + 0x0800) + 380));
+                            MSG(MSG_CITY_UFO_GET_RATEUP_);
+                        }
+                    }
+                }
+
+                if (attemptsRemaining == 2)
+                {
+                    MSG(MSG_CITY_UFO_ONEMORE_PLA);
+                    CLOSE_MSG_WIN();
+                }
+
+                attemptsRemaining = (attemptsRemaining - 1);
+                goto _183;
+            }
+
+            SET_CNT(224, attemptsToday);
+            SET_CNT(182, proficiency);
+        }
+    }
+
+    CLOSE_MSG_WIN();
+}

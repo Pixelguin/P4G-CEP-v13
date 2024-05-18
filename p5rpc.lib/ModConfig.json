@@ -1,0 +1,66 @@
+{
+  "ModId": "p5rpc.lib",
+  "ModName": "Persona 5 Royal Library",
+  "ModAuthor": "AnimatedSwine37",
+  "ModVersion": "1.0.4",
+  "ModDescription": "A library that makes it easy for mods to use some of the game\u0027s native functions such as flowscript functions",
+  "ModDll": "p5rpc.lib.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/p5rpc.lib.dll",
+  "ModR2RManagedDll64": "x64/p5rpc.lib.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [
+    "Library"
+  ],
+  "CanUnload": false,
+  "HasExports": true,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "p5rpc.lib.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "AnimatedSwine37",
+      "RepositoryName": "p5rpc.lib",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p5r.exe"
+  ],
+  "ProjectUrl": "https://github.com/AnimatedSwine37/p5rpc.lib"
+}

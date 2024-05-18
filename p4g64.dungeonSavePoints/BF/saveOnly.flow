@@ -1,0 +1,4 @@
+// Replace the save or return to dungeon entrance with just save
+void save_point_hook() {
+    NS_SAVE();
+}

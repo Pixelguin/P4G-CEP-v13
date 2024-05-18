@@ -1,0 +1,473 @@
+import("books.msg");
+
+void ``860_034A_DOKUSYO_1_hook``()
+{
+    int var2;
+    OPEN_MSG_WIN();
+    var2 = GET_CNT(88);
+    EVT_FUNCTION_002E(var2);
+
+    if (GET_CNT(87) == 0)
+    {
+        MSG(CHECK_SOFA_5);
+    }
+    else
+    {
+        MSG(CHECK_SOFA_6);
+    }
+
+    if (var2 == 1)
+    {
+        MSG(BOOK_01);
+    }
+    else if (var2 == 2)
+    {
+        MSG(BOOK_02);
+    }
+    else if (var2 == 3)
+    {
+        MSG(BOOK_03);
+    }
+    else if (var2 == 4)
+    {
+        MSG(BOOK_04);
+    }
+    else if (var2 == 5)
+    {
+        MSG(BOOK_05);
+    }
+    else if (var2 == 6)
+    {
+        MSG(BOOK_06);
+    }
+    else if (var2 == 7)
+    {
+        MSG(BOOK_07);
+    }
+    else if (var2 == 8)
+    {
+        MSG(BOOK_08);
+    }
+    else if (var2 == 9)
+    {
+        MSG(BOOK_09);
+    }
+    else if (var2 == 10)
+    {
+        MSG(BOOK_10);
+    }
+    else if (var2 == 11)
+    {
+        MSG(BOOK_11);
+    }
+    else if (var2 == 12)
+    {
+        MSG(BOOK_12);
+    }
+    else if (var2 == 13)
+    {
+        MSG(BOOK_13);
+    }
+    else if (var2 == 14)
+    {
+        MSG(BOOK_14);
+    }
+    else if (var2 == 15)
+    {
+        MSG(BOOK_15);
+    }
+    else if (var2 == 0x10)
+    {
+        MSG(BOOK_16);
+    }
+    else if (var2 == 17)
+    {
+        if (!BIT_CHK(6210))
+            MSG(BOOK_17);
+        else
+            MSG(BOOK_17_NO_KOU);
+    }
+    else if (var2 == 18)
+    {
+        MSG(BOOK_18);
+    }
+    else if (var2 == 19)
+    {
+        MSG(BOOK_19);
+    }
+    else if (var2 == 20)
+    {
+        MSG(BOOK_20);
+    }
+    else if (var2 == 21)
+    {
+        MSG(BOOK_21);
+    }
+    else if (var2 == 22)
+    {
+        MSG(BOOK_22);
+    }
+    else if (var2 == 23)
+    {
+        MSG(BOOK_23);
+    }
+    else if (var2 == 24)
+    {
+        MSG(BOOK_24);
+    }
+    else if (var2 == 25)
+    {
+        MSG(BOOK_25);
+    }
+    else if (var2 == 26)
+    {
+        MSG(BOOK_30);
+    }
+    else if (var2 == 27)
+    {
+        MSG(BOOK_31);
+    }
+    else if (var2 == 28)
+    {
+        MSG(BOOK_32);
+    }
+    else if (var2 == 29)
+    {
+        MSG(BOOK_33);
+    }
+    else if (var2 == 30)
+    {
+        MSG(BOOK_34);
+    }
+    else if (var2 == 31)
+    {
+        MSG(BOOK_35);
+    }
+    else if (var2 == 0x20)
+    {
+        MSG(BOOK_36);
+    }
+
+    CLOSE_MSG_WIN();
+
+    if (((GET_WEATHER() == 1) || (GET_WEATHER() == 7)) || (GET_WEATHER() == 3))
+    {
+        BIT_ON(2508);
+    }
+    else
+    {
+        BIT_OFF(2508);
+    }
+}
+
+void ``860_034A_DOKUSYO_hook``()
+{
+    int var14;
+    int var13;
+    int var16;
+    int var17;
+    OPEN_MSG_WIN();
+    var14 = GET_CNT(88);
+    EVT_FUNCTION_002E(var14);
+
+    if (GET_CNT(87) == 0)
+    {
+        MSG(CHECK_SOFA_5);
+    }
+    else
+    {
+        MSG(CHECK_SOFA_6);
+    }
+
+    var13 = SEL(6);
+
+    if (var13 == 1)
+    {
+        BIT_OFF(2509);
+        MSG(CHECK_SOFA_7);
+
+        if (var14 == 1)
+        {
+            MSG(BOOK_01);
+        }
+        else if (var14 == 2)
+        {
+            MSG(BOOK_02);
+        }
+        else if (var14 == 3)
+        {
+            MSG(BOOK_03);
+        }
+        else if (var14 == 4)
+        {
+            MSG(BOOK_04);
+        }
+        else if (var14 == 5)
+        {
+            MSG(BOOK_05);
+        }
+        else if (var14 == 6)
+        {
+            MSG(BOOK_06);
+        }
+        else if (var14 == 7)
+        {
+            MSG(BOOK_07);
+        }
+        else if (var14 == 8)
+        {
+            MSG(BOOK_08);
+        }
+        else if (var14 == 9)
+        {
+            MSG(BOOK_09);
+        }
+        else if (var14 == 10)
+        {
+            MSG(BOOK_10);
+        }
+        else if (var14 == 11)
+        {
+            MSG(BOOK_11);
+        }
+        else if (var14 == 12)
+        {
+            MSG(BOOK_12);
+        }
+        else if (var14 == 13)
+        {
+            MSG(BOOK_13);
+        }
+        else if (var14 == 14)
+        {
+            MSG(BOOK_14);
+        }
+        else if (var14 == 15)
+        {
+            MSG(BOOK_15);
+        }
+        else if (var14 == 0x10)
+        {
+            MSG(BOOK_16);
+        }
+        else if (var14 == 17)
+        {
+            // Display altered message if you bought the book instead of getting it
+            if (BIT_CHK(6210))
+                MSG(BOOK_17);
+            else
+                MSG(BOOK_17_NO_KOU);
+        }
+        else if (var14 == 18)
+        {
+            MSG(BOOK_18);
+        }
+        else if (var14 == 19)
+        {
+            MSG(BOOK_19);
+        }
+        else if (var14 == 20)
+        {
+            MSG(BOOK_20);
+        }
+
+        CLOSE_MSG_WIN();
+        GET_SOCIAL_STATS(EVT_FUNCTION_0030(var14, 1), EVT_FUNCTION_0030(var14, 4));
+
+        if (var14 >= 11)
+        {
+            BIT_ON(2510);
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(var14, 2), EVT_FUNCTION_0030(var14, 5));
+        }
+
+        if (EVT_FUNCTION_002D(var14, 1) != 0)
+        {
+            OPEN_MSG_WIN();
+            MSG(CHECK_SOFA_9);
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else
+        {
+            OPEN_MSG_WIN();
+            MSG(CHECK_SOFA_10);
+            var16 = EVT_FUNCTION_0030(var14, 3);
+
+            if ((EVT_FUNCTION_002F(var16, 3, 0) == 0) && (EVT_FUNCTION_002F(var16, 1, 0) == 0))
+            {
+
+                if (var16 == 1)
+                {
+                    MSG(CHECK_SOFA_11);
+                }
+                else if (var16 == 2)
+                {
+                    MSG(CHECK_SOFA_12);
+                }
+                else if (var16 == 3)
+                {
+                    MSG(CHECK_SOFA_13);
+                }
+                else if (var16 == 4)
+                {
+                    MSG(CHECK_SOFA_14);
+                }
+
+                if ((EVT_FUNCTION_002F(0, 3, 0) == 0) && (EVT_FUNCTION_002F(0, 1, 0) == 0))
+                {
+                    MSG(ALL_BOOK_READ);
+                }
+            }
+
+            CLOSE_MSG_WIN();
+            SET_CNT(87, 0);
+            SET_CNT(88, 0);
+            return;
+        }
+    }
+    else
+    {
+        BIT_ON(2509);
+        MSG(CHECK_SOFA_8);
+
+        if (var14 == 1)
+        {
+            MSG(BOOK_01);
+        }
+        else if (var14 == 2)
+        {
+            MSG(BOOK_02);
+        }
+        else if (var14 == 3)
+        {
+            MSG(BOOK_03);
+        }
+        else if (var14 == 4)
+        {
+            MSG(BOOK_04);
+        }
+        else if (var14 == 5)
+        {
+            MSG(BOOK_05);
+        }
+        else if (var14 == 6)
+        {
+            MSG(BOOK_06);
+        }
+        else if (var14 == 7)
+        {
+            MSG(BOOK_07);
+        }
+        else if (var14 == 8)
+        {
+            MSG(BOOK_08);
+        }
+        else if (var14 == 9)
+        {
+            MSG(BOOK_09);
+        }
+        else if (var14 == 10)
+        {
+            MSG(BOOK_10);
+        }
+        else if (var14 == 11)
+        {
+            MSG(BOOK_11);
+        }
+        else if (var14 == 12)
+        {
+            MSG(BOOK_12);
+        }
+        else if (var14 == 13)
+        {
+            MSG(BOOK_13);
+        }
+        else if (var14 == 14)
+        {
+            MSG(BOOK_14);
+        }
+        else if (var14 == 15)
+        {
+            MSG(BOOK_15);
+        }
+        else if (var14 == 0x10)
+        {
+            MSG(BOOK_16);
+        }
+        else if (var14 == 17)
+        {
+            if (BIT_CHK(6210))
+                MSG(BOOK_17);
+            else
+                MSG(BOOK_17_NO_KOU);
+        }
+        else if (var14 == 18)
+        {
+            MSG(BOOK_18);
+        }
+        else if (var14 == 19)
+        {
+            MSG(BOOK_19);
+        }
+        else if (var14 == 20)
+        {
+            MSG(BOOK_20);
+        }
+
+        CLOSE_MSG_WIN();
+        GET_SOCIAL_STATS(EVT_FUNCTION_0030(var14, 1), EVT_FUNCTION_0030(var14, 4));
+
+        if (var14 >= 11)
+        {
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(var14, 2), EVT_FUNCTION_0030(var14, 5));
+        }
+
+        if (EVT_FUNCTION_002D(var14, 2) != 0)
+        {
+            OPEN_MSG_WIN();
+            MSG(CHECK_SOFA_9);
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else
+        {
+            OPEN_MSG_WIN();
+            MSG(CHECK_SOFA_10);
+            var16 = EVT_FUNCTION_0030(var14, 3);
+
+            if ((EVT_FUNCTION_002F(var16, 3, 0) == 0) && (EVT_FUNCTION_002F(var16, 1, 0) == 0))
+            {
+
+                if (var16 == 1)
+                {
+                    MSG(CHECK_SOFA_11);
+                }
+                else if (var16 == 2)
+                {
+                    MSG(CHECK_SOFA_12);
+                }
+                else if (var16 == 3)
+                {
+                    MSG(CHECK_SOFA_13);
+                }
+                else if (var16 == 4)
+                {
+                    MSG(CHECK_SOFA_14);
+                }
+
+                if ((EVT_FUNCTION_002F(0, 3, 0) == 0) && (EVT_FUNCTION_002F(0, 1, 0) == 0))
+                {
+                    MSG(ALL_BOOK_READ);
+                    var17 = GET_ITEM((0x0200 + 246));
+                    SET_ITEM((0x0200 + 246), (var17 + 1));
+                }
+            }
+
+            CLOSE_MSG_WIN();
+            SET_CNT(87, 0);
+            SET_CNT(88, 0);
+            BIT_OFF(2510);
+            return;
+        }
+    }
+}

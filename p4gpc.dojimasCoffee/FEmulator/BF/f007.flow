@@ -1,0 +1,545 @@
+
+// 
+// FlowScript decompiled by AtlusScriptLib by TGE (2017)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+
+// 
+// Imports
+// 
+
+import( "coffee.msg" );
+
+// 
+// Script-level variable definitions
+// 
+
+// 
+// Procedure declarations
+// 
+
+void f007_002_init_hook()
+{
+    int var5 = 0;
+    int var6 = 0;
+    int var7 = 0;
+    
+    if ( FLD_FUNCTION_0000() == 1 )
+    {
+        
+        if ( CHECK_TIME_SPAN( 7, 1, 7, 7 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10253, 1 );
+            BIT_ON( 0 + 0x0400 + 600 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10253, 0 );
+            BIT_OFF( 0 + 0x0400 + 600 );
+        }
+
+        
+        if ( GET_WEATHER() == 1 || GET_WEATHER() == 7 )
+        {
+            FLD_FUNCTION_0007( 10250, 1 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10250, 0 );
+        }
+
+        
+        if ( CHECK_TIME_SPAN( 1, 1, 2, 29 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10255, 0 );
+            FLD_FUNCTION_0007( 10256, 1 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10255, 1 );
+            FLD_FUNCTION_0007( 10256, 0 );
+        }
+
+        
+        if ( CHECK_TIME_SPAN( 12, 28, 1, 11 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10254, 1 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10254, 0 );
+        }
+
+        
+        if ( CHECK_TIME_SPAN( 7, 22, 9, 10 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10241, 1 );
+            FLD_FUNCTION_0007( 10248, 0 );
+            FLD_FUNCTION_0007( 10243, 0 );
+            FLD_FUNCTION_0007( 10258, 0 );
+        }
+        else if ( CHECK_TIME_SPAN( 12, 3, 2, 29 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10241, 0 );
+            FLD_FUNCTION_0007( 10248, 0 );
+            
+            if ( GET_TIME_OF_DAY() != 5 && BIT_CHK( 0 + 0x0400 + 668 ) == 1 || GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 669 ) == 1 || BIT_CHK( 0 + 0x0400 + 687 ) == 1 )
+            {
+                FLD_FUNCTION_0007( 10243, 0 );
+                FLD_FUNCTION_0007( 10258, 1 );
+            }
+            else 
+            {
+                FLD_FUNCTION_0007( 10243, 1 );
+                FLD_FUNCTION_0007( 10258, 0 );
+            }
+
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10241, 0 );
+            FLD_FUNCTION_0007( 10248, 0 );
+            FLD_FUNCTION_0007( 10243, 0 );
+            FLD_FUNCTION_0007( 10258, 0 );
+        }
+
+        
+        if ( GET_TIME_OF_DAY() == 0 )
+        {
+            FLD_FUNCTION_0008( 10241, 0, 0, 0, 100 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0008( 10241, 0, 1, 0, 1 );
+        }
+
+        
+        if ( GET_TIME_OF_DAY() == 5 )
+        {
+            FLD_FUNCTION_0008( 10242, 2, 0, 0, 0 );
+        }
+        else if ( GET_WEATHER() == 0 && GET_TIME_OF_DAY() != 4 )
+        {
+            FLD_FUNCTION_0008( 10242, 0, 0, 0, 0 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0008( 10242, 1, 0, 0, 0 );
+        }
+
+        
+        if ( GET_TIME_OF_DAY() == 5 )
+        {
+            FLD_FUNCTION_0008( 10259, 1, 1, 0, 1 );
+        }
+        else 
+        {
+            FLD_FUNCTION_0008( 10259, 0, 1, 0, 1 );
+        }
+
+        var5 = EVT_FUNCTION_0027();
+        var6 = GET_CNT( 105 );
+        home_exit_chk_nanako();
+        
+        if ( var6 > 3 && GET_TIME_OF_DAY() == 5 )
+        {
+            
+            if ( sVar66 == 0 && sVar67 == 0 && BIT_CHK( 0 + 0x0400 + 687 ) == 0 )
+            {
+                FLD_FUNCTION_0007( 10247, 0 );
+                BIT_ON( 0 + 0x0400 + 867 );
+            }
+            else 
+            {
+                FLD_FUNCTION_0007( 10247, 1 );
+                BIT_ON( 0 + 0x0400 + 867 );
+            }
+
+        }
+        else if ( CHECK_TIME_SPAN( 5, 24, 5, 28 ) && BIT_CHK( 0 + 0x0400 + 1633 ) == 1 && GET_TIME_OF_DAY() == 5 )
+        {
+            FLD_FUNCTION_0007( 10247, 1 );
+        }
+        else if ( var5 == 1 && BIT_CHK( 0 + 0x0400 + 1633 ) == 1 && GET_TIME_OF_DAY() == 5 )
+        {
+            
+            if ( sVar66 == 0 && sVar67 == 0 && BIT_CHK( 0 + 0x0400 + 687 ) == 0 )
+            {
+                FLD_FUNCTION_0007( 10247, 0 );
+            }
+            else 
+            {
+                FLD_FUNCTION_0007( 10247, 1 );
+            }
+
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10247, 0 );
+        }
+
+    }
+    else if ( FLD_FUNCTION_0000() == 2 )
+    {
+        
+        if ( CHECK_TIME_SPAN( 11, 4, 12, 25 ) == 1 )
+        {
+            FLD_FUNCTION_0007( 10252, 0 );
+        }
+        else if ( BIT_CHK( 0 + 0x0400 + 449 ) == 1 || BIT_CHK( 0 + 0x0400 + 481 ) == 1 )
+        {
+            
+            if ( GET_TIME_OF_DAY() == 3 && BIT_CHK( 0 + 0x0400 + 530 ) == 1 )
+            {
+                FLD_FUNCTION_0007( 10252, 0 );
+            }
+            else if ( GET_TIME_OF_DAY() == 3 && BIT_CHK( 0 + 0x0400 + 530 ) == 0 )
+            {
+                FLD_FUNCTION_0008( 10252, 3, 1, 0, 1.00f );
+            }
+            else if ( GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 445 ) == 1 )
+            {
+                FLD_FUNCTION_0007( 10252, 0 );
+            }
+            else if ( BIT_CHK( 0 + 0x0400 + 481 ) == 1 )
+            {
+                FLD_FUNCTION_0008( 10252, 5, 1, 0, 1.00f );
+            }
+            else 
+            {
+                FLD_FUNCTION_0008( 10252, 4, 1, 0, 1.00f );
+            }
+
+        }
+        else if ( BIT_CHK( 0 + 0x0400 + 687 ) == 1 )
+        {
+            
+            if ( GET_TIME_OF_DAY() != 5 )
+            {
+                FLD_FUNCTION_0008( 10252, 3, 1, 0, 1.00f );
+            }
+            else if ( GET_DAY_OF_WEEK() == 1 || GET_DAY_OF_WEEK() == 3 || GET_DAY_OF_WEEK() == 5 )
+            {
+                FLD_FUNCTION_0008( 10252, 5, 1, 0, 1.00f );
+            }
+            else 
+            {
+                FLD_FUNCTION_0008( 10252, 4, 1, 0, 1.00f );
+            }
+
+        }
+        else 
+        {
+            FLD_FUNCTION_0007( 10252, 0 );
+        }
+
+        
+        if ( GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 1764 ) == 0 && BIT_CHK( 0 + 0x0400 + 1761 ) != 1 )
+        {
+            
+            if ( BIT_CHK( 0 + 17 ) && BIT_CHK( 0 + 35 ) == 0 )
+            {
+                return;
+            }
+            else if ( BIT_CHK( 0 + 18 ) && BIT_CHK( 0 + 36 ) == 0 )
+            {
+                return;
+            }
+            else if ( GET_MONTH() == 4 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 11 || GET_DAY_OF_MONTH() == 12 || GET_DAY_OF_MONTH() == 13 || GET_DAY_OF_MONTH() == 14 || GET_DAY_OF_MONTH() == 15 || GET_DAY_OF_MONTH() == 17 || GET_DAY_OF_MONTH() == 29 || GET_DAY_OF_MONTH() == 30 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 5 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 2 || GET_DAY_OF_MONTH() == 5 || GET_DAY_OF_MONTH() == 8 || GET_DAY_OF_MONTH() == 13 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 6 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 4 || GET_DAY_OF_MONTH() == 8 || GET_DAY_OF_MONTH() == 14 || GET_DAY_OF_MONTH() == 17 || GET_DAY_OF_MONTH() == 19 || GET_DAY_OF_MONTH() == 22 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 7 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 9 || GET_DAY_OF_MONTH() == 10 || GET_DAY_OF_MONTH() == 23 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 8 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 12 || GET_DAY_OF_MONTH() == 13 || GET_DAY_OF_MONTH() == 20 || GET_DAY_OF_MONTH() == 23 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 9 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 8 || GET_DAY_OF_MONTH() == 10 || GET_DAY_OF_MONTH() == 12 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 10 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 5 || GET_DAY_OF_MONTH() == 20 || GET_DAY_OF_MONTH() == 30 || GET_DAY_OF_MONTH() == 31 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 11 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 4 || GET_DAY_OF_MONTH() == 5 || GET_DAY_OF_MONTH() == 20 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 12 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 24 || GET_DAY_OF_MONTH() == 25 )
+                {
+                    return;
+                }
+
+            }
+            else if ( GET_MONTH() == 1 )
+            {
+                
+                if ( GET_DAY_OF_MONTH() == 1 && BIT_CHK( 0 + 0x0400 + 531 ) == 0 || GET_DAY_OF_MONTH() == 3 || GET_DAY_OF_MONTH() == 10 && BIT_CHK( 0 + 0x0400 + 1548 ) == 1 || GET_DAY_OF_MONTH() == 20 || GET_DAY_OF_MONTH() == 28 )
+                {
+                    return;
+                }
+
+            }
+
+            PLAY_SOUNDEFFECT( 7 );
+            WAIT( 60 );
+        }
+        else if ( DATE_CHK( 4, 17 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 327 ) == 1 )
+        {
+            PLAY_SOUNDEFFECT( 7 );
+            WAIT( 60 );
+        }
+
+        
+        if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 238 ) == 1 )
+        {
+            
+            if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 208 ) == 1 && GET_CNT( 176 ) != 0 )
+            {
+                SET_CNT( 174, GET_CNT( 174 ) + 1 );
+                SET_CNT( 175, GET_CNT( 175 ) + 1 );
+                
+                if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 204 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 192 ) == 1 || BIT_CHK( 0 + 0x0400 + 0x0800 + 193 ) == 1 )
+                {
+                    SET_CNT( 174, GET_CNT( 174 ) + 1 );
+                }
+
+                BIT_OFF( 0 + 0x0400 + 0x0800 + 204 );
+                farmfield_condition();
+                FLD_FUNCTION_0033();
+            }
+
+        }
+
+        
+        if ( DATE_CHK( 4, 17 ) == 1 && GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 0x0800 + 320 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 321 ) == 0 )
+        {
+            FLD_FUNCTION_0008( FLD_FUNCTION_0004( 0 ), 10, 1, 0, 1.00f );
+            FLD_FUNCTION_0009( FLD_FUNCTION_0004( 0 ) );
+        }
+
+    }
+    else if ( FLD_FUNCTION_0000() == 3 )
+    {
+        
+        if ( DATE_CHK( 4, 17 ) == 1 && GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 0x0800 + 320 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 321 ) == 0 )
+        {
+            BIT_ON( 0 + 0x0400 + 0x0800 + 321 );
+            WAIT( 15 );
+            PLAY_SOUNDEFFECT( 172 );
+            OPEN_MSG_WIN();
+            MSG( MSG_1ST_NIGHTSTREET_MORO );
+            CLOSE_MSG_WIN();
+            PLAY_SOUNDEFFECT( 160 );
+            WAIT( 60 );
+            FLD_FUNCTION_0008( FLD_FUNCTION_0004( 0 ), 13, 1, 10, 1.00f );
+            WAIT( 15 );
+            PLAY_SOUNDEFFECT( 162 );
+            WAIT( 15 );
+            FLD_FUNCTION_0008( FLD_FUNCTION_0004( 0 ), 0, 1, 10, 1.00f );
+            WAIT( 15 );
+            OPEN_MSG_WIN();
+            MSG( MSG_1ST_NIGHTSTREET_MORO2 );
+            CLOSE_MSG_WIN();
+        }
+        else if ( DATE_CHK( 4, 17 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 327 ) == 1 )
+        {
+            OPEN_MSG_WIN();
+            MSG( MSG_DOUJIMA_COMINGHOME_03 );
+            CLOSE_MSG_WIN();
+        }
+        else if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 447 ) == 1 )
+        {
+            BIT_OFF( 0 + 0x0400 + 0x0800 + 447 );
+            getout_doujima_warning();
+        }
+        else if ( GET_TIME_OF_DAY() == 5 )
+        {
+            var7 = EVT_FUNCTION_0022( 28 );
+            
+            if ( var7 == 27 )
+            {
+                MSG( STOP_OUTDOOR );
+                return;
+            }
+
+            
+            if ( BIT_CHK( 0 + 0x0400 + 1764 ) == 0 )
+            {
+                
+                if ( DATE_CHK( 1, 10 ) == 1 && GET_TIME_OF_DAY() == 5 && BIT_CHK( 0 + 0x0400 + 1548 ) == 0 )
+                {
+                    firsttime_bug_farm();
+                    return;
+                }
+
+                BIT_ON( 0 + 0x0400 + 1764 );
+                
+                if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 12 ) == 0 )
+                {
+                    BIT_ON( 0 + 0x0400 + 0x0800 + 12 );
+                    FUNCTION_008C( 23, 1 );
+                }
+
+                
+                if ( BIT_CHK( 0 + 132 ) == 0 && DATE_CHK( 4, 15 ) )
+                {
+                    BIT_ON( 0 + 132 );
+                    HELP_MSG( 24 );
+                }
+
+                okaerimes();
+                start_living_tuuhanuke();
+                start_living_testkokuti();
+                katei_baito();
+                byouin_baito();
+                
+                if ( CHECK_TIME_SPAN( 4, 18, 3, 31 ) == 1 && BIT_CHK( 0 + 0x0400 + 671 ) == 0 && BIT_CHK( 0 + 0x0400 + 0x0800 + 2 ) == 0 && BIT_CHK( 0 + 0x0400 + 1726 ) == 0 && BIT_CHK( 0 + 0x0400 + 0x0800 + 415 ) == 0 )
+                {
+                    BIT_ON( 0 + 0x0400 + 0x0800 + 415 );
+                    WAIT( 30 );
+                    OPEN_MSG_WIN();
+                    MSG( FIRST_GO_OUT_NIGHT );
+                    CLOSE_MSG_WIN();
+                    HELP_MSG( 603 );
+                }
+                else if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 0x0400 + 0x0200 + 0x0200 + 0x0200 + 35 ) == 1 && BIT_CHK( 0 + 0x0400 + 0x0800 + 184 ) == 0 )
+                {
+                    BIT_ON( 0 + 0x0400 + 0x0800 + 184 );
+                    OPEN_MSG_WIN();
+                    MSG( MSG_SENARIO_INFO_MARIE_D );
+                    CLOSE_MSG_WIN();
+                }
+				
+				if (BIT_CHK( 0 + 0x0400 + 0x0800 + 2 ) && !BIT_CHK( 0 + 0x0400 + 1726 ) && GET_ITEM(1188) > 0 && !BIT_CHK(6419))
+				{
+					SET_MSG_VAR(0, 1188, 1);
+					OPEN_MSG_WIN();
+					HELP_MSG(CoffeeTutorial);
+					CLOSE_MSG_WIN();
+					BIT_ON(6419);
+				}
+
+                return;
+            }
+
+        }
+        else if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 229 ) == 0 && DATE_CHK( 5, 22 ) == 1 )
+        {
+            BIT_ON( 0 + 0x0400 + 0x0800 + 229 );
+            FUNCTION_008C( 800, 9 );
+        }
+
+        
+        if ( DATE_CHK( 1, 2 ) == 1 && BIT_CHK( 0 + 0x0400 + 1282 ) == 0 )
+        {
+            BIT_ON( 0 + 0x0400 + 1282 );
+            OPEN_MSG_WIN();
+            MSG( MSG_NEWYEAR_0103_INFO );
+            CLOSE_MSG_WIN();
+        }
+		
+		if (BIT_CHK( 0 + 0x0400 + 0x0800 + 2 ) && !BIT_CHK( 0 + 0x0400 + 1726 ) && GET_ITEM(1188) > 0 && !BIT_CHK(6419))
+		{
+			SET_MSG_VAR(0, 1188, 1);
+			OPEN_MSG_WIN();
+			HELP_MSG(CoffeeTutorial);
+			CLOSE_MSG_WIN();
+			BIT_ON(6419);
+		}
+
+    }
+
+}
+
+void check_kitchen_hook()
+{
+	if (BIT_CHK( 0 + 0x0400 + 0x0800 + 2 ) && !BIT_CHK( 0 + 0x0400 + 1726 ) && GET_ITEM(1188) > 0)
+	{
+		OPEN_MSG_WIN();
+		MSG( CoffeePrompt );
+		int select = SEL( YESNO_SEL );
+		if (select == 0)
+		{
+			CLOSE_MSG_WIN();
+			FADE( 1, 10 );
+			FADE_SYNC();
+			FLD_FUNCTION_0008( 10244, 3, 0, 0, 1.00f );
+			PLAY_SOUNDEFFECT( 724 );
+			WAIT( 20 );
+			OPEN_MSG_WIN();
+			PLAY_SOUNDEFFECT(224);
+			MSG(REIZOU_EATING);
+			CLOSE_MSG_WIN();
+			FADE_BACK( 30 );
+			FADE_SYNC();
+			OPEN_MSG_WIN();
+			PLAY_BTL_SOUNDEFFECT( 5, 9 );
+			MSG(NoLongerTired);	
+			BIT_OFF( 0 + 0x0400 + 0x0800 + 2 );
+		}
+		CLOSE_MSG_WIN();
+	}
+	else
+	{
+		OPEN_MSG_WIN();
+		MSG( SAKANA );
+		CLOSE_MSG_WIN();
+	}
+}

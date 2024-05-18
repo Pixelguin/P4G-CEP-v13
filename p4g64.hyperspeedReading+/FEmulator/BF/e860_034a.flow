@@ -1,0 +1,340 @@
+import("books.msg");
+
+void ``860_034A_DOKUSYO_2_hook``()
+{
+    int localVariable9 = GET_CNT(88);
+    EVT_FUNCTION_002E(localVariable9);
+
+    if (BIT_CHK(0 + 0x0400 + 1483) == 1 && BIT_CHK(0 + 0x0400 + 919) == 1)
+    {
+        SET_MSG_VAR(10, 0x0400 + 119, 5);
+        OPEN_MSG_WIN();
+        MSG(BOOK_READ28_BONUS);
+        CLOSE_MSG_WIN();
+        NS_PLAY_EXPRESSION(0, 6);
+        GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 3));
+    }
+
+    OPEN_MSG_WIN();
+    int localVariable10 = 0;
+    int localVariable11 = 0;
+
+    // Makes both 1 if hyperspeed reading is read and there isn't only one page to be read
+    if (BIT_CHK(0 + 0x0400 + 927) == 1 && BIT_CHK(65530) == 0)
+    {
+        localVariable10 = 1;
+        localVariable11 = 1;
+        SET_MSG_VAR(10, 0x0400 + 127, 5);
+    }
+    else
+    {
+        localVariable10 = 1;
+    }
+
+    int localVariable7 = 0;
+
+    // Reads one page and returns how many are left to read
+    if (EVT_FUNCTION_002D(localVariable9, localVariable10) != 0)
+    {
+        // No more books will be able to be read so set the bit off
+        BIT_OFF(65530);
+
+        // If you have hyperspeed reading say so and try reading another bit to see if that finishes the book
+        if (localVariable11 == 1)
+        {
+            MSG(BOOK_READ36_BONUS);
+            if (EVT_FUNCTION_002D(localVariable9, localVariable11) != 0)
+            {
+                MSG(CHECK_SOFA_9);
+                CLOSE_MSG_WIN();
+                return;
+            }
+            else
+            {
+                // Copy of the stuff that happens when a book is finished below (I know it's gross and could be done much nicer but too bad)
+                MSG(CHECK_SOFA_10);
+
+                if (EVT_FUNCTION_0030(localVariable9, 4) > 0)
+                {
+                    CLOSE_MSG_WIN();
+                    NS_PLAY_EXPRESSION(0, 6);
+                    GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 4));
+                    OPEN_MSG_WIN();
+                }
+
+                if (EVT_FUNCTION_0030(localVariable9, 5) > 0)
+                {
+                    NS_PLAY_EXPRESSION(0, 6);
+                    GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 2), EVT_FUNCTION_0030(localVariable9, 5));
+                }
+
+                if (localVariable9 == 21)
+                {
+                    MSG(BOOK_21_END);
+                }
+                else if (localVariable9 == 22)
+                {
+                    MSG(BOOK_22_END);
+                }
+                else if (localVariable9 == 23)
+                {
+                    MSG(BOOK_23_END);
+                }
+                else if (localVariable9 == 24)
+                {
+                    MSG(BOOK_24_END);
+                }
+                else if (localVariable9 == 25)
+                {
+                    MSG(BOOK_25_END);
+                }
+                else if (localVariable9 == 26)
+                {
+                    MSG(BOOK_30_END);
+                }
+                else if (localVariable9 == 27)
+                {
+                    MSG(BOOK_31_END);
+                }
+                else if (localVariable9 == 28)
+                {
+                    MSG(BOOK_32_END_000);
+                    CLOSE_MSG_WIN();
+                    BIT_ON(0 + 0x0400 + 1659);
+                    FUNCTION_008C(61, 22);
+                    OPEN_MSG_WIN();
+                    MSG(BOOK_32_END_010);
+                }
+                else if (localVariable9 == 29)
+                {
+                    MSG(BOOK_33_END);
+                }
+                else if (localVariable9 == 30)
+                {
+                    MSG(BOOK_34_END);
+                }
+                else if (localVariable9 == 31)
+                {
+                    MSG(BOOK_35_END_000);
+
+                    if (CHECK_TIME_SPAN(1, 1, 2, 29) == 1)
+                    {
+                        MSG(BOOK_35_END_010_WINTER);
+                    }
+                    else
+                    {
+                        CLOSE_MSG_WIN();
+                        HELP_MSG(69);
+                        OPEN_MSG_WIN();
+                        MSG(BOOK_35_END_010);
+                    }
+                }
+                else if (localVariable9 == 0x20)
+                {
+                    MSG(BOOK_36_END_000);
+                    CLOSE_MSG_WIN();
+                    HELP_MSG(74);
+                    OPEN_MSG_WIN();
+                    MSG(BOOK_36_END_010);
+                }
+
+                localVariable7 = EVT_FUNCTION_0030(localVariable9, 3);
+
+                if (EVT_FUNCTION_002F(localVariable7, 3, 0) == 0 && EVT_FUNCTION_002F(localVariable7, 1, 0) == 0)
+                {
+
+                    if (localVariable7 == 1)
+                    {
+                        MSG(CHECK_SOFA_11);
+                    }
+                    else if (localVariable7 == 2)
+                    {
+                        MSG(CHECK_SOFA_12);
+                    }
+                    else if (localVariable7 == 3)
+                    {
+                        MSG(CHECK_SOFA_13);
+                    }
+                    else if (localVariable7 == 4)
+                    {
+                        MSG(CHECK_SOFA_14);
+                    }
+                    else if (localVariable7 == 5)
+                    {
+                        MSG(CHECK_SOFA_15);
+                    }
+
+                    if (EVT_FUNCTION_002F(0, 3, 0) == 0 && EVT_FUNCTION_002F(0, 1, 0) == 0)
+                    {
+                        MSG(ALL_BOOK_READ);
+                        int localVariable8 = GET_ITEM(0x0200 + 246);
+                        SET_ITEM(0x0200 + 246, localVariable8 + 1);
+                        FUNCTION_0096(29, 0);
+                    }
+                }
+
+                CLOSE_MSG_WIN();
+                SET_CNT(87, 0);
+                SET_CNT(88, 0);
+                return;
+            }
+        }
+        else
+        {
+            MSG(CHECK_SOFA_9);
+            CLOSE_MSG_WIN();
+            return;
+        }
+    }
+    else
+    // Comes here if the book is finished with a page to spare
+    {
+        MSG(CHECK_SOFA_10);
+
+        if (EVT_FUNCTION_0030(localVariable9, 4) > 0)
+        {
+            CLOSE_MSG_WIN();
+            NS_PLAY_EXPRESSION(0, 6);
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 1), EVT_FUNCTION_0030(localVariable9, 4));
+            OPEN_MSG_WIN();
+        }
+
+        if (EVT_FUNCTION_0030(localVariable9, 5) > 0)
+        {
+            NS_PLAY_EXPRESSION(0, 6);
+            GET_SOCIAL_STATS(EVT_FUNCTION_0030(localVariable9, 2), EVT_FUNCTION_0030(localVariable9, 5));
+        }
+
+        if (localVariable9 == 21)
+        {
+            MSG(BOOK_21_END);
+        }
+        else if (localVariable9 == 22)
+        {
+            MSG(BOOK_22_END);
+        }
+        else if (localVariable9 == 23)
+        {
+            MSG(BOOK_23_END);
+        }
+        else if (localVariable9 == 24)
+        {
+            MSG(BOOK_24_END);
+        }
+        else if (localVariable9 == 25)
+        {
+            MSG(BOOK_25_END);
+        }
+        else if (localVariable9 == 26)
+        {
+            MSG(BOOK_30_END);
+        }
+        else if (localVariable9 == 27)
+        {
+            MSG(BOOK_31_END);
+        }
+        else if (localVariable9 == 28)
+        {
+            MSG(BOOK_32_END_000);
+            CLOSE_MSG_WIN();
+            BIT_ON(0 + 0x0400 + 1659);
+            FUNCTION_008C(61, 22);
+            OPEN_MSG_WIN();
+            MSG(BOOK_32_END_010);
+        }
+        else if (localVariable9 == 29)
+        {
+            MSG(BOOK_33_END);
+        }
+        else if (localVariable9 == 30)
+        {
+            MSG(BOOK_34_END);
+        }
+        else if (localVariable9 == 31)
+        {
+            MSG(BOOK_35_END_000);
+
+            if (CHECK_TIME_SPAN(1, 1, 2, 29) == 1)
+            {
+                MSG(BOOK_35_END_010_WINTER);
+            }
+            else
+            {
+                CLOSE_MSG_WIN();
+                HELP_MSG(69);
+                OPEN_MSG_WIN();
+                MSG(BOOK_35_END_010);
+            }
+        }
+        else if (localVariable9 == 0x20)
+        {
+            MSG(BOOK_36_END_000);
+            CLOSE_MSG_WIN();
+            HELP_MSG(74);
+            OPEN_MSG_WIN();
+            MSG(BOOK_36_END_010);
+        }
+
+        localVariable7 = EVT_FUNCTION_0030(localVariable9, 3);
+
+        if (EVT_FUNCTION_002F(localVariable7, 3, 0) == 0 && EVT_FUNCTION_002F(localVariable7, 1, 0) == 0)
+        {
+
+            if (localVariable7 == 1)
+            {
+                MSG(CHECK_SOFA_11);
+            }
+            else if (localVariable7 == 2)
+            {
+                MSG(CHECK_SOFA_12);
+            }
+            else if (localVariable7 == 3)
+            {
+                MSG(CHECK_SOFA_13);
+            }
+            else if (localVariable7 == 4)
+            {
+                MSG(CHECK_SOFA_14);
+            }
+            else if (localVariable7 == 5)
+            {
+                MSG(CHECK_SOFA_15);
+            }
+
+            if (EVT_FUNCTION_002F(0, 3, 0) == 0 && EVT_FUNCTION_002F(0, 1, 0) == 0)
+            {
+                // No more books to read so turn the bit off
+                BIT_OFF(65530);
+                MSG(ALL_BOOK_READ);
+                int localVariable8 = GET_ITEM(0x0200 + 246);
+                SET_ITEM(0x0200 + 246, localVariable8 + 1);
+                FUNCTION_0096(29, 0);
+            }
+        }
+
+        // Check if another book can be read and set the bit respectively
+        if (localVariable11 == 1)
+        {
+            // If you would read more but there are no more books to read
+            if (EVT_FUNCTION_002F(0, 1, 0) == 0)
+            {
+                BIT_OFF(65530);
+                MSG(CANT_READ_MORE);
+            }
+            else
+            {
+                BIT_ON(65530);
+                MSG(READ_MORE);
+            }
+        }
+        else
+        {
+            BIT_OFF(65530);
+        }
+
+        CLOSE_MSG_WIN();
+        SET_CNT(87, 0);
+        SET_CNT(88, 0);
+        return;
+    }
+}

@@ -1,0 +1,9 @@
+bool ModMenuEnabled()
+{
+	return false;
+}
+
+bool ModMenuShown()
+{
+	return false;
+}

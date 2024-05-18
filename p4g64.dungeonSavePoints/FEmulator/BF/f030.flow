@@ -1,0 +1,15 @@
+void f030_001_init_hook()
+{
+    int var0;
+    int var1;
+    
+    if ( FLD_FUNCTION_0000() == 2 )
+    {
+        // Spawn save butterfly
+        var0 = LOAD_FIELD_OBJECT( -1, 102 );
+        var1 = FLD_FUNCTION_000F( var0 );
+        FLD_FUNCTION_000C( var1, 1 );
+        FLD_FUNCTION_0007( var1, 1 );
+    }
+
+}

@@ -1,0 +1,68 @@
+import("naoto.msg");
+
+void EVE_MES_NAO_hook()
+{
+    int var31;
+    int msg;
+    int var30;
+    var31 = 14;
+    msg = 0;
+    var30 = 1;
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var31 ) == 1 )
+    {
+        MSG( var30 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+void EVE_END_SYSMES_NAO_hook()
+{
+    int msg;
+    msg = 2;
+    if(BIT_CHK(6380))
+        msg = ChatEnd;
+    OPEN_MSG_WIN();
+    MSG( msg );
+    CLOSE_MSG_WIN();
+}
+
+
+void COMMUNITY_POINT_NAO_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var57;
+    int var55;
+    int var58;
+    int var56;
+    var57 = 235;
+    var55 = 7;
+    var58 = GET_CNT( var57 );
+    
+    if ( var58 >= 2000 )
+    {
+        var56 = 15;
+        SET_CNT( var57, ( var58 - 2000 ) );
+    }
+    else if ( var58 >= 1000 )
+    {
+        var56 = 10;
+        SET_CNT( var57, ( var58 - 1000 ) );
+    }
+    else 
+    {
+        var56 = 5;
+    }
+
+    EVT_FUNCTION_0016( EVT_FUNCTION_0022( 14 ) );
+    EVT_FUNCTION_0031( EVT_FUNCTION_0022( 14 ), var56, var55 );
+    EVT_FUNCTION_0016( 0 );
+}

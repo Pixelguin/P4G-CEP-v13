@@ -1,0 +1,488 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+void NPC_PLANT_SELLER_hook()
+{
+    int var25;
+    int var26;
+    int var27;
+    int var28;
+    int var29;
+    int var30;
+    int var31;
+    int var32;
+    int var33;
+    int var34;
+    int var35;
+    int var36;
+    int var37;
+    int var38;
+    int var39;
+    int var40;
+    int var41;
+    int var42;
+    var25 = 0;
+    var26 = 0;
+    var27 = 0;
+    var28 = 0;
+    var29 = 0;
+    var30 = 0;
+    var31 = 0;
+    var32 = 0;
+    var33 = 0;
+    var34 = 0;
+    var35 = 0;
+    var36 = 0;
+    var37 = 0;
+    var38 = 0;
+    var39 = 0;
+    var40 = 0;
+    var41 = 0;
+    
+    if ( ( ( ( GET_SL_LEVEL( 7 ) >= 6 ) && ( GET_ITEM( ( 1792 + 66 ) ) <= 0 ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Yosuke, 3 ) != ( 1792 + 66 ) ) ) && ( GET_FIELD_MAJOR() == 9 ) )
+    {
+        SET_MSG_VAR( 0, ( 1792 + 66 ), 1 );
+        SET_MSG_VAR( 1, ( 1792 + 184 ), 1 );
+        SET_ITEM( ( 1792 + 66 ), 1 );
+        SET_ITEM( ( 1792 + 184 ), 1 );
+        OPEN_MSG_WIN();
+        MSG( MSG_NPC_SELLER_GIVE_COSU );
+        
+        if ( BIT_CHK( 53 ) == 1 )
+        {
+            MSG( MSG_NPC_SELLER_GIVE_COSU_3 );
+        }
+        else 
+        {
+            MSG( MSG_NPC_SELLER_GIVE_COSU_2 );
+        }
+
+        MSG( MSG_NPC_SELLER_GIVE_COSU_4 );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( ( ( ( CHECK_TIME_SPAN( 10, 10, 2, 29 ) == 1 ) && ( GET_ITEM( ( 1792 + 178 ) ) <= 0 ) ) && ( GET_EQUIPMENT_ID( PartyUnit.Yosuke, 3 ) != ( 1792 + 178 ) ) ) && ( GET_FIELD_MAJOR() == 9 ) )
+    {
+        SET_MSG_VAR( 0, ( 1792 + 178 ), 1 );
+        SET_ITEM( ( 1792 + 178 ), 1 );
+        OPEN_MSG_WIN();
+        MSG( MSG_NPC_SELLER_GIVE_COSU_5 );
+        MSG( MSG_NPC_SELLER_GIVE_COSU_6 );
+        MSG( MSG_NPC_SELLER_GIVE_COSU_7 );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( CHECK_TIME_SPAN( 1, 1, 1, 3 ) == 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( MSG_NPC_SELLER_0103_000 );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( CHECK_TIME_SPAN( 4, 1, 4, 17 ) == 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( MSG_NPC_SELLER_NOTSELL );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( ( GET_CNT( 177 ) >= 1 ) && ( GET_CNT( 178 ) >= 1 ) )
+    {
+        
+        if ( CHECK_TIME_SPAN( 4, 18, 5, 21 ) == 1 )
+        {
+            OPEN_MSG_WIN();
+            MSG( MSG_NPC_SELLER_VEGET_SOL );
+            CLOSE_MSG_WIN();
+        }
+        else if ( CHECK_TIME_SPAN( 1, 1, 2, 29 ) == 1 )
+        {
+            OPEN_MSG_WIN();
+            MSG( MSG_NPC_SELLER_MENU_VEGE_5 );
+            CLOSE_MSG_WIN();
+        }
+
+        return;
+    }
+    else if ( CHECK_TIME_SPAN( 4, 18, 5, 21 ) == 1 )
+    {
+        SET_CNT( 178, 1 );
+        
+        if ( ( ( CHECK_TIME_SPAN( 4, 18, 4, 24 ) == 1 ) || ( CHECK_TIME_SPAN( 5, 2, 5, 8 ) == 1 ) ) || ( CHECK_TIME_SPAN( 5, 0x10, 5, 21 ) == 1 ) )
+        {
+            var25 = ( 0x0800 + 49 );
+            var26 = ( 0x0800 + 51 );
+            var27 = 3;
+            var28 = 800;
+            var29 = 177;
+        }
+        else 
+        {
+            var25 = ( 0x0800 + 51 );
+            var26 = ( 0x0800 + 49 );
+            var27 = 1;
+            var28 = 900;
+            var29 = 177;
+        }
+
+        OPEN_MSG_WIN();
+        SET_MSG_VAR( 10, var25, 1 );
+        SET_MSG_VAR( 11, var27, 0 );
+        SET_MSG_VAR( 12, var28, 0 );
+        SET_MSG_VAR( 20, ADD_YEN( 0 ), 0 );
+        MSG( MSG_NPC_SELLER_VEGET_HEL );
+        SEL_CHK_PAD( 14, 1 );
+        var30 = SEL( SEL_NPC_SELLER_CHK_BUY );
+        
+        if ( var30 == 0 )
+        {
+            
+            if ( ADD_YEN( 0 ) < var28 )
+            {
+                MSG( MSG_NPC_SELLER_MENU_NOMO );
+            }
+            else if ( GET_ITEM( var25 ) >= 99 )
+            {
+                MSG( MSG_NPC_SELLER_MENU_MOTE );
+            }
+            else 
+            {
+                ADD_YEN( -var28 );
+                SET_ITEM( var25, ( GET_ITEM( var25 ) + var27 ) );
+                SET_CNT( var29, ( GET_CNT( var29 ) + 1 ) );
+                SET_MSG_VAR( 0, var25, 1 );
+                MSG( MSG_NPC_SELLER_VEGET_BUY );
+                MSG( MSG_NPC_SELLER_GET_ITEM );
+                
+                if ( ( GET_CNT( var29 ) >= 1 ) && ( GET_CNT( 178 ) >= 1 ) )
+                {
+                    MSG( MSG_NPC_SELLER_VEGET_RES );
+                }
+
+            }
+
+        }
+        else 
+        {
+            MSG( MSG_NPC_SELLER_VEGET_BUY_2 );
+        }
+
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( BIT_CHK( 3321 ) == 0 )
+    {
+        BIT_ON( 3321 );
+        SET_CNT( 183, ( GET_CNT( 183 ) + 1 ) );
+    }
+
+    OPEN_MSG_WIN();
+    
+    if ( ( CHECK_TIME_SPAN( 5, 22, 6, 4 ) == 1 ) && ( GET_CNT( 184 ) < 10 ) )
+    {
+        SET_CNT( 184, 10 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_1STOPEN );
+    }
+    else if ( ( CHECK_TIME_SPAN( 6, 5, 6, 23 ) == 1 ) && ( GET_CNT( 184 ) < 20 ) )
+    {
+        SET_CNT( 184, 20 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_2NDOPEN );
+    }
+    else if ( ( CHECK_TIME_SPAN( 6, 24, 7, 23 ) == 1 ) && ( GET_CNT( 184 ) < 30 ) )
+    {
+        SET_CNT( 184, 30 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_3RDOPEN );
+    }
+    else if ( ( CHECK_TIME_SPAN( 7, 24, 8, 13 ) == 1 ) && ( GET_CNT( 184 ) < 40 ) )
+    {
+        SET_CNT( 184, 40 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_4THOPEN );
+    }
+    else if ( ( CHECK_TIME_SPAN( 8, 14, 12, 31 ) == 1 ) && ( GET_CNT( 184 ) < 50 ) )
+    {
+        SET_CNT( 184, 50 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_5THOPEN );
+    }
+    else if ( ( CHECK_TIME_SPAN( 1, 1, 2, 29 ) == 1 ) && ( GET_CNT( 184 ) < 60 ) )
+    {
+        SET_CNT( 184, 60 );
+        SET_CNT( 177, 0 );
+        SET_CNT( 178, 0 );
+        SET_CNT( 183, 0 );
+        MSG( MSG_NPC_SELLER_6THOPEN );
+    }
+    else if ( CHECK_TIME_SPAN( 5, 22, 12, 31 ) == 1 )
+    {
+        MSG( MSG_NPC_SELLER_MENU_PLAN );
+    }
+    else 
+    {
+        MSG( MSG_NPC_SELLER_MENU_VEGE );
+    }
+
+    
+    if ( CHECK_TIME_SPAN( 5, 22, 12, 31 ) == 1 )
+    {
+        CLOSE_MSG_WIN();
+        PRODUCE_SHOP();
+        return;
+    }
+    else if ( GET_CNT( 183 ) == 0 )
+    {
+        var32 = ( 0x0800 + 56 );
+        var33 = ( 0x0800 + 54 );
+    }
+    else if ( GET_CNT( 183 ) == 1 )
+    {
+        var32 = ( 0x0800 + 49 );
+        var33 = ( 0x0800 + 55 );
+    }
+    else if ( GET_CNT( 183 ) == 2 )
+    {
+        var32 = ( 0x0800 + 51 );
+        var33 = ( 0x0800 + 61 );
+    }
+    else if ( GET_CNT( 183 ) == 3 )
+    {
+        var32 = ( 0x0800 + 50 );
+        var33 = ( 0x0800 + 52 );
+    }
+    else if ( GET_CNT( 183 ) == 4 )
+    {
+        var32 = ( 0x0800 + 59 );
+        var33 = ( 0x0800 + 60 );
+    }
+    else if ( GET_CNT( 183 ) == 5 )
+    {
+        var32 = ( 0x0800 + 53 );
+        var33 = ( 0x0800 + 62 );
+    }
+
+    var34 = 1;
+    var35 = 1;
+    
+    if ( var32 == ( 0x0800 + 49 ) )
+    {
+        var36 = 800;
+        var34 = 3;
+    }
+    else if ( var32 == ( 0x0800 + 50 ) )
+    {
+        var36 = 3500;
+    }
+    else if ( var32 == ( 0x0800 + 51 ) )
+    {
+        var36 = 900;
+    }
+    else if ( var32 == ( 0x0800 + 52 ) )
+    {
+        var36 = 2300;
+    }
+    else if ( var32 == ( 0x0800 + 53 ) )
+    {
+        var36 = 1600;
+    }
+    else if ( var32 == ( 0x0800 + 54 ) )
+    {
+        var36 = 2000;
+    }
+    else if ( var32 == ( 0x0800 + 55 ) )
+    {
+        var36 = 950;
+    }
+    else if ( var32 == ( 0x0800 + 56 ) )
+    {
+        var36 = 9800;
+    }
+    else if ( var32 == ( 0x0800 + 59 ) )
+    {
+        var36 = 2300;
+    }
+    else if ( var32 == ( 0x0800 + 60 ) )
+    {
+        var36 = 2000;
+    }
+    else if ( var32 == ( 0x0800 + 61 ) )
+    {
+        var36 = 2000;
+    }
+    else if ( var32 == ( 0x0800 + 62 ) )
+    {
+        var36 = 2000;
+    }
+
+    
+    if ( var33 == ( 0x0800 + 49 ) )
+    {
+        var37 = 800;
+        var35 = 3;
+    }
+    else if ( var33 == ( 0x0800 + 50 ) )
+    {
+        var37 = 3500;
+    }
+    else if ( var33 == ( 0x0800 + 51 ) )
+    {
+        var37 = 900;
+    }
+    else if ( var33 == ( 0x0800 + 52 ) )
+    {
+        var37 = 2300;
+    }
+    else if ( var33 == ( 0x0800 + 53 ) )
+    {
+        var37 = 1600;
+    }
+    else if ( var33 == ( 0x0800 + 54 ) )
+    {
+        var37 = 2000;
+    }
+    else if ( var33 == ( 0x0800 + 55 ) )
+    {
+        var37 = 950;
+    }
+    else if ( var33 == ( 0x0800 + 56 ) )
+    {
+        var37 = 9800;
+    }
+    else if ( var33 == ( 0x0800 + 59 ) )
+    {
+        var37 = 2300;
+    }
+    else if ( var33 == ( 0x0800 + 60 ) )
+    {
+        var37 = 2000;
+    }
+    else if ( var33 == ( 0x0800 + 61 ) )
+    {
+        var37 = 2000;
+    }
+    else if ( var33 == ( 0x0800 + 62 ) )
+    {
+        var37 = 2000;
+    }
+
+    _139_123:
+    
+    if ( 1 )
+    {
+        SET_MSG_VAR( 0, var32, 5 );
+        SET_MSG_VAR( 1, var33, 5 );
+        var38 = 0;
+        
+        if ( GET_CNT( 177 ) >= 1 )
+        {
+            var38 = 1;
+        }
+
+        
+        if ( GET_CNT( 178 ) >= 1 )
+        {
+            var38 = 2;
+        }
+
+        MSG( MSG_NPC_SELLER_MENU_VEGE_2 );
+        var39 = 116;
+        var40 = 117;
+        var42 = 107;
+        var41 = 110;
+        SEL_CHK_PAD( 14, 2 );
+        SET_MASK( var38 );
+        var30 = SEL( SEL_NPC_SELLER_MENU );
+        
+        if ( var30 == 0 )
+        {
+            var25 = var32;
+            var26 = var33;
+            var28 = var36;
+            var27 = var34;
+            var29 = 177;
+        }
+        else if ( var30 == 1 )
+        {
+            var25 = var33;
+            var26 = var32;
+            var28 = var37;
+            var27 = var35;
+            var29 = 178;
+        }
+        else 
+        {
+            MSG( var40 );
+            goto _140_124;
+        }
+
+        SET_MSG_VAR( 10, var25, 1 );
+        SET_MSG_VAR( 11, var27, 0 );
+        SET_MSG_VAR( 12, var28, 0 );
+        SET_MSG_VAR( 20, ADD_YEN( 0 ), 0 );
+        MSG( var42 );
+        SEL_CHK_PAD( 14, 1 );
+        var30 = SEL( SEL_NPC_SELLER_CHK_BUY );
+        
+        if ( var30 == 0 )
+        {
+            
+            if ( ADD_YEN( 0 ) < var28 )
+            {
+                MSG( MSG_NPC_SELLER_MENU_NOMO );
+            }
+            else if ( GET_ITEM( var25 ) >= 99 )
+            {
+                MSG( MSG_NPC_SELLER_MENU_MOTE );
+            }
+            else 
+            {
+                ADD_YEN( -var28 );
+                SET_ITEM( var25, ( GET_ITEM( var25 ) + var27 ) );
+                SET_MSG_VAR( 0, var25, 1 );
+                MSG( var39 );
+                MSG( MSG_NPC_SELLER_GET_ITEM );
+                SET_CNT( var29, ( GET_CNT( var29 ) + 1 ) );
+                SET_MSG_VAR( 8, var25, 1 );
+                SET_MSG_VAR( 9, var26, 1 );
+                
+                if ( ( GET_CNT( 177 ) >= 1 ) && ( GET_CNT( 178 ) >= 1 ) )
+                {
+                    MSG( MSG_NPC_SELLER_MENU_RESU );
+                    goto _140_124;
+                }
+                else if ( GET_CNT( var29 ) >= 1 )
+                {
+                    MSG( var41 );
+                }
+
+            }
+
+        }
+        else 
+        {
+            MSG( var40 );
+            goto _140_124;
+        }
+
+        goto _139_123;
+    }
+
+    _140_124:
+    CLOSE_MSG_WIN();
+}
+

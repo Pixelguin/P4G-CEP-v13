@@ -1,0 +1,120 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PAK.Stream.Emulator/1.0.0": {
+        "dependencies": {
+          "FileEmulationFramework.Interfaces": "2.0.0",
+          "FileEmulationFramework.Lib": "1.1.1",
+          "PAK.Stream.Emulator.Interfaces": "1.0.0",
+          "Reloaded.Memory": "9.3.2",
+          "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
+          "Reloaded.Mod.Interfaces": "2.3.0"
+        },
+        "runtime": {
+          "PAK.Stream.Emulator.dll": {}
+        }
+      },
+      "Reloaded.Memory/9.3.2": {
+        "runtime": {
+          "lib/net7.0/Reloaded.Memory.dll": {
+            "assemblyVersion": "9.3.2.0",
+            "fileVersion": "9.3.2.0"
+          }
+        }
+      },
+      "Reloaded.Memory.Sigscan.Definitions/1.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Reloaded.Memory.Sigscan.Definitions.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Reloaded.Memory.SigScan.ReloadedII.Interfaces/1.2.0": {
+        "dependencies": {
+          "Reloaded.Memory.Sigscan.Definitions": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reloaded.Memory.SigScan.ReloadedII.Interfaces.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "Reloaded.Mod.Interfaces/2.3.0": {},
+      "FileEmulationFramework.Interfaces/2.0.0": {
+        "runtime": {
+          "FileEmulationFramework.Interfaces.dll": {}
+        }
+      },
+      "FileEmulationFramework.Lib/1.1.1": {
+        "dependencies": {
+          "Reloaded.Mod.Interfaces": "2.3.0"
+        },
+        "runtime": {
+          "FileEmulationFramework.Lib.dll": {}
+        }
+      },
+      "PAK.Stream.Emulator.Interfaces/1.0.0": {
+        "runtime": {
+          "PAK.Stream.Emulator.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PAK.Stream.Emulator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reloaded.Memory/9.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WF4AAzzvLqYzIhoWsILfB10A+blkQZ9VyQ/OYYxsUsYxxUj7lzYbcLpMQQ1ONnCdWHlIbFWO4Cq1DmKvWdP23g==",
+      "path": "reloaded.memory/9.3.2",
+      "hashPath": "reloaded.memory.9.3.2.nupkg.sha512"
+    },
+    "Reloaded.Memory.Sigscan.Definitions/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jJYe9pZAzdK0MSaSOmMFPWZ5258YYcn89MnQVnb1AY8QrIf9KmhBOYwNPuc7f0hPV9lIr1i4w3La/ngnaA5Ylg==",
+      "path": "reloaded.memory.sigscan.definitions/1.1.0",
+      "hashPath": "reloaded.memory.sigscan.definitions.1.1.0.nupkg.sha512"
+    },
+    "Reloaded.Memory.SigScan.ReloadedII.Interfaces/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iRorTjJJA2d+u6hqv4C9fKbdC8KQN3bQ0bRpWv/4MoK6bTcDzetJhBgbsB5opgNJXb97KxFupxZlS84ykMxqTg==",
+      "path": "reloaded.memory.sigscan.reloadedii.interfaces/1.2.0",
+      "hashPath": "reloaded.memory.sigscan.reloadedii.interfaces.1.2.0.nupkg.sha512"
+    },
+    "Reloaded.Mod.Interfaces/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u0n87wuTPqcM4dSYm5BKC7q6rgzVH07Jg2r+CzYONZo6Ys367tza1Hd/LKNfQMum5vcSdqBifTJyKGAPlSNMpQ==",
+      "path": "reloaded.mod.interfaces/2.3.0",
+      "hashPath": "reloaded.mod.interfaces.2.3.0.nupkg.sha512"
+    },
+    "FileEmulationFramework.Interfaces/2.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileEmulationFramework.Lib/1.1.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PAK.Stream.Emulator.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

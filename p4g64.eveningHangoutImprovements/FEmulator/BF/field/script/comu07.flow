@@ -1,0 +1,309 @@
+import("nightHangouts.msg");
+
+void SCR_NIGHT_NPC_KANJI_hook()
+{
+    int var30;
+    int var31;
+    int var27;
+    int var28;
+    int var29;
+    int slId;
+    int var35;
+    int var36;
+    int var39;
+    int var37;
+    int var38;
+    int var42;
+    int var43;
+    int var44;
+    int var41;
+    int var45;
+    int var32;
+    int var33;
+    int var40;
+    int selectedChoice;
+    var30 = 233;
+    var31 = GET_CNT( var30 );
+    var27 = 53;
+    var28 = 0;
+    var29 = 503;
+    slId = 10;
+    var35 = 0;
+    var36 = 17;
+    var39 = 117;
+    var37 = 119;
+    var38 = 120;
+    
+    if ( EVT_FUNCTION_0002( slId ) >= 5 )
+    {
+        var42 = 127;
+    }
+    else 
+    {
+        var42 = 126;
+    }
+
+    var43 = 0x80;
+    var44 = 121;
+    var41 = 129;
+    
+    if ( var31 >= 10 )
+    {
+        var45 = ( ( var31 / 10 ) * 10 );
+    }
+    else 
+    {
+        var45 = 0;
+    }
+
+    var32 = ( var31 - var45 );
+    var33 = ( var31 / 10 );
+    
+    if ( var33 >= 10 )
+    {
+        var33 = ( var33 - 10 );
+    }
+
+    
+    if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+    {
+        var40 = 140;
+    }
+    else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+    {
+        var40 = 140;
+    }
+    else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+    {
+        var40 = 140;
+    }
+    else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+    {
+        var40 = 141;
+    }
+    else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+    {
+        var40 = 142;
+    }
+    else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+    {
+        var40 = 143;
+    }
+    else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+    {
+        var40 = 144;
+    }
+    else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+    {
+        var40 = 145;
+    }
+    else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+    {
+        var40 = 146;
+    }
+    else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+    {
+        var40 = 149;
+    }
+    else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+    {
+        var40 = 150;
+    }
+    else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+    {
+        var40 = 151;
+    }
+    else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+    {
+        var40 = 140;
+    }
+    else 
+    {
+        var40 = 140;
+    }
+
+    
+    if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+    {
+        var39 = 118;
+    }
+
+    
+    if ( ( CHECK_TIME_SPAN( 11, 6, 11, 20 ) == 1 ) && ( BIT_CHK( 22 ) == 0 ) )
+    {
+        var40 = 147;
+        var41 = 134;
+        
+        if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+        {
+            var39 = 136;
+        }
+        else 
+        {
+            var39 = 135;
+        }
+
+    }
+
+    
+    if ( ( CHECK_TIME_SPAN( 12, 8, 12, 24 ) == 1 ) && ( BIT_CHK( 23 ) == 0 ) )
+    {
+        var40 = 148;
+        var41 = 137;
+        
+        if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+        {
+            var39 = 139;
+        }
+        else 
+        {
+            var39 = 138;
+        }
+
+    }
+
+    
+    if ( ( ( ( ( CHECK_TIME_SPAN( 4, 18, 4, 29 ) == 1 ) || ( CHECK_TIME_SPAN( 5, 18, 6, 4 ) == 1 ) ) || ( CHECK_TIME_SPAN( 6, 24, 7, 9 ) == 1 ) ) || ( CHECK_TIME_SPAN( 7, 27, 8, 12 ) == 1 ) ) || ( CHECK_TIME_SPAN( 9, 0x10, 10, 5 ) == 1 ) )
+    {
+        
+        if ( BIT_CHK( 2593 ) == 1 )
+        {
+            var40 = 130;
+            var41 = 131;
+            
+            if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+            {
+                var39 = 133;
+            }
+            else 
+            {
+                var39 = 132;
+            }
+
+        }
+
+    }
+
+    OPEN_MSG_WIN();
+    
+    if ( var32 == 0 )
+    {
+        var31 = GET_CNT( var30 );
+        SET_CNT( var30, ( var31 + 1 ) );
+        MSG( var40 );
+    }
+    else 
+    {
+        MSG( var41 );
+    }
+
+    
+    if ( BIT_CHK( 3199 ) == 0 )
+    {
+        BIT_ON(6381);
+        BIT_ON( 3199 );
+        CLOSE_MSG_WIN();
+        HELP_MSG( NightHangoutHelp );
+        OPEN_MSG_WIN();
+    }
+
+    // Chat help message
+    if(!BIT_CHK(6381))
+    {
+        BIT_ON(6381);
+        CLOSE_MSG_WIN();
+        HELP_MSG( ChatHelp );
+        OPEN_MSG_WIN();
+    }
+
+    MSG( var39 );
+    
+    if ( ( GET_SL_LEVEL( slId ) < 10 ) && ( EVT_FUNCTION_0019( slId ) != 0 ) )
+    {
+        EVT_FUNCTION_0013( slId );
+        MSG( var36 );
+    }
+    else if ( GET_SL_LEVEL( slId ) == 10 )
+    {
+        MSG( KAN_NIGHT_TALK_POINT_MAX );
+        
+        if ( ( var33 >= 2 ) && ( var31 >= 100 ) )
+        {
+            MSG( KAN_NIGHT_TALK_POINT_MAX_3 );
+        }
+        else 
+        {
+            MSG( KAN_NIGHT_TALK_POINT_MAX_2 );
+        }
+
+    }
+
+    EVT_FUNCTION_0013( slId );
+    if(CHECK_IF_SL_LVLUP(slId))
+        MSG(NightWaitSuggestion);
+    MSG( var37 );
+    SEL_CHK_PAD( 14, 2 );
+    selectedChoice = SEL( HangoutSel );
+    CLOSE_MSG_WIN();
+    
+    if ( selectedChoice <= 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( var42 );
+        CLOSE_MSG_WIN();
+        
+        if ( var28 == 0 && selectedChoice == 0)
+        {
+            EVT_FUNCTION_0016( slId );
+            EVT_FUNCTION_0031( slId, 5, var27 );
+        }
+        else if ( EVT_FUNCTION_0002( slId ) == 1 && selectedChoice == 0)
+        {
+            EVT_FUNCTION_0016( slId );
+            EVT_FUNCTION_0031( slId, 5, var27 );
+        }
+        else if ( EVT_FUNCTION_0002( var35 ) == 1 && selectedChoice == 0)
+        {
+            EVT_FUNCTION_0016( var35 );
+            EVT_FUNCTION_0031( var35, 5, var27 );
+        }
+
+        EVT_FUNCTION_0016( 0 );
+        OPEN_MSG_WIN();
+        MSG( var44 );
+        CLOSE_MSG_WIN();
+        FADE( 1, 20 );
+        FADE_SYNC();
+        if(selectedChoice == 1) {
+            BIT_OFF(2179); // Despawn Kanji
+            BIT_ON(6380); // Turn on chatting flag
+        }
+        CALL_EVENT( 845, var29, 0 );
+        BIT_ON( 4071 );
+        BIT_OFF(6380); // Turn off chatting flag
+        
+        if ( BIT_CHK( 3206 ) == 1 )
+        {
+            var31 = GET_CNT( var30 );
+            SET_CNT( var30, ( var31 - 1 ) );
+            CALL_FIELD( 8, 1, 5, 0 );
+        }
+        else if(selectedChoice == 1) 
+        {
+            CALL_FIELD( 8, 1, 5, 0 );
+        }
+        else 
+        {
+            commu_yoru();
+        }
+
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        MSG( var43 );
+        CLOSE_MSG_WIN();
+    }
+
+}
+

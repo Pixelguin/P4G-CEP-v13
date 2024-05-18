@@ -1,0 +1,15 @@
+[sel SEL_NPC_KASHIWAGI_QUEST_3]
+[f 0 5 -258][f 2 1]Pig[e]
+[f 0 5 -258][f 2 1]Rabbit[e]
+[f 0 5 -258][f 2 1]Horse[e]
+[f 0 5 -258][f 2 1]Can you repeat that?[e]
+
+[msg KSAHIWAGI_QUEST_3_REPEATED]
+[f 0 5 -258][f 2 1]In 1936, the first artificial snowflake[n]was created.[n][f 1 1][e]
+[f 0 5 -258][f 2 1]Hair from a certain animal was used[n]as the core. What animal was it?[n][f 1 1][e]
+
+[sel SEL_NPC_KASHIWAGI_QUEST_7]
+[f 0 5 -258][f 2 1]Cathode[e]
+[f 0 5 -258][f 2 1]Raster[e]
+[f 0 5 -258][f 2 1]Vector[e]
+[f 0 5 -258][f 2 1]Can you repeat that?[e]

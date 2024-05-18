@@ -1,0 +1,225 @@
+void check_sofa_p4p_hook()
+{
+    int viewAlbum;
+    int readBook;
+    int selectedOption;
+    viewAlbum = 0;
+    readBook = 0;
+    
+    if ( ( GET_MONTH() == 4 ) && ( GET_DAY_OF_MONTH() == 11 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( HEYA_NERUIGAIDAME_0411 );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( DATE_CHK( 4, 14 ) == 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( SUGUNERU_SOFA );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if ( ( BIT_CHK( 1538 ) == 1 ) || ( BIT_CHK( 1551 ) == 1 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( SOFA_NONE );
+        CLOSE_MSG_WIN();
+        return;
+    }
+
+    
+    if ( HD_EVT_FUNCTION_004C( 0, 2, 0 ) == 0 )
+    {
+        
+        if ( EVT_FUNCTION_002F( 0, 2, 0 ) == 0 )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else if ( BIT_CHK( 3074 ) == 1 )
+        {
+            OPEN_MSG_WIN();
+            MSG( DUNGEON_SOFA );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else if ( ( EVT_FUNCTION_002F( 0, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 ) )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_ALLREAD_BOOK );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else if ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_NOREAD_BOOK );
+            CLOSE_MSG_WIN();
+            return;
+        }
+        else 
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_READ );
+            SEL_CHK_PAD( 14, 1 );
+            selectedOption = SEL( SEL_READ_SEL );
+            
+            if ( selectedOption == 0 )
+            {
+                readBook = 1;
+            }
+
+            CLOSE_MSG_WIN();
+        }
+
+    }
+    else if ( EVT_FUNCTION_002F( 0, 2, 0 ) == 0 )
+    {
+        OPEN_MSG_WIN();
+        MSG( NEW_SOFA_READ_NOT_BOOK );
+        SEL_CHK_PAD( 14, 1 );
+        selectedOption = SEL( SEL_READ_3_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( selectedOption == 0 )
+        {
+            viewAlbum = 1;
+        }
+
+        CLOSE_MSG_WIN();
+    }
+    else if ( BIT_CHK( 3074 ) == 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( NEW_SOFA_DUNGEON_ALBUM );
+        SEL_CHK_PAD( 14, 1 );
+        selectedOption = SEL( SEL_READ_3_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( selectedOption == 0 )
+        {
+            viewAlbum = 1;
+        }
+
+        CLOSE_MSG_WIN();
+    }
+    else if ( ( EVT_FUNCTION_002F( 0, 3, 0 ) == 0 ) && ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 ) )
+    {
+        OPEN_MSG_WIN();
+        MSG( NEW_SOFA_ALLREAD_BOOK );
+        SEL_CHK_PAD( 14, 1 );
+        selectedOption = SEL( SEL_READ_3_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( selectedOption == 0 )
+        {
+            viewAlbum = 1;
+        }
+
+        CLOSE_MSG_WIN();
+    }
+    else if ( EVT_FUNCTION_002F( 0, 1, 0 ) == 0 )
+    {
+        OPEN_MSG_WIN();
+        MSG( NEW_SOFA_NOREAD_BOOK );
+        SEL_CHK_PAD( 14, 1 );
+        selectedOption = SEL( SEL_READ_3_SEL );
+        CLOSE_MSG_WIN();
+        
+        if ( selectedOption == 0 )
+        {
+            viewAlbum = 1;
+        }
+
+        CLOSE_MSG_WIN();
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        MSG( NEW_SOFA_READ );
+        SEL_CHK_PAD( 14, 2 );
+        selectedOption = SEL( SEL_READ_2_SEL );
+        
+        if ( selectedOption == 0 )
+        {
+            readBook = 1;
+        }
+        else if ( selectedOption == 1 )
+        {
+            viewAlbum = 1;
+        }
+
+        CLOSE_MSG_WIN();
+    }
+
+    
+    if ( readBook == 1 )
+    {
+        bookReadEvent();
+    }
+
+    
+    if ( viewAlbum == 1 )
+    {
+        album_read_event();
+    }
+
+}
+
+
+void bookReadEvent() {
+    BOOK_READ();
+
+    if (GET_CNT(88) != 0)
+    {
+        FADE( 1, 10 );
+        FADE_SYNC();
+        CALL_EVENT( 860, 34, 0 );
+        
+        if ( GET_TIME_OF_DAY() != 5 )
+        {
+            BIT_ON( 0 + 0x0400 + 0x0800 + 931 );
+        }
+        else 
+        {
+            BIT_ON( 0 + 0x0400 + 0x0800 + 990 );
+        }
+
+        
+        if ( BIT_CHK( 0 + 0x0400 + 0x0800 + 332 ) == 1 )
+        {
+            OPEN_MSG_WIN();
+            MSG( CHECK_SOFA_READBOOK_DEBU );
+            CLOSE_MSG_WIN();
+            CALL_FIELD( 7, 3, 0, 0 );
+            return;
+        }
+        else if ( GET_TIME_OF_DAY() == 5 )
+        {
+            // If there is another book to read go back inside and open the bookshelf
+            if( BIT_CHK(65530) == 1 ) {
+                bookReadEvent();
+            } else {
+                commu_yoru();
+            }
+            return;
+        }
+        else 
+        {
+            // If there is another book to read go back inside and open the bookshelf
+            if( BIT_CHK(65530) == 1 ) { 
+                bookReadEvent();
+            } else {
+                BIT_ON( 0 + 0x0400 + 1761 );
+                TV_STUDIO();					
+            }
+            return;
+        }
+    // If another book must be read when the user tries to close the bookshelf just open it again
+    } else if ( BIT_CHK( 65530 ) == 1) {
+        bookReadEvent();
+    }
+}

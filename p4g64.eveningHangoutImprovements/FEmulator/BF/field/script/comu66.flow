@@ -1,0 +1,259 @@
+import("nightHangouts.msg");
+
+void SCR_NIGHT_NPC_KONISHI_hook()
+{
+    int var16;
+    int var17;
+    int var13;
+    int var14;
+    int var15;
+    int slId;
+    int var21;
+    int var22;
+    int var25;
+    int var23;
+    int var24;
+    int var28;
+    int var29;
+    int var30;
+    int var27;
+    int var31;
+    int var18;
+    int var19;
+    int var26;
+    int selectedChoice;
+    var16 = 238;
+    var17 = GET_CNT( var16 );
+    var13 = 57;
+    var14 = 0;
+    var15 = 510;
+    slId = 18;
+    var21 = 0;
+    var22 = 24;
+    var25 = 53;
+    var23 = 57;
+    var24 = 58;
+    var28 = 0x40;
+    var29 = 65;
+    var30 = 59;
+    var27 = 66;
+    
+    if ( var17 >= 10 )
+    {
+        var31 = ( ( var17 / 10 ) * 10 );
+    }
+    else 
+    {
+        var31 = 0;
+    }
+
+    var18 = ( var17 - var31 );
+    var19 = ( var17 / 10 );
+    
+    if ( var19 >= 10 )
+    {
+        var19 = ( var19 - 10 );
+    }
+
+    
+    if ( ( var19 >= 2 ) && ( var17 >= 100 ) )
+    {
+        var26 = 67;
+    }
+    else if ( CHECK_TIME_SPAN( 4, 11, 4, 30 ) == 1 )
+    {
+        var26 = 67;
+    }
+    else if ( CHECK_TIME_SPAN( 5, 1, 5, 31 ) == 1 )
+    {
+        var26 = 67;
+    }
+    else if ( CHECK_TIME_SPAN( 6, 1, 6, 30 ) == 1 )
+    {
+        var26 = 68;
+    }
+    else if ( CHECK_TIME_SPAN( 7, 1, 7, 31 ) == 1 )
+    {
+        var26 = 69;
+    }
+    else if ( CHECK_TIME_SPAN( 8, 1, 8, 31 ) == 1 )
+    {
+        var26 = 70;
+    }
+    else if ( CHECK_TIME_SPAN( 9, 1, 9, 30 ) == 1 )
+    {
+        var26 = 71;
+    }
+    else if ( CHECK_TIME_SPAN( 10, 1, 10, 31 ) == 1 )
+    {
+        var26 = 72;
+    }
+    else if ( CHECK_TIME_SPAN( 11, 1, 11, 30 ) == 1 )
+    {
+        var26 = 73;
+    }
+    else if ( CHECK_TIME_SPAN( 12, 1, 12, 31 ) == 1 )
+    {
+        var26 = 75;
+    }
+    else if ( CHECK_TIME_SPAN( 1, 1, 1, 31 ) == 1 )
+    {
+        var26 = 76;
+    }
+    else if ( CHECK_TIME_SPAN( 2, 1, 2, 29 ) == 1 )
+    {
+        var26 = 77;
+    }
+    else if ( CHECK_TIME_SPAN( 3, 1, 3, 21 ) == 1 )
+    {
+        var26 = 67;
+    }
+    else 
+    {
+        var26 = 67;
+    }
+
+    
+    if ( ( var19 >= 2 ) && ( var17 >= 100 ) )
+    {
+        var25 = 54;
+    }
+
+    
+    if ( ( CHECK_TIME_SPAN( 12, 8, 12, 24 ) == 1 ) && ( BIT_CHK( 23 ) == 0 ) )
+    {
+        var26 = 74;
+        
+        if ( ( var19 >= 2 ) && ( var17 >= 100 ) )
+        {
+            var25 = 56;
+        }
+        else 
+        {
+            var25 = 55;
+        }
+
+    }
+
+    OPEN_MSG_WIN();
+    
+    if ( var18 == 0 )
+    {
+        var17 = GET_CNT( var16 );
+        SET_CNT( var16, ( var17 + 1 ) );
+        MSG( var26 );
+    }
+    else 
+    {
+        MSG( var27 );
+    }
+
+    
+    if ( BIT_CHK( 3199 ) == 0 )
+    {
+        BIT_ON(6381);
+        BIT_ON( 3199 );
+        CLOSE_MSG_WIN();
+        HELP_MSG( NightHangoutHelp );
+        OPEN_MSG_WIN();
+    }
+
+    // Chat help message
+    if(!BIT_CHK(6381))
+    {
+        BIT_ON(6381);
+        CLOSE_MSG_WIN();
+        HELP_MSG( ChatHelp );
+        OPEN_MSG_WIN();
+    }
+
+    MSG( var25 );
+    
+    if ( ( GET_SL_LEVEL( slId ) < 10 ) && ( EVT_FUNCTION_0019( slId ) != 0 ) )
+    {
+        EVT_FUNCTION_0013( slId );
+        MSG( var22 );
+    }
+    else if ( GET_SL_LEVEL( slId ) == 10 )
+    {
+        MSG( OTO_NIGHT_TALK_POINT_MAX );
+        
+        if ( ( var19 >= 2 ) && ( var17 >= 100 ) )
+        {
+            MSG( OTO_NIGHT_TALK_POINT_MAX_3 );
+        }
+        else 
+        {
+            MSG( OTO_NIGHT_TALK_POINT_MAX_2 );
+        }
+
+    }
+    
+    EVT_FUNCTION_0013( slId );
+    if(CHECK_IF_SL_LVLUP(slId))
+        MSG(NightWaitSuggestion);
+    MSG( var23 );
+    SEL_CHK_PAD( 14, 2 );
+    selectedChoice = SEL( HangoutSel );
+    CLOSE_MSG_WIN();
+    
+    if ( selectedChoice <= 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( var28 );
+        CLOSE_MSG_WIN();
+        
+        if ( var14 == 0 && selectedChoice == 0)
+        {
+            EVT_FUNCTION_0016( slId );
+            EVT_FUNCTION_0031( slId, 5, var13 );
+        }
+        else if ( EVT_FUNCTION_0002( slId ) == 1 && selectedChoice == 0 )
+        {
+            EVT_FUNCTION_0016( slId );
+            EVT_FUNCTION_0031( slId, 5, var13 );
+        }
+        else if ( EVT_FUNCTION_0002( var21 ) == 1 && selectedChoice == 0 )
+        {
+            EVT_FUNCTION_0016( var21 );
+            EVT_FUNCTION_0031( var21, 5, var13 );
+        }
+
+        EVT_FUNCTION_0016( 0 );
+        OPEN_MSG_WIN();
+        MSG( var30 );
+        CLOSE_MSG_WIN();
+        FADE( 1, 20 );
+        FADE_SYNC();
+        if(selectedChoice == 1) {
+            BIT_OFF(2186); // Despawn yumi
+            BIT_ON(6380); // Turn on chatting flag
+        }
+        CALL_EVENT( 845, var15, 0 );
+        BIT_ON( 4077 );
+        BIT_OFF(6380); // Turn off chatting flag
+        
+        if ( BIT_CHK( 3206 ) == 1 )
+        {
+            var17 = GET_CNT( var16 );
+            SET_CNT( var16, ( var17 - 1 ) );
+            CALL_FIELD( 8, 1, 2, 0 );
+        }
+        else if(selectedChoice == 1) 
+        {
+            CALL_FIELD( 8, 1, 2, 0 );
+        }
+        else 
+        {
+            commu_yoru();
+        }
+
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        MSG( var29 );
+        CLOSE_MSG_WIN();
+    }
+
+}

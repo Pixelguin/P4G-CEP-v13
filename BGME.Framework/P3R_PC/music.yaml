@@ -1,0 +1,601 @@
+Game: P3R_PC
+Version: 1
+DefaultBaseReplacementPath: Ryo/P3R
+DefaultEncoder: HCA (Persona 3 Reload)
+Songs:
+- Name: tartarus_0d01
+  Category: Location
+  Tags:
+  - Tartarus
+  - 1st Block
+  CueId: 1
+  ReplacementPath: Ryo/P3R/link_01.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Shadow
+  Category: Story
+  Tags: []
+  CueId: 19
+  ReplacementPath: Ryo/P3R/link_19.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Deep Breath, Deep Breath -Reload-
+  Category: Story
+  Tags: []
+  CueId: 20
+  ReplacementPath: Ryo/P3R/link_20.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Basement
+  Category: Story
+  Tags: []
+  CueId: 21
+  ReplacementPath: Ryo/P3R/link_21.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Deep Mentality -Reload-
+  Category: Story
+  Tags: []
+  CueId: 22
+  ReplacementPath: Ryo/P3R/link_22.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: When The Moon's Reaching Out Stars
+  Category: Overworld
+  Tags: []
+  CueId: 25
+  ReplacementPath: Ryo/P3R/link_25.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Mass Destruction -Reload-
+  Category: Normal Battle
+  Tags: []
+  CueId: 26
+  ReplacementPath: Ryo/P3R/link_26.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Master of Shadow -Reload- (Cue 27)
+  Category: Boss Battle
+  Tags: []
+  CueId: 27
+  ReplacementPath: Ryo/P3R/link_27.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Unavoidable Battle
+  Category: Boss Battle
+  Tags: []
+  CueId: 28
+  ReplacementPath: Ryo/P3R/link_28.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Burn My Dread -Last Battle Reload-
+  Category: Boss Battle
+  Tags: []
+  CueId: 29
+  ReplacementPath: Ryo/P3R/link_29.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: The Battle For Everyone's Souls
+  Category: Boss Battle
+  Tags: []
+  CueId: 30
+  ReplacementPath: Ryo/P3R/link_30.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Master Of Tartarus -Reload-
+  Category: Boss Battle
+  Tags: []
+  CueId: 31
+  ReplacementPath: Ryo/P3R/link_31.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Kyoto
+  Category: Location
+  Tags:
+  - Kyoto
+  CueId: 32
+  ReplacementPath: Ryo/P3R/link_32.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Troubled
+  Category: Story
+  Tags: []
+  CueId: 35
+  ReplacementPath: Ryo/P3R/link_35.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: What Lies in the Darkness
+  Category: Story
+  Tags: []
+  CueId: 36
+  ReplacementPath: Ryo/P3R/link_36.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Living With Determination
+  Category: Story
+  Tags: []
+  CueId: 37
+  ReplacementPath: Ryo/P3R/link_37.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Joy (Story)
+  Category: Story
+  Tags: []
+  CueId: 38
+  ReplacementPath: Ryo/P3R/link_38.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Fearful Experience
+  Category: Story
+  Tags: []
+  CueId: 39
+  ReplacementPath: Ryo/P3R/link_39.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Calamity
+  Category: Story
+  Tags: []
+  CueId: 40
+  ReplacementPath: Ryo/P3R/link_40.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Memories of You
+  Category: Story
+  Tags:
+  - Ending
+  CueId: 42
+  ReplacementPath: Ryo/P3R/link_42.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Joy (Social Links)
+  Category: Story
+  Tags: []
+  CueId: 43
+  ReplacementPath: Ryo/P3R/link_43.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: This Mysterious Feeling
+  Category: Story
+  Tags: []
+  CueId: 44
+  ReplacementPath: Ryo/P3R/link_44.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Crisis
+  Category: Story
+  Tags: []
+  CueId: 45
+  ReplacementPath: Ryo/P3R/link_45.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: The Path Is Open
+  Category: Story
+  Tags: []
+  CueId: 46
+  ReplacementPath: Ryo/P3R/link_46.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Want To Be Close
+  Category: Location
+  Tags:
+  - School
+  - 1st Semester
+  CueId: 50
+  ReplacementPath: Ryo/P3R/link_50.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Changing Seasons -Reload-
+  Category: Location
+  Tags:
+  - School
+  - 2nd Semester
+  CueId: 51
+  ReplacementPath: Ryo/P3R/link_51.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Memories of The School (Another Version)
+  Category: Location
+  Tags:
+  - School
+  - January
+  CueId: 52
+  ReplacementPath: Ryo/P3R/link_52.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Iwatodai Dorm -Reload-
+  Category: Location
+  Tags:
+  - Iwatodai Dorm
+  CueId: 53
+  ReplacementPath: Ryo/P3R/link_53.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Aria of The Soul
+  Category: Location
+  Tags:
+  - Velvet Room
+  CueId: 54
+  ReplacementPath: Ryo/P3R/link_54.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Tanaka's Amazing Commodities -Reload-
+  Category: Shop
+  Tags: []
+  CueId: 55
+  ReplacementPath: Ryo/P3R/link_55.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Paulownia Mall -Reload-
+  Category: Shop
+  Tags: []
+  CueId: 56
+  ReplacementPath: Ryo/P3R/link_56.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: After The Battle
+  Category: Victory Theme
+  Tags: []
+  CueId: 60
+  ReplacementPath: Ryo/P3R/link_60.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: The Path Is Closed
+  Category: Story
+  Tags: []
+  CueId: 62
+  ReplacementPath: Ryo/P3R/link_62.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d02
+  Category: Location
+  Tags:
+  - Tartarus
+  - 2nd Block
+  CueId: 70
+  ReplacementPath: Ryo/P3R/link_70.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: The Voice Someone Calls
+  Category: Location
+  Tags:
+  - Tartarus
+  - Entrance
+  CueId: 71
+  ReplacementPath: Ryo/P3R/link_71.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d04
+  Category: Location
+  Tags:
+  - Tartarus
+  - 4th Block
+  CueId: 72
+  ReplacementPath: Ryo/P3R/link_72.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d05
+  Category: Location
+  Tags:
+  - Tartarus
+  - 5th Block
+  CueId: 73
+  ReplacementPath: Ryo/P3R/link_73.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d06 (Tartarus)
+  Category: Location
+  Tags:
+  - Tartarus
+  - 6th Block
+  CueId: 74
+  ReplacementPath: Ryo/P3R/link_74.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d06 (Story)
+  Category: Story
+  Tags: []
+  CueId: 75
+  ReplacementPath: Ryo/P3R/link_75.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Living With Determination -Iwatodai Dorm Arrangement-
+  Category: Location
+  Tags:
+  - Iwatodai Dorm
+  CueId: 77
+  ReplacementPath: Ryo/P3R/link_77.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: After The Battle (Again)
+  Category: ''
+  Tags: []
+  CueId: 78
+  ReplacementPath: Ryo/P3R/link_78.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Mistic
+  Category: Story
+  Tags: []
+  CueId: 79
+  ReplacementPath: Ryo/P3R/link_79.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Memories Of The City
+  Category: Location
+  Tags:
+  - Port Island
+  CueId: 80
+  ReplacementPath: Ryo/P3R/link_80.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: tartarus_0d03
+  Category: Location
+  Tags:
+  - Tartarus
+  - 3rd Block
+  CueId: 81
+  ReplacementPath: Ryo/P3R/link_81.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Peace Reload
+  Category: Story
+  Tags: []
+  CueId: 85
+  ReplacementPath: Ryo/P3R/link_85.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Strength of Heart
+  Category: Story
+  Tags: []
+  CueId: 86
+  ReplacementPath: Ryo/P3R/link_86.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Everyone Loves 1989
+  Category: Story
+  Tags: []
+  CueId: 87
+  ReplacementPath: Ryo/P3R/link_87.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: During The Exams
+  Category: Daily Life
+  Tags: []
+  CueId: 89
+  ReplacementPath: Ryo/P3R/link_89.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Bad Feeling
+  Category: Story
+  Tags: []
+  CueId: 90
+  ReplacementPath: Ryo/P3R/link_90.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Afternoon Break
+  Category: Daily Life
+  Tags: []
+  CueId: 91
+  ReplacementPath: Ryo/P3R/link_91.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Aria of The Soul (Interlude)
+  Category: ''
+  Tags: []
+  CueId: 93
+  ReplacementPath: Ryo/P3R/link_93.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: p3ct004_01
+  Category: ''
+  Tags: []
+  CueId: 94
+  ReplacementPath: Ryo/P3R/link_94.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Color Your Night
+  Category: ''
+  Tags: []
+  CueId: 97
+  ReplacementPath: Ryo/P3R/link_97.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I Will Protect You (Unused?)
+  Category: ''
+  Tags: []
+  CueId: 98
+  ReplacementPath: Ryo/P3R/link_98.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Memories of You (Instrumental)
+  Category: ''
+  Tags: []
+  CueId: 99
+  ReplacementPath: Ryo/P3R/link_99.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Nyx
+  Category: ''
+  Tags: []
+  CueId: 100
+  ReplacementPath: Ryo/P3R/link_100.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I Will Protect You (Alternate)
+  Category: ''
+  Tags: []
+  CueId: 101
+  ReplacementPath: Ryo/P3R/link_101.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Shadow (No Intro)
+  Category: ''
+  Tags: []
+  CueId: 102
+  ReplacementPath: Ryo/P3R/link_102.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: It's Going Down Now
+  Category: ''
+  Tags: []
+  CueId: 128
+  ReplacementPath: Ryo/P3R/link_128.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Master of Shadow -Reload- (Cue 129)
+  Category: ''
+  Tags: []
+  CueId: 129
+  ReplacementPath: Ryo/P3R/link_129.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Abandoned Streets
+  Category: ''
+  Tags: []
+  CueId: 200
+  ReplacementPath: Ryo/P3R/link_200.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: This is How It Should Be...
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_170_170_A.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Living With Determination (alternate)
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_200_070_A.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Unknown
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_190_190_A.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I Will Protect You -Reload-
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_220_040_A.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Victory (Again)
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_Result_04.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Victory
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_Result_02.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Period (Again)
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_Result_03.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Period
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_Result_01.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Blooming Villain
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_36.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Will Power
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_35.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I Believe
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_34
+  Encoder: HCA (Persona 3 Reload)
+- Name: Gentle Madman
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_33.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Kichijoji 199X
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_32.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Beneath The Mask
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_31.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Life Will Change
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_30.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: The Almighty
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_26.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I'll Face Myself (Mitsuo)
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_25.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Long Way
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_24.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Heaven
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_23.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Junes Theme
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_22.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Shin Mitsuo Tensei
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_21.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Backside of The TV
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_20.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Throw Your Mask Away
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_10.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Yaldabaoth
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_09.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Rivers In The Desert
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_08.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Take Over
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_07.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Last Surprise
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_06.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Fog/Mist
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_05.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: A New World Fool
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_04.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: I'll Face Myself -Battle-
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_03.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Time To Make History
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_02.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Reach Out To The Truth
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_Sound_01.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Persona Invocation
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_100_285_A.hca
+  Encoder: HCA (Persona 3 Reload)
+- Name: Late Arrival
+  Category: ''
+  Tags: []
+  CueId: -1
+  ReplacementPath: Ryo/P3R/link_100_050_B.hca
+  Encoder: HCA (Persona 3 Reload)

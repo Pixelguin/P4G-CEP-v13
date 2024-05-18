@@ -1,0 +1,188 @@
+import("yumi.msg");
+
+void EVE_END_SYSMES_BU1_hook()
+{
+    int var63;
+    int msg;
+    var63 = EVT_FUNCTION_0022( 25 );
+    bool isChat = BIT_CHK(6380);
+    
+    if ( BIT_CHK( 2571 ) == 1 )
+    {
+        if(isChat)
+            msg = ChatEndEx;
+        else
+            msg = 9;
+    }
+    else if ( GET_SL_LEVEL( var63 ) >= 10 )
+    {
+        if(isChat)
+            msg = ChatEnd2;
+        else
+            msg = 8;
+    }
+    else if ( GET_SL_LEVEL( var63 ) >= 5 )
+    {
+        if(isChat)
+            msg = ChatEnd1;
+        else
+            msg = 7;
+    }
+    else 
+    {
+        if(isChat)
+            msg = ChatEnd;
+        else
+            msg = 6;
+    }
+
+    OPEN_MSG_WIN();
+    MSG( msg );
+    CLOSE_MSG_WIN();
+}
+
+void COMMUNITY_POINT_BU1_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var66;
+    int var64;
+    int var67;
+    int var65;
+    var66 = 237;
+    var64 = 900;
+    var67 = GET_CNT( var66 );
+    
+    if ( var67 >= 2000 )
+    {
+        var65 = 15;
+        SET_CNT( var66, ( var67 - 2000 ) );
+    }
+    else if ( var67 >= 1000 )
+    {
+        var65 = 10;
+        SET_CNT( var66, ( var67 - 1000 ) );
+    }
+    else 
+    {
+        var65 = 5;
+    }
+
+    EVT_FUNCTION_0016( EVT_FUNCTION_0022( 25 ) );
+    EVT_FUNCTION_0031( EVT_FUNCTION_0022( 25 ), var65, var64 );
+    EVT_FUNCTION_0016( 0 );
+}
+
+void EVE_MES_BU1_hook()
+{
+    bool isChat = BIT_CHK(6380);
+    int var33;
+    int var34;
+    int var35;
+    int var36;
+    int var38;
+    int var37;
+    int var32;
+    int var31;
+    int generalMsg;
+    var33 = 0;
+    var34 = 0;
+    var35 = 237;
+    var36 = GET_CNT( var35 );
+    var38 = ( var36 / 100 );
+    var36 = ( var36 - ( var38 * 100 ) );
+    var37 = ( var36 / 10 );
+    var32 = EVT_FUNCTION_0022( 25 );
+    var31 = 5;
+    
+    if ( ( GET_SL_LEVEL( var32 ) <= 9 ) && ( GET_SL_LEVEL( var32 ) >= 5 ) )
+    {
+        var34 = 1;
+    }
+    else if ( ( GET_SL_LEVEL( 25 ) == 10 ) && ( EVT_FUNCTION_0002( 26 ) == 0 ) )
+    {
+        generalMsg = 1;
+    }
+    else 
+    {
+        generalMsg = 0;
+    }
+
+    
+    if ( ( ( ( ( CHECK_TIME_SPAN( 12, 1, 12, 23 ) == 1 ) && ( BIT_CHK( 23 ) == 1 ) ) && ( GET_CNT( 237 ) < 100 ) ) && ( GET_SL_LEVEL( 25 ) == 10 ) ) && ( EVT_FUNCTION_0002( 26 ) == 0 ) )
+    {
+        generalMsg = 12;
+    }
+
+    if(isChat)
+    {
+        generalMsg = NightPassChat;
+    }
+    
+    if ( var34 == 1 )
+    {
+        OPEN_MSG_WIN();
+        MSG( BU1_NIGHT_PASS_EX01 );
+        CLOSE_MSG_WIN();
+        OPEN_MSG_WIN();
+        
+        if ( CHECK_TIME_SPAN( 7, 26, 8, 31 ) == 1 )
+        {
+            MSG( BU1_NIGHT_PASS_EX02_S );
+        }
+        else 
+        {
+            MSG( BU1_NIGHT_PASS_EX02 );
+        }
+
+        CLOSE_MSG_WIN();
+        var33 = 5;
+        
+        if ( var33 > 5 )
+        {
+            var36 = GET_CNT( var35 );
+            
+            if ( var33 > 10 )
+            {
+                var36 = ( var36 + 2000 );
+            }
+            else 
+            {
+                var36 = ( var36 + 1000 );
+            }
+
+            SET_CNT( var35, var36 );
+        }
+
+        OPEN_MSG_WIN();
+        
+        if ( var33 > 0 )
+        {
+            COMMUNITY_POINT_BU1();
+        }
+
+        if(isChat)
+        {
+            MSG( NightPassExChat );
+        }
+        else
+        {
+            MSG( BU1_NIGHT_PASS_EX03 );
+        }
+    }
+    else 
+    {
+        OPEN_MSG_WIN();
+        MSG( generalMsg );
+    }
+
+    
+    if ( CHECK_IF_SL_LVLUP( var32 ) == 1 )
+    {
+        MSG( var31 );
+    }
+
+    CLOSE_MSG_WIN();
+}

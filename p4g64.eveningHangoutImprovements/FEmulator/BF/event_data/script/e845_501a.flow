@@ -1,0 +1,91 @@
+import("chie.msg");
+
+void EVE_MES_CHI_hook()
+{
+    int var31;
+    int msg;
+    int var30;
+    var31 = EVT_FUNCTION_0022( 11 );
+    msg = 0;
+    var30 = 1;
+    
+    if ( ( ( ( ( CHECK_TIME_SPAN( 12, 1, 12, 23 ) == 1 ) && ( BIT_CHK( 23 ) == 1 ) ) && ( GET_CNT( 231 ) < 100 ) ) && ( GET_SL_LEVEL( 11 ) >= 9 ) ) && ( EVT_FUNCTION_0002( 12 ) == 0 ) )
+    {
+        msg = 6;
+    }
+
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var31 ) == 1 )
+    {
+        MSG( var30 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+void EVE_END_SYSMES_CHI_hook()
+{
+    bool isChat = BIT_CHK(6380);
+    int msg;
+    
+    if ( BIT_CHK( 2571 ) == 1 )
+    {
+        if(isChat)
+            msg = ChatEndEx;
+        else
+            msg = 3;
+    }
+    else 
+    {
+        if(isChat)
+            msg = ChatEnd;
+        else
+            msg = 2;    
+    }
+
+    OPEN_MSG_WIN();
+    MSG( msg );
+    CLOSE_MSG_WIN();
+}
+
+
+void COMMUNITY_POINT_CHI_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var57;
+    int var55;
+    int var58;
+    int var56;
+    var57 = 231;
+    var55 = 3;
+    var58 = GET_CNT( var57 );
+    
+    if ( var58 >= 2000 )
+    {
+        var56 = 15;
+        SET_CNT( var57, ( var58 - 2000 ) );
+    }
+    else if ( var58 >= 1000 )
+    {
+        var56 = 10;
+        SET_CNT( var57, ( var58 - 1000 ) );
+    }
+    else 
+    {
+        var56 = 5;
+    }
+
+    EVT_FUNCTION_0016( EVT_FUNCTION_0022( 11 ) );
+    EVT_FUNCTION_0031( EVT_FUNCTION_0022( 11 ), var56, var55 );
+    EVT_FUNCTION_0016( 0 );
+}
+

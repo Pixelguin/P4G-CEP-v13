@@ -1,0 +1,9 @@
+bool ModMenuEnabled()
+{
+	return BIT_CHK(6321);
+}
+
+bool ModMenuShown()
+{
+	return true;
+}

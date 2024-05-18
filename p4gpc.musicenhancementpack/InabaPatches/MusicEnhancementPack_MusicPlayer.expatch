@@ -1,0 +1,70 @@
+[replacement Music Enhancement Pack 12]
+search = "Memories"
+replacement = "Girl of the Hollow Forest -another ver.-"
+index = 14
+// Placed higher to avoid conflict with "A Corner of Memories"
+
+[replacement Music Enhancement Pack 01]
+search = "Border of Insanity"
+replacement = "Borderline of Madness"
+index = 3
+
+[replacement Music Enhancement Pack 02]
+search = "Strength of Heart (P4 ver.)"
+replacement = "The Power of the Heart"
+index = 3
+
+[replacement Music Enhancement Pack 03]
+search = "The Path is Open (P4 ver.)"
+replacement = "The Path is Open"
+index = 3
+
+[replacement Music Enhancement Pack 04]
+search = "Glimpse of a Memory"
+replacement = "A Corner of Memories"
+index = 3
+
+[replacement Music Enhancement Pack 05]
+search = "Aria of the Soul"
+replacement = "Poem for Everyone's Souls"
+index = 3
+
+[replacement Music Enhancement Pack 06]
+search = "Studio Backlot"
+replacement = "Backside of the TV"
+index = 3
+
+[replacement Music Enhancement Pack 07]
+search = "Striptease"
+replacement = "Theater"
+index = 53
+
+[replacement Music Enhancement Pack 08]
+search = "Burn My Dread"
+replacement = "Persona Dancing"
+index = 3
+
+[replacement Music Enhancement Pack 09]
+search = "Deduction (Another Ver.)"
+replacement = "Deduction -another ver.-"
+index = 3
+
+[replacement Music Enhancement Pack 10]
+search = "I'll Face Myself (Another Ver.)"
+replacement = "I'll Face Myself -another ver.-"
+index = 3
+
+[replacement Music Enhancement Pack 11]
+search = "Girl of the Hollow Forest"
+replacement = "Just Like the Wind -another ver.-"
+index = 3
+
+[replacement Music Enhancement Pack 13]
+search = "Revelations: Mitsuo"
+replacement = "Shin Mitsuo Tensei"
+index = 3
+
+[replacement Music Enhancement Pack 14]
+search = "Electronica of the Soul"
+replacement = "Electronica in Velvet Room"
+index = 3

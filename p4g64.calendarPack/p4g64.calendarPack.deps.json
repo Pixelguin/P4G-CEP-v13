@@ -1,0 +1,97 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "p4g64.calendarPack/1.0.0": {
+        "dependencies": {
+          "CriFs.V2.Hook.Interfaces": "1.0.0",
+          "Reloaded.Mod.Interfaces": "2.4.0",
+          "Reloaded.SharedLib.Hooks": "1.9.0"
+        },
+        "runtime": {
+          "p4g64.calendarPack.dll": {}
+        }
+      },
+      "CriFsV2Lib.Definitions/1.1.0": {
+        "runtime": {
+          "lib/net7.0/CriFsV2Lib.Definitions.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "Reloaded.Hooks.Definitions/1.11.0": {
+        "runtime": {
+          "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
+            "assemblyVersion": "1.11.0.0",
+            "fileVersion": "1.11.0.0"
+          }
+        }
+      },
+      "Reloaded.Mod.Interfaces/2.4.0": {},
+      "Reloaded.SharedLib.Hooks/1.9.0": {
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.11.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.dll": {
+            "assemblyVersion": "1.9.0.0",
+            "fileVersion": "1.9.0.0"
+          }
+        }
+      },
+      "CriFs.V2.Hook.Interfaces/1.0.0": {
+        "dependencies": {
+          "CriFsV2Lib.Definitions": "1.1.0"
+        },
+        "runtime": {
+          "CriFs.V2.Hook.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "p4g64.calendarPack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CriFsV2Lib.Definitions/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hPvJ4DR16lVSYHSddUsMTUQLajCALhNA+GDfAY0VMa4xSvBOEbZeCuj2tYO8GqeQMyiosL0/aRaFZ2OgFefRKA==",
+      "path": "crifsv2lib.definitions/1.1.0",
+      "hashPath": "crifsv2lib.definitions.1.1.0.nupkg.sha512"
+    },
+    "Reloaded.Hooks.Definitions/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/z0AwcCvVTQHlQ9SMMMBqKEIrm5t/yBFPylySW2Rnr7uRGV9jGfoACFe79KZKF976dhtkyy2xl0HIXz5hRUkng==",
+      "path": "reloaded.hooks.definitions/1.11.0",
+      "hashPath": "reloaded.hooks.definitions.1.11.0.nupkg.sha512"
+    },
+    "Reloaded.Mod.Interfaces/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKQu7M0MyToKU4NK5Ula29MXSNeHz01ZzMK9BWD+xqJCITemAPdMW+w60Swln3ceGCU/ZooFSKtn4I8rcSA9AQ==",
+      "path": "reloaded.mod.interfaces/2.4.0",
+      "hashPath": "reloaded.mod.interfaces.2.4.0.nupkg.sha512"
+    },
+    "Reloaded.SharedLib.Hooks/1.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AEDTDhCnYxJGuLrdZCZPoiqrdl/lW4XwA6bb5dntOvkyw4RBBm/gqoNlHS7RJS7k+kt36ES+UFZAtBeyusYtgw==",
+      "path": "reloaded.sharedlib.hooks/1.9.0",
+      "hashPath": "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
+    },
+    "CriFs.V2.Hook.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

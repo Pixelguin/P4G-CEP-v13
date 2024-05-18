@@ -1,0 +1,91 @@
+import("yukiko.msg");
+
+void EVE_MES_YUK_hook()
+{
+    int var31;
+    int msg;
+    int var30;
+    var31 = EVT_FUNCTION_0022( 5 );
+    msg = 0;
+    var30 = 1;
+    
+    if ( ( ( ( ( CHECK_TIME_SPAN( 12, 1, 12, 23 ) == 1 ) && ( BIT_CHK( 23 ) == 1 ) ) && ( GET_CNT( 232 ) < 100 ) ) && ( GET_SL_LEVEL( 5 ) >= 9 ) ) && ( EVT_FUNCTION_0002( 6 ) == 0 ) )
+    {
+        msg = 6;
+    }
+
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var31 ) == 1 )
+    {
+        MSG( var30 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+void EVE_END_SYSMES_YUK_hook()
+{
+    bool isChat = BIT_CHK(6380);
+    int endMsg;
+    
+    if ( BIT_CHK( 2571 ) == 1 )
+    {
+        if(isChat)
+            endMsg = ChatEndEx;
+        else
+            endMsg = 3;
+    }
+    else 
+    {
+        if(isChat)
+            endMsg = ChatEnd;
+        else
+            endMsg = 2;
+    }
+
+    OPEN_MSG_WIN();
+    MSG( endMsg );
+    CLOSE_MSG_WIN();
+}
+
+
+void COMMUNITY_POINT_YUK_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var60;
+    int var58;
+    int var61;
+    int var59;
+    var60 = 232;
+    var58 = 4;
+    var61 = GET_CNT( var60 );
+    
+    if ( var61 >= 2000 )
+    {
+        var59 = 15;
+        SET_CNT( var60, ( var61 - 2000 ) );
+    }
+    else if ( var61 >= 1000 )
+    {
+        var59 = 10;
+        SET_CNT( var60, ( var61 - 1000 ) );
+    }
+    else 
+    {
+        var59 = 5;
+    }
+
+    EVT_FUNCTION_0016( EVT_FUNCTION_0022( 5 ) );
+    EVT_FUNCTION_0031( EVT_FUNCTION_0022( 5 ), var59, var58 );
+    EVT_FUNCTION_0016( 0 );
+}
+

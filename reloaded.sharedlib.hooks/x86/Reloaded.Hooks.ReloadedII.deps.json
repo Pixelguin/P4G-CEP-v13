@@ -1,0 +1,173 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0/win-x86",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {},
+    ".NETCoreApp,Version=v7.0/win-x86": {
+      "Reloaded.Hooks.ReloadedII/1.0.0": {
+        "dependencies": {
+          "Reloaded.Hooks": "4.3.1",
+          "Reloaded.Mod.Interfaces": "2.4.0",
+          "Reloaded.SharedLib.Hooks": "1.14.0",
+          "Reloaded.Hooks.ReloadedII.Interfaces": "1.14.0.0"
+        },
+        "runtime": {
+          "Reloaded.Hooks.ReloadedII.dll": {}
+        }
+      },
+      "Iced/1.17.0": {
+        "runtime": {
+          "lib/netstandard2.1/Iced.dll": {
+            "assemblyVersion": "1.17.0.0",
+            "fileVersion": "1.17.0.0"
+          }
+        }
+      },
+      "Reloaded.Assembler/1.0.14": {
+        "dependencies": {
+          "Reloaded.Memory.Buffers": "2.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Reloaded.Assembler.dll": {
+            "assemblyVersion": "1.0.14.0",
+            "fileVersion": "1.0.14.0"
+          }
+        }
+      },
+      "Reloaded.Hooks/4.3.1": {
+        "dependencies": {
+          "Iced": "1.17.0",
+          "Reloaded.Assembler": "1.0.14",
+          "Reloaded.Hooks.Definitions": "1.15.0",
+          "Reloaded.Memory.Buffers": "2.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Reloaded.Hooks.dll": {
+            "assemblyVersion": "4.3.1.0",
+            "fileVersion": "4.3.1.0"
+          }
+        }
+      },
+      "Reloaded.Hooks.Definitions/1.15.0": {
+        "runtime": {
+          "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
+            "assemblyVersion": "1.15.0.0",
+            "fileVersion": "1.15.0.0"
+          }
+        }
+      },
+      "Reloaded.Memory/7.0.0": {
+        "runtime": {
+          "lib/net6.0/Reloaded.Memory.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "Reloaded.Memory.Buffers/2.0.0": {
+        "dependencies": {
+          "Reloaded.Memory": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Reloaded.Memory.Buffers.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "Reloaded.Mod.Interfaces/2.4.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Reloaded.Mod.Interfaces.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
+        }
+      },
+      "Reloaded.SharedLib.Hooks/1.14.0": {
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.15.0"
+        },
+        "runtime": {
+          "Reloaded.Hooks.ReloadedII.Interfaces.dll": {}
+        }
+      },
+      "Reloaded.Hooks.ReloadedII.Interfaces/1.14.0.0": {
+        "runtime": {
+          "Reloaded.Hooks.ReloadedII.Interfaces.dll": {
+            "assemblyVersion": "1.14.0.0",
+            "fileVersion": "1.14.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reloaded.Hooks.ReloadedII/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Iced/1.17.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8x+HCVTl/HHTGpscH3vMBhV8sknN/muZFw9s3TsI8SA6+c43cOTCi2+jE4KsU8pNLbJ++iF2ZFcpcXHXtDglnw==",
+      "path": "iced/1.17.0",
+      "hashPath": "iced.1.17.0.nupkg.sha512"
+    },
+    "Reloaded.Assembler/1.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-y4I1ktSnHPIz3t1JcWk5Xiu0C0BmrlJ6nDnQGwiyz65RH6hjn9vPCcKYjpQDveuTtsebBFdTdUjxTUSw+qtZ2w==",
+      "path": "reloaded.assembler/1.0.14",
+      "hashPath": "reloaded.assembler.1.0.14.nupkg.sha512"
+    },
+    "Reloaded.Hooks/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/VA5uv+ZUR2bCZGXl3H17NAgBDS/Ug5oYSgQSs9OTXe4qrsg6ZyXYVIbazNQzNeeGJOV1utVq9g29xMiXMNXNw==",
+      "path": "reloaded.hooks/4.3.1",
+      "hashPath": "reloaded.hooks.4.3.1.nupkg.sha512"
+    },
+    "Reloaded.Hooks.Definitions/1.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bLY20vYB0fS2xwu6RDQVwlJxt2//KXLigYrCsCuzt5QFQqkvft4abq9FWPeCJYcvEeg/GQpJ3LC+108/4I2l+g==",
+      "path": "reloaded.hooks.definitions/1.15.0",
+      "hashPath": "reloaded.hooks.definitions.1.15.0.nupkg.sha512"
+    },
+    "Reloaded.Memory/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QGg022yKnymnOGvvWQbIa7s0ODm3YRf4epRtr4D9pQ3KBy7mq/pF5kqCgW1oCmocjKnCKNBOBIz2A4zgZkLNkQ==",
+      "path": "reloaded.memory/7.0.0",
+      "hashPath": "reloaded.memory.7.0.0.nupkg.sha512"
+    },
+    "Reloaded.Memory.Buffers/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LghMip4Q1mpr9+HsZCGYazlaxnZyMtbiGf87Ttao8Al2F+wvnRet1gPPA5qEaTWnBFg/3DNILwBBbC0W6o0tsw==",
+      "path": "reloaded.memory.buffers/2.0.0",
+      "hashPath": "reloaded.memory.buffers.2.0.0.nupkg.sha512"
+    },
+    "Reloaded.Mod.Interfaces/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKQu7M0MyToKU4NK5Ula29MXSNeHz01ZzMK9BWD+xqJCITemAPdMW+w60Swln3ceGCU/ZooFSKtn4I8rcSA9AQ==",
+      "path": "reloaded.mod.interfaces/2.4.0",
+      "hashPath": "reloaded.mod.interfaces.2.4.0.nupkg.sha512"
+    },
+    "Reloaded.SharedLib.Hooks/1.14.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reloaded.Hooks.ReloadedII.Interfaces/1.14.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ModId": "p4gpc.communityenhancementpack13",
+  "ModName": "P4G Community Enhancement Pack",
+  "ModAuthor": "P4G CEP Team",
+  "ModVersion": "13.0.0",
+  "ModDescription": "An all-in-one collection of tools and mods for Persona 4 Golden.\n\nCreated by P4G CEP Team.\nCompiled and maintained by Pixelguin.",
+  "ModDll": "",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "p4gpc.communityenhancementpack13.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": "https://p4g.cep.one/credits"
+}

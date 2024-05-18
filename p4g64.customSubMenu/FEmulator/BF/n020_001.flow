@@ -1,0 +1,302 @@
+import("OtherMods/DungeonOptions/Fox.msg");
+
+void fox_recover_hook()
+{
+    int var17;
+    int var18;
+    int var19;
+    int var27;
+    int var23;
+    int var24;
+    int var25;
+    int var21;
+    int var22;
+    int var26;
+    int var20;
+    int var16;
+    int var28;
+    int var29;
+    var17 = GET_FLOOR_ID();
+    var18 = GET_SL_LEVEL( 13 );
+    var19 = ADD_YEN( 0 );
+    var27 = 1;
+    
+    if ( var18 == 1 )
+    {
+        var23 = 60;
+    }
+    else if ( var18 == 2 )
+    {
+        var23 = 55;
+    }
+    else if ( var18 == 3 )
+    {
+        var23 = 50;
+    }
+    else if ( var18 == 4 )
+    {
+        var23 = 45;
+    }
+    else if ( var18 == 5 )
+    {
+        var23 = 40;
+    }
+    else if ( var18 == 6 )
+    {
+        var23 = 35;
+    }
+    else if ( var18 == 7 )
+    {
+        var23 = 30;
+    }
+    else if ( var18 == 8 )
+    {
+        var23 = 25;
+    }
+    else if ( var18 == 9 )
+    {
+        var23 = 20;
+    }
+    else if ( var18 == 10 )
+    {
+        var23 = 15;
+    }
+    else 
+    {
+        var23 = 100;
+    }
+
+    var24 = ( GET_MONTH() + GET_DAY_OF_MONTH() );
+    _254:
+    
+    if ( var24 >= 4 )
+    {
+        var24 = ( var24 - 4 );
+        goto _254;
+    }
+
+    var25 = GET_DAY_OF_MONTH();
+    _256:
+    
+    if ( var25 >= 10 )
+    {
+        var25 = ( var25 - 10 );
+        goto _256;
+    }
+
+    var21 = GET_CUR_SP( PartyUnit.Protagonist );
+    var22 = GET_TOT_SP( PartyUnit.Protagonist );
+    var26 = 0;
+    _258:
+    
+    if ( var26 < 3 )
+    {
+        var27 = GET_PARTY_MEMBER_ID( var26 );
+        
+        if ( var27 != 0 )
+        {
+            var21 = ( var21 + GET_CUR_SP( var27 ) );
+            var22 = ( var22 + GET_TOT_SP( var27 ) );
+        }
+
+        var26 = ( var26 + 1 );
+        goto _258;
+    }
+
+    var20 = ( ( var22 - var21 ) * var23 );
+    
+    if ( var24 == 1 )
+    {
+        var20 = ( var20 * 1.50f );
+    }
+    else if ( ( var24 == 0 ) || ( var24 == 2 ) )
+    {
+        var20 = ( var20 * 1 );
+    }
+    else if ( var24 == 3 )
+    {
+        var20 = ( var20 * 0.70f );
+    }
+
+    
+    if ( var20 > 9999999 )
+    {
+        var20 = 9999999;
+    }
+
+    
+    if ( BIT_CHK( 3081 ) == 0 )
+    {
+        BIT_ON( 3081 );
+        OPEN_MSG_WIN();
+        
+        if ( var24 == 1 )
+        {
+            MSG( FOX_FIRST_BAD );
+        }
+        else if ( ( var24 == 0 ) || ( var24 == 2 ) )
+        {
+            MSG( FOX_FIRST_NORMAL );
+        }
+        else if ( var24 == 3 )
+        {
+            MSG( FOX_FIRST_GOOD );
+        }
+
+        CLOSE_MSG_WIN();
+        
+        if ( ( var17 == 1 ) && ( CHECK_TIME_SPAN( 4, 1, 7, 9 ) == 1 ) )
+        {
+            OPEN_MSG_WIN();
+            MSG( FOX_FIRST_KUMA );
+            CLOSE_MSG_WIN();
+        }
+
+        if(BIT_CHK(6330))
+            HELP_MSG( FOX_HELP );
+
+    }
+
+    OPEN_MSG_WIN();
+    
+    if ( var24 == 1 )
+    {
+        MSG( FOX_TALK_BAD );
+    }
+    else if ( ( var24 == 0 ) || ( var24 == 2 ) )
+    {
+        MSG( FOX_TALK_NORMAL );
+    }
+    else if ( var24 == 3 )
+    {
+        MSG( FOX_TALK_GOOD );
+    }
+
+    SEL_CHK_PAD( 14, 2 );
+    var16 = SEL( FOX_SEL );
+    CLOSE_MSG_WIN();
+    
+    if ( var16 != 2 )
+    {
+        OPEN_MSG_WIN();
+        
+        if ( var16 == 0 )
+        {
+            
+            if ( var20 == 0 )
+            {
+                MSG( RECOVER_NOT_NEED );
+            }
+            else 
+            {
+                SET_MSG_VAR( 0, var20, 0 );
+                SET_MSG_VAR( 1, var19, 0 );
+                MSG( RECOVER_OK );
+                SEL_CHK_PAD( 14, 1 );
+                var16 = SEL( PAY_SEL );
+                
+                if ( var16 == 0 )
+                {
+                    
+                    if ( var20 > var19 )
+                    {
+                        MSG( RECOVER_NO_MONEY );
+                    }
+                    else 
+                    {
+                        var20 = ( var20 * -1 );
+                        ADD_YEN( var20 );
+                        MSG( RECOVER_START );
+                        CLOSE_MSG_WIN();
+                        WAIT( 10 );
+                        recovery_SP();
+                        OPEN_MSG_WIN();
+                        MSG( RECOVER_DONE );
+                    }
+
+                }
+
+            }
+
+        }
+        else if ( var16 == 1 )
+        {
+            
+            if ( var24 == 1 )
+            {
+                MSG( FOX_FEEL_BAD );
+            }
+            else if ( ( var24 == 0 ) || ( var24 == 2 ) )
+            {
+                MSG( FOX_FEEL_NORMAL );
+            }
+            else if ( var24 == 3 )
+            {
+                MSG( FOX_FEEL_GOOD );
+            }
+
+            
+            if ( BIT_CHK( 3099 ) == 0 )
+            {
+                BIT_ON( 3099 );
+                
+                if ( ( ( ( ( var24 == 3 ) && ( BIT_CHK( 3162 ) == 1 ) ) && ( ( var17 == 1 ) || ( var17 == 161 ) ) ) && ( BIT_CHK( 3115 ) == 0 ) ) && ( CHECK_TIME_SPAN( 4, 1, 3, 31 ) == 1 ) )
+                {
+                    set_costume_martial();
+                    return;
+                }
+                else if ( ( ( ( ( var24 == 3 ) && ( BIT_CHK( 3162 ) == 1 ) ) && ( ( var17 == 1 ) || ( var17 == 161 ) ) ) && ( BIT_CHK( 3114 ) == 0 ) ) && ( CHECK_TIME_SPAN( 6, 0x10, 3, 31 ) == 1 ) )
+                {
+                    set_costume_zoku();
+                    return;
+                }
+                else if ( ( ( ( ( var24 == 3 ) && ( BIT_CHK( 3162 ) == 1 ) ) && ( ( var17 == 1 ) || ( var17 == 161 ) ) ) && ( BIT_CHK( 3117 ) == 0 ) ) && ( CHECK_TIME_SPAN( 7, 10, 3, 31 ) == 1 ) )
+                {
+                    set_costume_prince();
+                    return;
+                }
+                else if ( ( ( ( ( var24 == 3 ) && ( BIT_CHK( 3162 ) == 1 ) ) && ( ( var17 == 1 ) || ( var17 == 161 ) ) ) && ( BIT_CHK( 3116 ) == 0 ) ) && ( CHECK_TIME_SPAN( 8, 13, 3, 31 ) == 1 ) )
+                {
+                    set_costume_jersy();
+                    return;
+                }
+                else 
+                {
+                    BIT_ON( 3162 );
+                    MSG( FOX_GIFT );
+                    
+                    if ( ( ( ( var25 == 0 ) || ( var25 == 1 ) ) || ( var25 == 5 ) ) || ( var25 == 8 ) )
+                    {
+                        var28 = ( 768 + 1 );
+                    }
+                    else if ( ( ( var25 == 2 ) || ( var25 == 6 ) ) || ( var25 == 9 ) )
+                    {
+                        var28 = ( 768 + 11 );
+                    }
+                    else if ( ( var25 == 3 ) || ( var25 == 7 ) )
+                    {
+                        var28 = ( 768 + 12 );
+                    }
+                    else 
+                    {
+                        var28 = ( 768 + 13 );
+                    }
+
+                }
+
+                CLOSE_MSG_WIN();
+                var29 = ( GET_ITEM( var28 ) + 1 );
+                SET_ITEM( var28, var29 );
+                SET_MSG_VAR( 0, var28, 1 );
+                SET_MSG_VAR( 1, 1, 0 );
+                OPEN_MSG_WIN();
+                MSG( GET_ITEM_FOX );
+            }
+
+        }
+
+        CLOSE_MSG_WIN();
+    }
+
+}
+

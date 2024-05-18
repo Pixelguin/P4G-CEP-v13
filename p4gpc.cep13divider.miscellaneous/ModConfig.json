@@ -1,0 +1,26 @@
+{
+  "ModId": "p4gpc.cep13divider.miscellaneous",
+  "ModName": "=============== [ MISCELLANEOUS ] ===============",
+  "ModAuthor": "",
+  "ModVersion": "",
+  "ModDescription": "Template for a Reloaded Mod Configuration",
+  "ModDll": "",
+  "ModIcon": "Preview_divider.png",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "p4gpc.cep13divider.miscellaneous.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": ""
+}

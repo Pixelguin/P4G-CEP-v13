@@ -1,0 +1,296 @@
+// DivineMother, DivineMother, WrathfulBook
+656
+
+// DivineMother, PurePapillon, PurePapillon, PurePapillon
+657
+
+// DivineMother, EternalSand, EternalSand
+658
+
+// CrazyTwins, CrazyTwins, WrathfulBook
+659
+
+// CrazyTwins, CrazyTwins, PurePapillon, PurePapillon
+660
+
+// CrazyTwins, CrazyTwins, EternalSand
+661
+
+// EmperorBeetle, WrathfulBook, WrathfulBook
+662
+
+// EmperorBeetle, PurePapillon, PurePapillon, PurePapillon
+663
+
+// EmperorBeetle, EternalSand, EternalSand
+664
+
+// WrathfulBook, PurePapillon, PurePapillon, EternalSand, EternalSand
+665
+
+// WrathfulBook, WrathfulBook, PurePapillon, PurePapillon, EternalSand
+666
+
+// SilentNyogo, SilentNyogo, SilentNyogo, DivineMother
+668
+
+// SilentNyogo, SilentNyogo, MistressPot, WrathfulBook
+669
+
+// SilentNyogo, SilentNyogo, MistressPot, PurePapillon
+670
+
+// SilentNyogo, SilentNyogo, WrathfulBook, PurePapillon, PurePapillon
+671
+
+// PrimitiveIdol, PrimitiveIdol, CrazyTwins, CrazyTwins
+672
+
+// PrimitiveIdol, MistressPot, PurePapillon, PurePapillon
+673
+
+// PrimitiveIdol, PrimitiveIdol, MistressPot, WrathfulBook
+674
+
+// PrimitiveIdol, PurePapillon, PurePapillon, EternalSand, EternalSand
+675
+
+// PhantomHero, PhantomHero, EmperorBeetle, EmperorBeetle
+676
+
+// PhantomHero, MistressPot, WrathfulBook, WrathfulBook
+677
+
+// PhantomHero, PhantomHero, MistressPot, EternalSand, EternalSand
+678
+
+// PhantomHero, PhantomHero, WrathfulBook, WrathfulBook, EternalSand
+679
+
+// GrandMagus, EmperorBeetle, EmperorBeetle
+681
+
+// GrandMagus, CrazyTwins, CrazyTwins
+682
+
+// GrandMagus, MistressPot, DivineMother
+683
+
+// GrandMagus, PurePapillon, PurePapillon, SilentNyogo
+684
+
+// GrandMagus, WrathfulBook, WrathfulBook, EternalSand
+685
+
+// GrudgeTower, GrudgeTower, GrudgeTower, EmperorBeetle, CrazyTwins
+686
+
+// GrudgeTower, GrudgeTower, PrimitiveIdol, DivineMother
+687
+
+// GrudgeTower, GrudgeTower, GrudgeTower, PhantomHero, SilentNyogo
+688
+
+// PrimitiveIdol, PrimitiveIdol, PhantomHero, EternalSand, EternalSand
+689
+
+// PrimitiveIdol, PhantomHero, PhantomHero, WrathfulBook
+690
+
+// DoomSword, DoomSword, GraciousCupid, GraciousCupid, GraciousCupid
+692
+
+// DoomSword, DoomSword, EternalEagle, EternalEagle
+693
+
+// AcheronSeeker, AcheronSeeker, GraciousCupid, GraciousCupid
+694
+
+// AcheronSeeker, EternalEagle, EternalEagle, EternalEagle
+695
+
+// JotunofGrief, GraciousCupid, GraciousCupid, GraciousCupid
+696
+
+// JotunofGrief, EternalEagle, EternalEagle
+697
+
+// BerserkTurret, GraciousCupid, GraciousCupid, GraciousCupid, GraciousCupid
+698
+
+// BerserkTurret, BerserkTurret, EternalEagle, EternalEagle
+699
+
+// GrandMagus, GrandMagus, GrudgeTower, GrudgeTower, GrudgeTower
+700
+
+// GrandMagus, GrandMagus, DoomSword, DoomSword
+701
+
+// GrudgeTower, GrudgeTower, AcheronSeeker, AcheronSeeker
+702
+
+// GrudgeTower, GrudgeTower, GrudgeTower, JotunofGrief
+703
+
+// RampageDrive, RampageDrive, MoonOkina
+705
+
+// RampageDrive, NextGene, NextGene, JotunofGrief
+706
+
+// RampageDrive, NextGene, DoomSword, DoomSword
+707
+
+// RampageDrive, GraciousCupid, GraciousCupid, EternalEagle, EternalEagle
+708
+
+// PtarmiganPanzer, MoonOkina, MoonOkina
+709
+
+// PtarmiganPanzer, NextGene, JotunofGrief, JotunofGrief
+710
+
+// PtarmiganPanzer, JotunofGrief, DoomSword
+711
+
+// PtarmiganPanzer, GraciousCupid, GraciousCupid, GraciousCupid, EternalEagle
+712
+
+// MoonOkina, MoonOkina, BerserkTurret, DoomSword
+713
+
+// MoonOkina, MoonOkina, JotunofGrief, AcheronSeeker
+714
+
+// NextGene, NextGene, NextGene, BerserkTurret, AcheronSeeker
+715
+
+// NextGene, NextGene, NextGene, JotunofGrief, DoomSword
+716
+
+// BrilliantKing, StoicSnake, StoicSnake
+718
+
+// BrilliantKing, SuccessfulJunecy, SuccessfulJunecy
+719
+
+// BrilliantKing, RampageDrive
+720
+
+// BrilliantKing, PtarmiganPanzer
+721
+
+// RebelliousCyclops, RebelliousCyclops, StoicSnake, StoicSnake
+722
+
+// RebelliousCyclops, RebelliousCyclops, SuccessfulJunecy, SuccessfulJunecy
+723
+
+// RebelliousCyclops, RebelliousCyclops, MoonOkina, NextGene, NextGene
+724
+
+// StoicSnake, StoicSnake, SuccessfulJunecy, RampageDrive
+725
+
+// StoicSnake, SuccessfulJunecy, SuccessfulJunecy, PtarmiganPanzer
+726
+
+// HeartlessMachine, ReckoningDice
+728
+
+// HeartlessMachine, StoicSnake, StoicSnake
+729
+
+// HeartlessMachine, SuccessfulJunecy, SuccessfulJunecy
+730
+
+// VoidGiant, VoidGiant, BrilliantKing
+731
+
+// VoidGiant, VoidGiant, RebelliousCyclops
+732
+
+// VoidGiant, VoidGiant, StoicSnake, SuccessfulJunecy
+733
+
+// NeoMinotaur239, BrilliantKing
+734
+
+// NeoMinotaur239, RebelliousCyclops, RebelliousCyclops
+735
+
+// NeoMinotaur239, SuccessfulJunecy, ReckoningDice
+736
+
+// ElDoradoBeast, BrilliantKing
+737
+
+// ElDoradoBeast, ElDoradoBeast, StoicSnake, StoicSnake
+738
+
+// ElDoradoBeast, ElDoradoBeast, ReckoningDice, SuccessfulJunecy
+739
+
+// VoidGiant, RebelliousCyclops, BerserkTurret
+741
+
+// VoidGiant, PtarmiganPanzer, JotunofGrief
+742
+
+// VoidGiant, RampageDrive, AcheronSeeker
+743
+
+// NeoMinotaur239, RebelliousCyclops, BerserkTurret
+744
+
+// NeoMinotaur239, PtarmiganPanzer, JotunofGrief
+745
+
+// NeoMinotaur239, RampageDrive, AcheronSeeker
+746
+
+// ElDoradoBeast, RebelliousCyclops, BerserkTurret
+747
+
+// ElDoradoBeast, PtarmiganPanzer, JotunofGrief
+748
+
+// ElDoradoBeast, RampageDrive, AcheronSeeker
+749
+
+// HeartlessMachine, ReckoningDice, SuccessfulJunecy
+750
+
+// HeartlessMachine, ReckoningDice, BerserkTurret
+751
+
+// HeartlessMachine, DoomSword, BerserkTurret
+752
+
+// GrandMagus, GrandMagus, EmperorBeetle, EmperorBeetle
+754
+
+// GrandMagus, GrandMagus, MistressPot
+755
+
+// NeoMinotaur239, GraciousCupid, GraciousCupid, GraciousCupid
+756
+
+// ElDoradoBeast, ElDoradoBeast, ReckoningDice
+757
+
+// VoidGiant, VoidGiant, ElDoradoBeast, ElDoradoBeast
+758
+
+// ReckoningDice, ReckoningDice, ReckoningDice
+759
+
+// HeartlessMachine, HeartlessMachine, ReckoningDice
+760
+
+// NeoMinotaur239, NeoMinotaur239, VoidGiant
+761
+
+// ReckoningDice, ReckoningDice, ReckoningDice
+762

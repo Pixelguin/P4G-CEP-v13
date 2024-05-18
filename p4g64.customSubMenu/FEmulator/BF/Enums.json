@@ -1,0 +1,53 @@
+[
+    {
+        "Name": "Dungeon",
+        "Description": "The dungeoens in the game",
+        "Members": [
+            {
+                "Name": "Yukiko",
+                "Value": 0,
+                "Description": ""
+            },
+            {
+                "Name": "Kanji",
+                "Value": 1,
+                "Description": ""
+            },
+            {
+                "Name": "Rise",
+                "Value": 2,
+                "Description": ""
+            },
+            {
+                "Name": "Mitsuo",
+                "Value": 3,
+                "Description": ""
+            },
+            {
+                "Name": "Naoto",
+                "Value": 4,
+                "Description": ""
+            },
+            {
+                "Name": "Nanako",
+                "Value": 5,
+                "Description": ""
+            },
+            {
+                "Name": "Adachi",
+                "Value": 6,
+                "Description": ""
+            },
+            {
+                "Name": "Izanami",
+                "Value": 7,
+                "Description": ""
+            },
+            {
+                "Name": "Marie",
+                "Value": 8,
+                "Description": ""
+            }
+        ]
+    }
+]

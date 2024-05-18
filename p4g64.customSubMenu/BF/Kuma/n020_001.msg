@@ -1,0 +1,5 @@
+[msg FOX_FIRST_KUMA [Kuma]]
+[f 0 5 -258][f 2 1][f 4 6 8 3 0 1]Hmm!? What's that weird thing with[n]the red apron?[n][f 1 1][e]
+[f 0 5 -258][f 2 1][f 4 6 8 5 0 1]Huh? Sensei's helper?[n][f 1 1][e]
+[f 0 5 -258][f 2 1]Amazing! Sensei sure knows some[n]neat people![n][f 1 1][e]
+[f 0 5 -258][f 2 1][f 4 6 8 2 0 1]Nice to meet you, Mr. Fox![n]Let's both do our best![n][f 1 1][e]

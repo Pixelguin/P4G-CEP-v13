@@ -1,0 +1,86 @@
+[
+  {
+    "Index": 0,
+    "Name": "",
+    "Description": "",
+    "Functions": [
+      {
+        "Index": 1,
+        "Name": "clr",
+        "Description": "",
+        "Parameters": [
+          {
+            "Name": "color"
+          }
+        ]
+      },
+      {
+        "Index": 5,
+        "Semantic": "Unused"
+      }
+    ]
+  },
+  {
+    "Index": 1,
+    "Name": "",
+    "Description": "",
+    "Functions": [
+      {
+        "Index": 1,
+        "Name": "w",
+        "Description": "Indicates that a message should be confirmed before moving on",
+        "Parameters": []
+      }
+    ]
+  },
+  {
+    "Index": 2,
+    "Name": "",
+    "Description": "",
+    "Functions": [
+      {
+        "Index": 1,
+        "Name": "s",
+        "Description": "Indicates the start of a line",
+        "Parameters": []
+      },
+      {
+        "Index": 4,
+        "Name": "var",
+        "Description": "Loads name previously defined by SET_MSG_VAR",
+        "Parameters": [
+          {
+            "Name": "VariableID",
+            "Description": "The ID of the variable set by SET_MSG_VAR function."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Index": 4,
+    "Name": "",
+    "Description": "",
+    "Functions": [
+      {
+        "Index": 6,
+        "Name": "bup",
+        "Description": "",
+        "Parameters": [
+          {
+            "Name": "param1"
+          },
+          {
+            "Name": "param2"
+          },
+          {
+            "Name": "param3"
+          },
+          {
+            "Name": "param4"
+          }
+        ]
+      }
+    ]
+  }
+]

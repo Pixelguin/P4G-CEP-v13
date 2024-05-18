@@ -1,0 +1,19 @@
+[replacement Title Bar Fix 1]
+pattern =           47 00 4F 00 4C 00 44 00 45 00 4E	// "GOLDEN" with a null between each character       
+replacement = bytes(47 00 6F 00 6C 00 64 00 65 00 6E)   // "Golden" with a null between each character
+
+[replacement Title Bar Fix 2]
+pattern =           20 00 5B 00 52 00 45 00 56 00 3A 00 20 00 25 00 64 00 5D	// " [REV: %d]" with a null between each character
+replacement =       ""															// Replace all with null
+
+[replacement Subtitle Fix 1]
+search =      "\nI'll reserve a"
+replacement = " I'll reserve\na"
+
+[replacement Subtitle Fix 2]
+search =      "been through"
+replacement = "been\nthrough"
+
+[replacement Name Change Fix]
+search =      "fixed as"
+replacement = "changed to"

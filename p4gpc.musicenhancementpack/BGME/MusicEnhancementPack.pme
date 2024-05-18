@@ -1,0 +1,100 @@
+// Normal Battles: ROTTT rudiger, TTMH rudiger
+encounter["Normal Battles"]:
+	music = random_song(679, 680)
+end
+
+// === Area collections ===
+
+// Void Quest: ROTTT 14.4mL, TTMH BitLemur
+encounter["Void Quest"]:
+	music = random_song(681, 682)
+end
+
+// Hollow Forest: Memory, Memory unknown
+encounter["Hollow Forest"]:
+	music = random_song(683, 684)
+end
+
+// === Boss collections ===
+
+// Minibosses: TTMH special
+encounter["Minibosses"]:
+	music = 687
+end
+
+// Optional Bosses: RWGYB
+encounter["Optional Bosses"]:
+	music = 689
+end
+
+// Reaper: F.O.E.
+encounter["Reapers"]:
+	music = 686
+end
+
+// === Misc collections ===
+
+// Spooky Fog Man: Borderline of Madness (default)
+encounter["Spooky Fog Man"]:
+	music = "default"
+end
+
+// Golden Hands: LTFUITN
+encounter["Golden Hands"]:
+	music = 685
+end
+
+// === Boss overrides ===
+
+// Mitsuo: Shin Mitsuo Tensei
+encounter["Shadow Mitsuo"]:
+	music = "default"
+end
+
+// Adachi: Ying Yang
+encounter["Adachi"]:
+	music = 691
+end
+
+// Marie: Just Like the Wind (manual replacement - 078)
+encounter["Marie"]:
+	music = 78
+end
+
+// Kusumi-no-Okami: I'll Face Myself -Reincarnation-
+encounter["Kusumi-no-Okami"]:
+	music = "default"
+end
+
+// Margaret: The Battle For Everyone's Souls
+encounter["Margaret"]:
+	music = 692
+end
+
+// === Miniboss overrides ===
+
+// Void Quest Miniboss: TTMH BitLemur
+encounter[814]:
+	music = 682
+end
+
+// Void Quest Optional Boss: Shin Mitsuo Tensei
+encounter[529]:
+	music = 81
+end
+
+// Hollow Forest Minibosses: Memory special
+encounter[938]:
+	music = 688
+end
+
+encounter[939]:
+	music = 688
+end
+
+// === Misc overrides ===
+
+// Tutorial Battle: ROTTT P4A
+encounter[524]:
+	music = 690
+end

@@ -1,0 +1,35 @@
+import("DungeonEnter.msg");
+
+global( 6 ) int enterSelMsg;
+global( 7 ) int enterMsg;
+global( 8 ) int floorSel;
+global( 10 ) int enterAloneSel;
+global( 11 ) int enterAloneMsg;
+
+void EnterDungeon() 
+{
+    int dungeon = GetDungeon();
+    enterAloneSel = EnterAloneSel;
+    floorSel = Yukiko_PORTAL_SEL + dungeon;
+    enterSelMsg = Yukiko_USE_PORTAL + dungeon;
+    
+    if ( dungeon <= Dungeon.Rise && BIT_CHK( 52 ) == 0 ) 
+    {
+        enterAloneMsg = CHECK_KUMA;
+        enterMsg = Yukiko_GO_KUMA + dungeon;
+        
+        if ( dungeon == Dungeon.Yukiko && BIT_CHK( 17 ) == 0 )
+            enterMsg = GO_KUMA_YUKIKO;
+        else if( dungeon == Dungeon.Marie && BIT_CHK( 3906 ))
+            enterMsg = Marie_GO_RISE_2;
+    }
+    else
+    { 
+        enterAloneMsg = CHECK_RISE;
+        enterMsg = Yukiko_GO_RISE + dungeon;
+    }
+
+    item_get_kuma();
+    dng_set_npc();
+    enter_dungeon();
+}

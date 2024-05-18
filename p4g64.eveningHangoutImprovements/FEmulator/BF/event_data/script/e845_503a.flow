@@ -1,0 +1,113 @@
+import("kanji.msg");
+
+void EVE_MES_KAN_hook()
+{
+    int var30;
+    int msg;
+    int var29;
+    var30 = 10;
+    msg = 0;
+    var29 = 1;
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var30 ) == 1 )
+    {
+        MSG( var29 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+
+void EVE_END_SYSMES_KAN_hook()
+{
+    bool isChat = BIT_CHK(6380);
+    int var56;
+    int msg;
+    var56 = RNG2( 100 );
+    
+    if ( var56 < 33 )
+    {
+        if(isChat)
+            msg = ChatEnd2;
+        else
+            msg = 3;
+    }
+    else if ( var56 < 66 )
+    {
+        if(isChat)
+            msg = ChatEnd3;
+        else
+            msg = 4;
+    }
+    else 
+    {
+        if(isChat)
+            msg = ChatEnd;
+        else
+            msg = 2;
+    }
+
+    OPEN_MSG_WIN();
+    MSG( msg );
+    CLOSE_MSG_WIN();
+}
+
+
+void COMMUNITY_POINT_KAN_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var57;
+    int var58;
+    int var59;
+    int var62;
+    int var60;
+    int var63;
+    int var61;
+    var57 = 0;
+    var58 = 10;
+    var59 = 0;
+    var62 = 233;
+    var60 = 6;
+    var63 = GET_CNT( var62 );
+    
+    if ( var63 >= 2000 )
+    {
+        var61 = 15;
+        SET_CNT( var62, ( var63 - 2000 ) );
+    }
+    else if ( var63 >= 1000 )
+    {
+        var61 = 10;
+        SET_CNT( var62, ( var63 - 1000 ) );
+    }
+    else 
+    {
+        var61 = 5;
+    }
+
+    
+    if ( var57 == 0 )
+    {
+        EVT_FUNCTION_0016( var58 );
+        EVT_FUNCTION_0031( var58, var61, var60 );
+    }
+    else if ( EVT_FUNCTION_0002( var58 ) == 1 )
+    {
+        EVT_FUNCTION_0016( var58 );
+        EVT_FUNCTION_0031( var58, var61, var60 );
+    }
+    else if ( EVT_FUNCTION_0002( var59 ) == 1 )
+    {
+        EVT_FUNCTION_0016( var59 );
+        EVT_FUNCTION_0031( var59, var61, var60 );
+    }
+
+    EVT_FUNCTION_0016( 0 );
+}

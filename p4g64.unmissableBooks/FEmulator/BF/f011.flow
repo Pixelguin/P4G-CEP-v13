@@ -1,0 +1,75 @@
+import("f011hook.msg");
+
+void city_bookstore_hook()
+{
+    // bit id ((0) + (1024)) + (514) = 1538
+    // bit id ((0) + (1024)) + (520) = 1544
+    // bit id ((0) + (1024)) + (527) = 1551
+    // bit id (((0) + (1024)) + (2048)) + (336) = 3408
+
+    if (BIT_CHK(((0 + 0x0400) + 514)) == 1)
+    {
+        commu_gojitu();
+        return;
+    }
+    else if (BIT_CHK(((0 + 0x0400) + 520)) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG( ``0213_STOP`` );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    else if (BIT_CHK(((0 + 0x0400) + 527)) == 1)
+    {
+        OPEN_MSG_WIN();
+        MSG( ``1205_STOP`` );
+        CLOSE_MSG_WIN();
+        return;
+    }
+    // Don't show the menu before the first book arrives
+    else if (CHECK_TIME_SPAN(4, 20, 6, 10))
+    {
+        OPEN_MSG_WIN();
+        MSG(NO_MORE_BOOKS);
+        CLOSE_MSG_WIN();
+    }
+    // else if (BIT_CHK((((0 + 0x0400) + 0x0800) + 336)) == 1)
+    // {
+    //     OPEN_MSG_WIN();
+    //     MSG(MSG_CITY_BOOKSTORE_INFO);
+    //     MSG(MSG_CITY_BOOKSTORE_NANPA);
+    //     CLOSE_MSG_WIN();
+    // }
+    else
+    {
+        int previousPolyLandAmount = GET_ITEM(1275);
+
+        BOOK_SHOP(1);
+
+        // Message saying when the next books are coming
+        if (CHECK_TIME_SPAN(4, 20, 6, 10))
+        {
+            OPEN_MSG_WIN();
+            MSG(BOOKSTORE_NEW_RELEASES_1);
+            CLOSE_MSG_WIN();
+        }
+        // Poly-Land
+        else if (CHECK_TIME_SPAN(6, 11, 8, 3))
+        {
+            OPEN_MSG_WIN();
+            MSG(BOOKSTORE_NEW_RELEASES_2);
+            CLOSE_MSG_WIN();
+        }
+        // The O-Cha Way
+        else if (CHECK_TIME_SPAN(8, 4, 8, 23))
+        {
+            OPEN_MSG_WIN();
+            MSG(BOOKSTORE_NEW_RELEASES_3);
+            CLOSE_MSG_WIN();
+        }
+
+        // If you had no Poly-Lands and now have one, you must of bought the book so turn on the flag used to remove the Kou text from it
+        if ( previousPolyLandAmount == 0 && GET_ITEM(1275) == 1 )
+            BIT_ON(6210);
+    }
+}

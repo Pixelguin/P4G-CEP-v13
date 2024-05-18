@@ -1,0 +1,223 @@
+void enemyAI_d_adachi_hook()
+{
+    int var54;
+    var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+    
+    if ( AI_IS_ENEMY_DOWN() == 1 )
+    {
+        
+        if ( ( ( AI_EN_HOJOUNKNOWN( 1 ) == 1 ) || ( AI_EN_HOJOUNKNOWN( 0x40 ) == 1 ) ) || ( AI_EN_HOJOUNKNOWN( 0x10 ) == 1 ) )
+        {
+            AI_USE_SKILL( BattleSkill.Dekaja );
+            AI_TAR_RND();
+            return;
+        }
+        else if ( ( ( AI_MY_HOJO( 2 ) == 1 ) || ( AI_MY_HOJO( 0x80 ) == 1 ) ) || ( AI_MY_HOJO( 0x20 ) == 1 ) )
+        {
+            AI_USE_SKILL( BattleSkill.Dekunda );
+            AI_TAR_RND();
+            return;
+        }
+        else 
+        {
+            AI_USE_SKILL( BattleSkill.PowerCharge );
+            AI_TAR_SELF();
+            return;
+        }
+
+    }
+
+    
+    if ( AI_SKILL_WAS_USED( BattleSkill.StagnantAir ) == 1 )
+    {
+        
+        if ( var54 < 50 )
+        {
+            AI_USE_SKILL( BattleSkill.EvilSmile );
+            AI_TAR_RND();
+            return;
+        }
+        else 
+        {
+            AI_USE_SKILL( BattleSkill.AtomSmasher );
+            AI_TAR_RND();
+            return;
+        }
+
+    }
+
+    
+    if ( AI_EN_HAS_AILMENT( 4 ) == 1 )
+    {
+        AI_USE_SKILL( BattleSkill.GhastlyWail );
+        AI_TAR_RND();
+        return;
+    }
+
+    
+    if ( BIT_CHK( 5630 ) == 1 )
+    {
+        AI_USE_SKILL( BattleSkill.EvilSmile );
+        AI_TAR_RND();
+        BIT_OFF( 5630 );
+        return;
+    }
+
+    
+    if ( ( AI_MY_HOJO( 1 ) == 0 ) && ( BIT_CHK( 5631 ) == 0 ) )
+    {
+        AI_USE_SKILL( BattleSkill.HeatRiser );
+        AI_TAR_SELF();
+        BIT_ON( 5631 );
+        BIT_ON( 5568 );
+        return;
+    }
+
+    
+    if ( AI_MY_HOJO( 0x0400 ) == 1 )
+    {
+        AI_USE_SKILL( BattleSkill.AtomSmasher );
+        AI_TAR_RND();
+        return;
+    }
+
+    
+    if ( AI_MY_HOJO( 0x0800 ) == 1 )
+    {
+        AI_USE_SKILL( BattleSkill.Megidola );
+        AI_TAR_RND();
+        return;
+    }
+
+    
+    if ( var54 < 40 )
+    {
+        var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+        
+        if ( var54 < 50 )
+        {
+            AI_USE_SKILL( BattleSkill.VorpalBlade );
+            AI_TAR_RND();
+            return;
+        }
+        else if ( AI_EN_HOJOUNKNOWN( 0x00400000 ) == 0 )
+        {
+            AI_USE_SKILL( BattleSkill.StagnantAir );
+            AI_TAR_RND();
+            return;
+        }
+        else 
+        {
+            AI_USE_SKILL( BattleSkill.AtomSmasher );
+            AI_TAR_RND();
+            return;
+        }
+
+    }
+    else if ( var54 < 80 )
+    {
+        var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+        
+        if ( var54 < 20 )
+        {
+            var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+            
+            if ( var54 < 50 )
+            {
+                AI_USE_SKILL( BattleSkill.Agidyne );
+                AI_TAR_RND();
+                return;
+            }
+            else 
+            {
+                AI_USE_SKILL( BattleSkill.Maragidyne );
+                AI_TAR_RND();
+                return;
+            }
+
+        }
+
+        
+        if ( var54 < 40 )
+        {
+            var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+            
+            if ( var54 < 50 )
+            {
+                AI_USE_SKILL( BattleSkill.Bufudyne );
+                AI_TAR_RND();
+                return;
+            }
+            else 
+            {
+                AI_USE_SKILL( BattleSkill.Mabufudyne );
+                AI_TAR_RND();
+                return;
+            }
+
+        }
+
+        
+        if ( var54 < 60 )
+        {
+            var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+            
+            if ( var54 < 50 )
+            {
+                AI_USE_SKILL( BattleSkill.Ziodyne );
+                AI_TAR_RND();
+                return;
+            }
+            else 
+            {
+                AI_USE_SKILL( BattleSkill.Maziodyne );
+                AI_TAR_RND();
+                return;
+            }
+
+        }
+
+        
+        if ( var54 < 80 )
+        {
+            var54 = AI_GET_RANDOM_NUMBER_BELOW( 100 );
+            
+            if ( var54 < 50 )
+            {
+                AI_USE_SKILL( BattleSkill.Garudyne );
+                AI_TAR_RND();
+                return;
+            }
+            else 
+            {
+                AI_USE_SKILL( BattleSkill.Magarudyne );
+                AI_TAR_RND();
+                return;
+            }
+
+        }
+
+        
+        if ( var54 < 90 )
+        {
+            AI_USE_SKILL( BattleSkill.Megidola );
+            AI_TAR_RND();
+            return;
+        }
+        else 
+        {
+            AI_ATTACK();
+            AI_TAR_RND();
+            return;
+        }
+
+    }
+    else 
+    {
+        AI_USE_SKILL( BattleSkill.Mudoon );
+        AI_TAR_RND();
+        BIT_ON( 5630 );
+        return;
+    }
+
+}

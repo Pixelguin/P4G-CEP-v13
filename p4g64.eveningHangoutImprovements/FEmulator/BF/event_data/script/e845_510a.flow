@@ -1,0 +1,90 @@
+import("naoki.msg");
+
+void EVE_MES_OTO_hook()
+{
+    int var30;
+    int msg;
+    int var29;
+    var30 = 18;
+    msg = 0;
+    var29 = 1;
+    if(BIT_CHK(6380))
+        msg = ChatNearEnd;
+    OPEN_MSG_WIN();
+    MSG( msg );
+    
+    if ( CHECK_IF_SL_LVLUP( var30 ) == 1 )
+    {
+        MSG( var29 );
+    }
+
+    CLOSE_MSG_WIN();
+}
+
+void EVE_END_SYSMES_OTO_hook()
+{
+    int msg;
+    msg = 2;
+    if(BIT_CHK(6380))
+        msg = ChatEnd;
+    OPEN_MSG_WIN();
+    MSG( msg );
+    CLOSE_MSG_WIN();
+}
+
+
+// Procedure Index: 4
+void COMMUNITY_POINT_OTO_hook()
+{
+    // No points if it's a chat
+    if(BIT_CHK(6380))
+        return;
+
+    int var56;
+    int var57;
+    int var58;
+    int var61;
+    int var59;
+    int var62;
+    int var60;
+    var56 = 0;
+    var57 = 18;
+    var58 = 0;
+    var61 = 238;
+    var59 = 10;
+    var62 = GET_CNT( var61 );
+    
+    if ( var62 >= 2000 )
+    {
+        var60 = 15;
+        SET_CNT( var61, ( var62 - 2000 ) );
+    }
+    else if ( var62 >= 1000 )
+    {
+        var60 = 10;
+        SET_CNT( var61, ( var62 - 1000 ) );
+    }
+    else 
+    {
+        var60 = 5;
+    }
+
+    
+    if ( var56 == 0 )
+    {
+        EVT_FUNCTION_0016( var57 );
+        EVT_FUNCTION_0031( var57, var60, var59 );
+    }
+    else if ( EVT_FUNCTION_0002( var57 ) == 1 )
+    {
+        EVT_FUNCTION_0016( var57 );
+        EVT_FUNCTION_0031( var57, var60, var59 );
+    }
+    else if ( EVT_FUNCTION_0002( var58 ) == 1 )
+    {
+        EVT_FUNCTION_0016( var58 );
+        EVT_FUNCTION_0031( var58, var60, var59 );
+    }
+
+    EVT_FUNCTION_0016( 0 );
+}

@@ -1,0 +1,35 @@
+void f024_002_init_hook()
+{
+    int var1;
+    int var2;
+    
+    if ( FLD_FUNCTION_0000() == 2 )
+    {
+        // Spawn save butterfly
+        var1 = LOAD_FIELD_OBJECT( -1, 102 );
+        var2 = FLD_FUNCTION_000F( var1 );
+        FLD_FUNCTION_000C( var2, 6 );
+        FLD_FUNCTION_0007( var2, 1 );
+        
+        if ( ( CHECK_TIME_SPAN( 4, 1, 6, 4 ) == 1 ) || ( BIT_CHK( 3728 ) == 1 ) )
+        {
+            BIT_ON( 3712 );
+        }
+        else 
+        {
+            BIT_OFF( 3712 );
+            FLD_FUNCTION_0008( 10241, 2, 0, 0, 10 );
+            FLD_FUNCTION_0009( 10241 );
+            FLD_FUNCTION_0010( 10245, 0 );
+        }
+
+        
+        if ( BIT_CHK( 3728 ) == 1 )
+        {
+            BIT_ON( 3718 );
+        }
+
+    }
+
+}
+

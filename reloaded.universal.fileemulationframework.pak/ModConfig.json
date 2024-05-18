@@ -1,0 +1,61 @@
+{
+  "ModId": "reloaded.universal.fileemulationframework.pak",
+  "ModName": "PAK Emulator for File Emulation Framework",
+  "ModAuthor": "ltsophia \u0026 friends",
+  "ModVersion": "1.1.1",
+  "ModDescription": "Simulates Atlus PAK files. Allows mods to add or replace existing files using files on disk.",
+  "ModDll": "PAK.Stream.Emulator.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/PAK.Stream.Emulator.dll",
+  "ModR2RManagedDll64": "x64/PAK.Stream.Emulator.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "PAK.Stream.Emulator.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.universal.fileemulationframework": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "Sewer56",
+      "RepositoryName": "FileEmulationFramework",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": true,
+  "ModDependencies": [
+    "reloaded.universal.fileemulationframework"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": "https://github.com/Sewer56/FileEmulationFramework"
+}

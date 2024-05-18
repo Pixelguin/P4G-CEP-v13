@@ -1,0 +1,62 @@
+{
+  "ModId": "p4g64.alternatingOpenings",
+  "ModName": "Alternating Openings",
+  "ModAuthor": "AnimatedSwine37",
+  "ModVersion": "1.0.1",
+  "ModDescription": "Makes the opening alternate if you wait on the main menu for it to be replayed",
+  "ModDll": "p4g64.alternatingOpenings.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/p4g64.alternatingOpenings.dll",
+  "ModR2RManagedDll64": "x64/p4g64.alternatingOpenings.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "p4g64.alternatingOpenings.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubRelease": {
+      "UserName": "AnimatedSwine37",
+      "RepositoryName": "p4g64.alternatingOpenings",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    },
+    "GameBanana": {
+      "ItemType": "Mod",
+      "ItemId": 453810
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": "https://gamebanana.com/mods/453810"
+}

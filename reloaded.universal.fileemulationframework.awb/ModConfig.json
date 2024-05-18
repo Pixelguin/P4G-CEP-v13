@@ -1,0 +1,73 @@
+{
+  "ModId": "reloaded.universal.fileemulationframework.awb",
+  "ModName": "AWB Emulator for File Emulation Framework",
+  "ModAuthor": "Sewer56",
+  "ModVersion": "2.1.3",
+  "ModDescription": "Simulates CRIWARE AWB (AFS2) files. Allows mods to add or replace existing files using files on disk.",
+  "ModDll": "AWB.Stream.Emulator.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/AWB.Stream.Emulator.dll",
+  "ModR2RManagedDll64": "x64/AWB.Stream.Emulator.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "AWB.Stream.Emulator.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        }
+      }
+    },
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "Sewer56",
+      "RepositoryName": "FileEmulationFramework",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.universal.fileemulationframework"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "p4g.exe"
+  ],
+  "ProjectUrl": "https://sewer56.dev/FileEmulationFramework/"
+}

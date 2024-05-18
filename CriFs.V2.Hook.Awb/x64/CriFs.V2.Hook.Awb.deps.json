@@ -1,0 +1,103 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {},
+    ".NETCoreApp,Version=v7.0/win-x64": {
+      "CriFs.V2.Hook.Awb/1.0.0": {
+        "dependencies": {
+          "AWB.Stream.Emulator.Interfaces": "1.0.0",
+          "CriFs.V2.Hook.Interfaces": "1.0.0",
+          "FileEmulationFramework.Lib": "1.0.0",
+          "Microsoft.NET.ILLink.Tasks": "8.0.0",
+          "Reloaded.Mod.Interfaces": "2.3.0"
+        },
+        "runtime": {
+          "CriFs.V2.Hook.Awb.dll": {}
+        }
+      },
+      "CriFsV2Lib.Definitions/1.1.0": {
+        "runtime": {
+          "lib/net7.0/CriFsV2Lib.Definitions.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "FileEmulationFramework.Lib/1.0.0": {
+        "dependencies": {
+          "Reloaded.Mod.Interfaces": "2.3.0"
+        },
+        "runtime": {
+          "lib/net5.0/FileEmulationFramework.Lib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.0": {},
+      "Reloaded.Mod.Interfaces/2.3.0": {},
+      "AWB.Stream.Emulator.Interfaces/1.0.0": {
+        "runtime": {
+          "AWB.Stream.Emulator.Interfaces.dll": {}
+        }
+      },
+      "CriFs.V2.Hook.Interfaces/1.0.0": {
+        "dependencies": {
+          "CriFsV2Lib.Definitions": "1.1.0"
+        },
+        "runtime": {
+          "CriFs.V2.Hook.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CriFs.V2.Hook.Awb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CriFsV2Lib.Definitions/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hPvJ4DR16lVSYHSddUsMTUQLajCALhNA+GDfAY0VMa4xSvBOEbZeCuj2tYO8GqeQMyiosL0/aRaFZ2OgFefRKA==",
+      "path": "crifsv2lib.definitions/1.1.0",
+      "hashPath": "crifsv2lib.definitions.1.1.0.nupkg.sha512"
+    },
+    "FileEmulationFramework.Lib/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ip4MNI6ikPA3BeVLCky7nTcC3T4OsPnWVUGvaczIYv9xlHQhKT+K/CSqsH486uNmvoCKY32iB0P6Y9quIyG5BA==",
+      "path": "fileemulationframework.lib/1.0.0",
+      "hashPath": "fileemulationframework.lib.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B3etT5XQ2nlWkZGO2m/ytDYrOmSsQG1XNBaM6ZYlX5Ch/tDrMFadr0/mK6gjZwaQc55g+5+WZMw4Cz3m8VEF7g==",
+      "path": "microsoft.net.illink.tasks/8.0.0",
+      "hashPath": "microsoft.net.illink.tasks.8.0.0.nupkg.sha512"
+    },
+    "Reloaded.Mod.Interfaces/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u0n87wuTPqcM4dSYm5BKC7q6rgzVH07Jg2r+CzYONZo6Ys367tza1Hd/LKNfQMum5vcSdqBifTJyKGAPlSNMpQ==",
+      "path": "reloaded.mod.interfaces/2.3.0",
+      "hashPath": "reloaded.mod.interfaces.2.3.0.nupkg.sha512"
+    },
+    "AWB.Stream.Emulator.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CriFs.V2.Hook.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

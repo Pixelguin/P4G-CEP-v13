@@ -1,0 +1,36 @@
+{
+  "ModId": "reloaded.sharedlib.hooks",
+  "ModName": "Reloaded II Shared Lib: Reloaded.Hooks",
+  "ModAuthor": "Sewer56",
+  "ModVersion": "1.16.1",
+  "ModDescription": "Lite Implementation of the Reloaded.Hooks library as a mod loader mod. Created in hopes of reducing load times at startup and reducing size of other mods.",
+  "ModDll": "Reloaded.Hooks.ReloadedII.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/Reloaded.Hooks.ReloadedII.dll",
+  "ModR2RManagedDll64": "x64/Reloaded.Hooks.ReloadedII.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "Sewer56.Update.ReleaseMetadata.json",
+  "PluginData": {
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "Sewer56",
+      "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+      "AssetFileName": "reloaded.sharedlib.hooks.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": ""
+}
