@@ -1,8 +1,8 @@
 ---
 name: Other feedback
 about: Provide feedback on the project or this issue tracker
-title: "[FEEDBACK]"
-labels: ''
+title: ''
+labels: feedback
 assignees: ''
 
 ---

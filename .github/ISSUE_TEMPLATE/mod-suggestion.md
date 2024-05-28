@@ -1,8 +1,8 @@
 ---
 name: Mod suggestion
 about: Suggest a mod to be added to P4G CEP
-title: "[SUGGESTION]"
-labels: ''
+title: ''
+labels: enhancement
 assignees: ''
 
 ---
