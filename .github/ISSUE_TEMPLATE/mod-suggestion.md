@@ -2,7 +2,7 @@
 name: Mod suggestion
 about: Suggest a mod to be added to P4G CEP
 title: ''
-labels: enhancement
+labels: mod-request
 assignees: ''
 
 ---
