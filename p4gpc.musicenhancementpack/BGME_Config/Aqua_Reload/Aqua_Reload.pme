@@ -1,0 +1,4 @@
+// Margaret: The Battle For Everyone's Souls -Reload-
+encounter["Margaret"]:
+	music = 696
+end

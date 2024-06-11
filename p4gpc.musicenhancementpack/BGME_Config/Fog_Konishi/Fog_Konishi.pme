@@ -1,0 +1,3 @@
+global_bgm["The Fog"]:
+  music = 695
+end

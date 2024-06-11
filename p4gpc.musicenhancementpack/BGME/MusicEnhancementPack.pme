@@ -1,35 +1,34 @@
-// Normal Battles: ROTTT rudiger, TTMH rudiger
-encounter["Normal Battles"]:
-	music = random_song(679, 680)
+global_bgm[77]:
+  music = 680
 end
 
 // === Area collections ===
 
 // Void Quest: ROTTT 14.4mL, TTMH BitLemur
 encounter["Void Quest"]:
-	music = random_song(681, 682)
+	music = random_song(682, 683)
 end
 
 // Hollow Forest: Memory, Memory unknown
 encounter["Hollow Forest"]:
-	music = random_song(683, 684)
+	music = random_song(684, 685)
 end
 
 // === Boss collections ===
 
 // Minibosses: TTMH special
 encounter["Minibosses"]:
-	music = 687
+	music = 688
 end
 
 // Optional Bosses: RWGYB
 encounter["Optional Bosses"]:
-	music = 689
+	music = 690
 end
 
 // Reaper: F.O.E.
 encounter["Reapers"]:
-	music = 686
+	music = 687
 end
 
 // === Misc collections ===
@@ -41,7 +40,7 @@ end
 
 // Golden Hands: LTFUITN
 encounter["Golden Hands"]:
-	music = 685
+	music = 686
 end
 
 // === Boss overrides ===
@@ -53,7 +52,7 @@ end
 
 // Adachi: Ying Yang
 encounter["Adachi"]:
-	music = 691
+	music = 692
 end
 
 // Marie: Just Like the Wind (manual replacement - 078)
@@ -64,11 +63,6 @@ end
 // Kusumi-no-Okami: I'll Face Myself -Reincarnation-
 encounter["Kusumi-no-Okami"]:
 	music = "default"
-end
-
-// Margaret: The Battle For Everyone's Souls
-encounter["Margaret"]:
-	music = 692
 end
 
 // === Miniboss overrides ===
@@ -85,16 +79,16 @@ end
 
 // Hollow Forest Minibosses: Memory special
 encounter[938]:
-	music = 688
+	music = 689
 end
 
 encounter[939]:
-	music = 688
+	music = 689
 end
 
 // === Misc overrides ===
 
 // Tutorial Battle: ROTTT P4A
 encounter[524]:
-	music = 690
+	music = 691
 end

@@ -1,0 +1,4 @@
+// Normal Battles: ROTTT, TTMH rudiger
+encounter["Normal Battles"]:
+	music = random_song(680, 681)
+end

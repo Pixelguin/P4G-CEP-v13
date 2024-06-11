@@ -1,18 +1,18 @@
 {
   "ModId": "p4gpc.musicenhancementpack",
   "ModName": "Music Enhancement Pack",
-  "ModAuthor": "Pixelguin, rudiger__gb",
-  "ModVersion": "7.0.3",
+  "ModAuthor": "Pixelguin, rudiger__gb, Brawler",
+  "ModVersion": "8.1.0",
   "ModDescription": "A small collection of carefully-selected music enhancements.",
-  "ModDll": "",
+  "ModDll": "p4gpc.musicenhancementpack.dll",
   "ModIcon": "Preview.png",
-  "ModR2RManagedDll32": "",
-  "ModR2RManagedDll64": "",
+  "ModR2RManagedDll32": "x86/p4gpc.musicenhancementpack.dll",
+  "ModR2RManagedDll64": "x64/p4gpc.musicenhancementpack.dll",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
   "Tags": [],
-  "CanUnload": null,
-  "HasExports": null,
+  "CanUnload": false,
+  "HasExports": false,
   "IsLibrary": false,
   "ReleaseMetadataFileName": "p4gpc.musicenhancementpack.ReleaseMetadata.json",
   "PluginData": {
@@ -22,6 +22,15 @@
     },
     "GitHubDependencies": {
       "IdToConfigMap": {
+        "crifs.v2.hook": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
+        },
         "p5rpc.modloader": {
           "Config": {
             "UserName": "Sewer56",
@@ -48,15 +57,6 @@
             "AssetFileName": "reloaded.sharedlib.hooks.zip"
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
-        },
-        "crifs.v2.hook": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
         },
         "p5rpc.lib": {
           "Config": {
@@ -154,6 +154,8 @@
   "IsUniversalMod": false,
   "ModDependencies": [
     "BGME.Framework",
+    "BGME.Framework.API",
+    "crifs.v2.hook",
     "p4gpc.inaba",
     "p5rpc.modloader"
   ],
