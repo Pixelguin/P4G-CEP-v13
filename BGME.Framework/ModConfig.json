@@ -2,7 +2,7 @@
   "ModId": "BGME.Framework",
   "ModName": "BGME Framework",
   "ModAuthor": "zutomayofan50",
-  "ModVersion": "2.2.2",
+  "ModVersion": "3.0.0",
   "ModDescription": "Extends BGM functionality in Persona games.",
   "ModDll": "BGME.Framework.dll",
   "ModIcon": "Preview.png",
@@ -18,6 +18,24 @@
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {
+        "crifs.v2.hook": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
+        },
+        "p5rpc.lib": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "p5rpc.lib",
+            "UseReleaseTag": true,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
+        },
         "p5rpc.modloader": {
           "Config": {
             "UserName": "Sewer56",
@@ -44,24 +62,6 @@
             "AssetFileName": "reloaded.sharedlib.hooks.zip"
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
-        },
-        "crifs.v2.hook": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
-        },
-        "p5rpc.lib": {
-          "Config": {
-            "UserName": "AnimatedSwine37",
-            "RepositoryName": "p5rpc.lib",
-            "UseReleaseTag": true,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
         },
         "CriFs.V2.Hook.Awb": {
           "Config": {
@@ -140,18 +140,34 @@
             "ItemId": 477399
           },
           "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
+        },
+        "Ryo.Reloaded": {
+          "Config": {
+            "ItemType": "Mod",
+            "ItemId": 495507
+          },
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "ItemType": "Mod",
+            "ItemId": 495507
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         }
       }
     }
   },
   "IsUniversalMod": false,
   "ModDependencies": [
+    "BGME.Framework.API",
+    "crifs.v2.hook",
+    "p5rpc.lib",
     "p5rpc.modloader",
     "Reloaded.Memory.SigScan.ReloadedII",
     "reloaded.sharedlib.hooks",
-    "crifs.v2.hook",
-    "p5rpc.lib",
-    "BGME.Framework.API"
+    "Ryo.Reloaded",
+    "SharedScans.Reloaded"
   ],
   "OptionalDependencies": [],
   "SupportedAppId": [

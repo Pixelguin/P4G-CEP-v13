@@ -67,14 +67,14 @@
           },
           "ReleaseMetadataName": "CriFs.V2.Hook.Awb.ReleaseMetadata.json"
         },
-        "reloaded.universal.fileemulationframework.bf": {
+        "reloaded.universal.fileemulationframework.pak": {
           "Config": {
             "UserName": "Sewer56",
             "RepositoryName": "FileEmulationFramework",
             "UseReleaseTag": false,
             "AssetFileName": "Mod.zip"
           },
-          "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
+          "ReleaseMetadataName": "PAK.Stream.Emulator.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.bmd": {
           "Config": {
@@ -85,14 +85,23 @@
           },
           "ReleaseMetadataName": "BMD.File.Emulator.ReleaseMetadata.json"
         },
-        "reloaded.universal.fileemulationframework.pak": {
+        "reloaded.universal.fileemulationframework.bf": {
           "Config": {
             "UserName": "Sewer56",
             "RepositoryName": "FileEmulationFramework",
             "UseReleaseTag": false,
             "AssetFileName": "Mod.zip"
           },
-          "ReleaseMetadataName": "PAK.Stream.Emulator.ReleaseMetadata.json"
+          "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework.spd": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {

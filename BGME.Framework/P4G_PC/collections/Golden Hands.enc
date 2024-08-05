@@ -40,6 +40,27 @@
 // HappinessHand, HappinessHand, HappinessHand
 85
 
+// TreasureHand, SoulDancer, SoulDancer
+87
+
+// TreasureHand, TreasureHand, VenusEagle
+88
+
+// TreasureHand, ForgottenHablerie, ForgottenHablerie
+89
+
+// TreasureHand, TreasureHand, LiberatingIdol
+90
+
+// TreasureHand, EnslavedBeast, EnslavedBeast
+91
+
+// TreasureHand, TreasureHand, AdamantBeetle
+92
+
+// TreasureHand, TreasureHand, TreasureHand
+93
+
 // WealthHand, WealthHand
 123
 
@@ -57,6 +78,9 @@
 
 // WealthHand
 176
+
+// TreasureHand
+177
 
 // SupremeHand
 178

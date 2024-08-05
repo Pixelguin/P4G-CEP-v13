@@ -2,7 +2,7 @@
   "ModId": "p4gpc.restoredgameovermusic",
   "ModName": "Restored Game Over Music",
   "ModAuthor": "Brawler",
-  "ModVersion": "1.1.1",
+  "ModVersion": "1.1.2",
   "ModDescription": "Restores \u0022The Path Was Closed\u0022 when getting a game over.",
   "ModDll": "p4gpc.restoredgameovermusic.dll",
   "ModIcon": "thumb_r2.png",
@@ -40,6 +40,15 @@
           },
           "ReleaseMetadataName": "p5rpc.modloader.ReleaseMetadata.json"
         },
+        "p5rpc.lib": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "p5rpc.lib",
+            "UseReleaseTag": true,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
+        },
         "Reloaded.Memory.SigScan.ReloadedII": {
           "Config": {
             "UserName": "Reloaded-Project",
@@ -57,15 +66,6 @@
             "AssetFileName": "reloaded.sharedlib.hooks.zip"
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
-        },
-        "p5rpc.lib": {
-          "Config": {
-            "UserName": "AnimatedSwine37",
-            "RepositoryName": "p5rpc.lib",
-            "UseReleaseTag": true,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
         },
         "CriFs.V2.Hook.Awb": {
           "Config": {
@@ -147,6 +147,20 @@
             "ItemId": 477399
           },
           "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
+        },
+        "Ryo.Reloaded": {
+          "Config": {
+            "ItemType": "Mod",
+            "ItemId": 495507
+          },
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "ItemType": "Mod",
+            "ItemId": 495507
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         }
       }
     }

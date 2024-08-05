@@ -1,8 +1,8 @@
 {
   "ModId": "p4gpc.interfaceenhancementpack",
   "ModName": "Interface Enhancement Pack",
-  "ModAuthor": "Pixelguin, rudiger__gb, Tekka",
-  "ModVersion": "1.0.0",
+  "ModAuthor": "Pixelguin et al.",
+  "ModVersion": "1.2.0",
   "ModDescription": "A compatibility pack that combines several UI improvement mods.",
   "ModDll": "",
   "ModIcon": "Preview.png",

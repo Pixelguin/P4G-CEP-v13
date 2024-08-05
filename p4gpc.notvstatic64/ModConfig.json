@@ -1,9 +1,9 @@
 {
   "ModId": "p4gpc.notvstatic64",
-  "ModName": "No TV Static 64",
-  "ModAuthor": "ShrineFox, rudiger__gb, Pixelguin",
-  "ModVersion": "2.0.0",
-  "ModDescription": "Removes the noise and scanline effects in the TV World.",
+  "ModName": "No TV Static\u002B",
+  "ModAuthor": "ShrineFox et al.",
+  "ModVersion": "3.0.0",
+  "ModDescription": "Removes the noise, scanline, and glare effects in the TV World.",
   "ModDll": "",
   "ModIcon": "Preview.png",
   "ModR2RManagedDll32": "",

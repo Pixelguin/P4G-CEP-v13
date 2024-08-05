@@ -18,6 +18,8 @@
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
+          "Ryo.Interfaces": "1.0.0",
+          "SharedScans.Interfaces": "1.0.0",
           "p5rpc.lib.interfaces": "1.0.1"
         },
         "runtime": {
@@ -166,11 +168,11 @@
           }
         }
       },
-      "Reloaded.Hooks.Definitions/1.11.0": {
+      "Reloaded.Hooks.Definitions/1.15.0": {
         "runtime": {
           "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
-            "assemblyVersion": "1.11.0.0",
-            "fileVersion": "1.11.0.0"
+            "assemblyVersion": "1.15.0.0",
+            "fileVersion": "1.15.0.0"
           }
         }
       },
@@ -196,7 +198,7 @@
       "Reloaded.Mod.Interfaces/2.4.0": {},
       "Reloaded.SharedLib.Hooks/1.9.0": {
         "dependencies": {
-          "Reloaded.Hooks.Definitions": "1.11.0"
+          "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
           "lib/netstandard2.0/Reloaded.Hooks.ReloadedII.Interfaces.dll": {
@@ -502,6 +504,22 @@
           "Project.Utils.dll": {}
         }
       },
+      "Ryo.Interfaces/1.0.0": {
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.15.0"
+        },
+        "runtime": {
+          "Ryo.Interfaces.dll": {}
+        }
+      },
+      "SharedScans.Interfaces/1.0.0": {
+        "dependencies": {
+          "Reloaded.Hooks.Definitions": "1.15.0"
+        },
+        "runtime": {
+          "SharedScans.Interfaces.dll": {}
+        }
+      },
       "Phos.MusicManager.Library/1.0.0.0": {
         "runtime": {
           "Phos.MusicManager.Library.dll": {
@@ -616,12 +634,12 @@
       "path": "protobuf-net.core/3.2.26",
       "hashPath": "protobuf-net.core.3.2.26.nupkg.sha512"
     },
-    "Reloaded.Hooks.Definitions/1.11.0": {
+    "Reloaded.Hooks.Definitions/1.15.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/z0AwcCvVTQHlQ9SMMMBqKEIrm5t/yBFPylySW2Rnr7uRGV9jGfoACFe79KZKF976dhtkyy2xl0HIXz5hRUkng==",
-      "path": "reloaded.hooks.definitions/1.11.0",
-      "hashPath": "reloaded.hooks.definitions.1.11.0.nupkg.sha512"
+      "sha512": "sha512-bLY20vYB0fS2xwu6RDQVwlJxt2//KXLigYrCsCuzt5QFQqkvft4abq9FWPeCJYcvEeg/GQpJ3LC+108/4I2l+g==",
+      "path": "reloaded.hooks.definitions/1.15.0",
+      "hashPath": "reloaded.hooks.definitions.1.15.0.nupkg.sha512"
     },
     "Reloaded.Memory.Sigscan.Definitions/1.1.0": {
       "type": "package",
@@ -883,6 +901,16 @@
       "sha512": ""
     },
     "Project.Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ryo.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharedScans.Interfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
