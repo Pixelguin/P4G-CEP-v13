@@ -92,7 +92,10 @@
           "CriFsV2Lib.Definitions": "1.1.0"
         },
         "runtime": {
-          "CriFs.V2.Hook.Interfaces.dll": {}
+          "CriFs.V2.Hook.Interfaces.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
