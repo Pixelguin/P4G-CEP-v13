@@ -1,8 +1,8 @@
 ---
-name: CEP support
+name: CEP support (Windows)
 about: Report a problem you're having and get assistance
 title: ''
-labels: support
+labels: support, .windows
 assignees: ''
 
 ---
