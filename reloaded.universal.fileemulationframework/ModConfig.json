@@ -10,6 +10,9 @@
   "ModR2RManagedDll64": "x64/FileEmulationFramework.dll",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
   "IsLibrary": true,
   "ReleaseMetadataFileName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json",
   "PluginData": {

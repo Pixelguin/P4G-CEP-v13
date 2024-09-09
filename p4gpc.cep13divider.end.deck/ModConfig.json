@@ -1,6 +1,6 @@
 {
-  "ModId": "p4gpc.cep13divider.end",
-  "ModName": "=============== [ P4G CEP ENDS HERE ] ===============",
+  "ModId": "p4gpc.cep13divider.end.deck",
+  "ModName": "=============== [ P4G CEP-XP ENDS HERE ] ===============",
   "ModAuthor": "",
   "ModVersion": "",
   "ModDescription": "",
@@ -14,7 +14,7 @@
   "CanUnload": null,
   "HasExports": null,
   "IsLibrary": false,
-  "ReleaseMetadataFileName": "p4gpc.cep13divider.end.ReleaseMetadata.json",
+  "ReleaseMetadataFileName": "p4gpc.cep13divider.end.deck.ReleaseMetadata.json",
   "PluginData": {},
   "IsUniversalMod": false,
   "ModDependencies": [],
