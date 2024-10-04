@@ -2,7 +2,7 @@
 name: CEP support (Windows)
 about: Report a problem you're having and get assistance
 title: ''
-labels: support, .windows
+labels: support, windows
 assignees: ''
 
 ---
