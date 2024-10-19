@@ -2,7 +2,7 @@
   "ModId": "Ryo.Reloaded",
   "ModName": "Ryo Framework",
   "ModAuthor": "zutomayofan50",
-  "ModVersion": "2.2.2",
+  "ModVersion": "2.5.3",
   "ModDescription": "Ryo Framework adds the ability to add or replace game audio and movies with zero file editing.",
   "ModDll": "Ryo.Reloaded.dll",
   "ModIcon": "Preview.png",
@@ -71,7 +71,9 @@
     "likeadragongaiden.exe",
     "lostjudgment.exe",
     "jujutsu kaisen cc.exe",
-    "raincodeplus-win64-shipping.exe"
+    "raincodeplus-win64-shipping.exe",
+    "metaphor.exe",
+    "sparkingzero-win64-shipping.exe"
   ],
   "ProjectUrl": ""
 }

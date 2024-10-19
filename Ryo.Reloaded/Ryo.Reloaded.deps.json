@@ -1,18 +1,18 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v7.0",
+    "name": ".NETCoreApp,Version=v8.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v7.0": {
+    ".NETCoreApp,Version=v8.0": {
       "Ryo.Reloaded/1.0.0": {
         "dependencies": {
-          "Project.Utils": "1.0.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
-          "Ryo.Interfaces": "1.0.0",
-          "SharedScans.Interfaces": "1.0.0",
+          "Ryo.Interfaces": "2.4.0",
+          "RyoTune.Reloaded": "1.0.0",
+          "SharedScans.Interfaces": "1.1.0",
           "YamlDotNet": "15.1.2"
         },
         "runtime": {
@@ -58,38 +58,47 @@
           }
         }
       },
-      "YamlDotNet/15.1.2": {
-        "runtime": {
-          "lib/net7.0/YamlDotNet.dll": {
-            "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.1.2.0"
-          }
-        }
-      },
-      "Project.Utils/1.0.0": {
+      "RyoTune.Reloaded/1.0.0": {
         "dependencies": {
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0"
         },
         "runtime": {
-          "Project.Utils.dll": {}
+          "lib/net8.0/RyoTune.Reloaded.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
-      "Ryo.Interfaces/1.0.0": {
+      "SharedScans.Interfaces/1.1.0": {
         "dependencies": {
           "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
-          "Ryo.Interfaces.dll": {}
+          "lib/net8.0/SharedScans.Interfaces.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
         }
       },
-      "SharedScans.Interfaces/1.0.0": {
+      "YamlDotNet/15.1.2": {
+        "runtime": {
+          "lib/net8.0/YamlDotNet.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.1.2.0"
+          }
+        }
+      },
+      "Ryo.Interfaces/2.4.0": {
         "dependencies": {
           "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
-          "SharedScans.Interfaces.dll": {}
+          "Ryo.Interfaces.dll": {
+            "assemblyVersion": "2.4.0",
+            "fileVersion": "2.4.0.0"
+          }
         }
       }
     }
@@ -135,6 +144,20 @@
       "path": "reloaded.sharedlib.hooks/1.9.0",
       "hashPath": "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
     },
+    "RyoTune.Reloaded/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hM4c73oc190pZ2e3KX2/oeSVikVHWB8O5fic6zV1kTJlqfdlAI2ddOvdbPsq6B7f/55sZqUa/J7U0hHlkum/VA==",
+      "path": "ryotune.reloaded/1.0.0",
+      "hashPath": "ryotune.reloaded.1.0.0.nupkg.sha512"
+    },
+    "SharedScans.Interfaces/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q5ryWCZTR2syRBcYoBm94R1D7AXhx2a7pg7hndd4CzLW8oArZSR1GAoawHoKLz/gV1HrjSudK26+w67c30mKgg==",
+      "path": "sharedscans.interfaces/1.1.0",
+      "hashPath": "sharedscans.interfaces.1.1.0.nupkg.sha512"
+    },
     "YamlDotNet/15.1.2": {
       "type": "package",
       "serviceable": true,
@@ -142,17 +165,7 @@
       "path": "yamldotnet/15.1.2",
       "hashPath": "yamldotnet.15.1.2.nupkg.sha512"
     },
-    "Project.Utils/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Ryo.Interfaces/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "SharedScans.Interfaces/1.0.0": {
+    "Ryo.Interfaces/2.4.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

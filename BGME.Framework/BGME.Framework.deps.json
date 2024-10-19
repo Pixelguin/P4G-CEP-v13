@@ -443,7 +443,10 @@
       },
       "BGME.Framework.Interfaces/1.0.0": {
         "runtime": {
-          "BGME.Framework.Interfaces.dll": {}
+          "BGME.Framework.Interfaces.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CriFs.V2.Hook.Interfaces/1.0.0": {
@@ -451,12 +454,18 @@
           "CriFsV2Lib.Definitions": "1.1.0"
         },
         "runtime": {
-          "CriFs.V2.Hook.Interfaces.dll": {}
+          "CriFs.V2.Hook.Interfaces.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Libellus Library/1.0.0": {
         "runtime": {
-          "Libellus Library.dll": {}
+          "Libellus Library.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Persona.Music.Types/1.0.0": {
@@ -464,12 +473,18 @@
           "PersonaModdingMetadata.Shared": "1.0.0"
         },
         "runtime": {
-          "Persona.Music.Types.dll": {}
+          "Persona.Music.Types.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PersonaModdingMetadata.Shared/1.0.0": {
         "runtime": {
-          "PersonaModdingMetadata.Shared.dll": {}
+          "PersonaModdingMetadata.Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PersonaMusicScript.Library/1.0.0": {
@@ -481,7 +496,10 @@
           "protobuf-net": "3.2.26"
         },
         "runtime": {
-          "PersonaMusicScript.Library.dll": {}
+          "PersonaMusicScript.Library.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PersonaMusicScript.Types/1.0.0": {
@@ -491,7 +509,10 @@
           "YamlDotNet": "13.7.1"
         },
         "runtime": {
-          "PersonaMusicScript.Types.dll": {}
+          "PersonaMusicScript.Types.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Project.Utils/1.0.0": {
@@ -501,7 +522,10 @@
           "Reloaded.SharedLib.Hooks": "1.9.0"
         },
         "runtime": {
-          "Project.Utils.dll": {}
+          "Project.Utils.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Ryo.Interfaces/1.0.0": {
@@ -509,7 +533,10 @@
           "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
-          "Ryo.Interfaces.dll": {}
+          "Ryo.Interfaces.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SharedScans.Interfaces/1.0.0": {
@@ -517,7 +544,10 @@
           "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
-          "SharedScans.Interfaces.dll": {}
+          "SharedScans.Interfaces.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Phos.MusicManager.Library/1.0.0.0": {

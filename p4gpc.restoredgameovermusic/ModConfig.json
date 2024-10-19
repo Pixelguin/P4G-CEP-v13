@@ -40,15 +40,6 @@
           },
           "ReleaseMetadataName": "p5rpc.modloader.ReleaseMetadata.json"
         },
-        "p5rpc.lib": {
-          "Config": {
-            "UserName": "AnimatedSwine37",
-            "RepositoryName": "p5rpc.lib",
-            "UseReleaseTag": true,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
-        },
         "Reloaded.Memory.SigScan.ReloadedII": {
           "Config": {
             "UserName": "Reloaded-Project",
@@ -66,6 +57,15 @@
             "AssetFileName": "reloaded.sharedlib.hooks.zip"
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        },
+        "p5rpc.lib": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "p5rpc.lib",
+            "UseReleaseTag": true,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
         },
         "CriFs.V2.Hook.Awb": {
           "Config": {
