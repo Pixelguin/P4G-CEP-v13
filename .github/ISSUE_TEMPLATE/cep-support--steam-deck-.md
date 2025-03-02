@@ -1,5 +1,5 @@
 ---
-name: CEP-XP support (Steam Deck)
+name: CEP support (Steam Deck)
 about: Report a problem you're having and get assistance
 title: ''
 labels: "steam-deck, support"
