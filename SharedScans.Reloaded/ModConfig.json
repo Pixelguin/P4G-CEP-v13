@@ -1,8 +1,8 @@
 {
   "ModId": "SharedScans.Reloaded",
   "ModName": "Shared Scans",
-  "ModAuthor": "zutomayofan50",
-  "ModVersion": "1.2.0",
+  "ModAuthor": "RyoTune",
+  "ModVersion": "1.2.3",
   "ModDescription": "Utility library for streamlining sharing scans between mods.",
   "ModDll": "SharedScans.Reloaded.dll",
   "ModIcon": "Preview.png",
@@ -11,7 +11,7 @@
   "ModNativeDll32": "",
   "ModNativeDll64": "",
   "Tags": [],
-  "CanUnload": null,
+  "CanUnload": false,
   "HasExports": true,
   "IsLibrary": true,
   "ReleaseMetadataFileName": "SharedScans.Reloaded.ReleaseMetadata.json",
@@ -38,9 +38,11 @@
         }
       }
     },
-    "GameBanana": {
-      "ItemType": "Mod",
-      "ItemId": 495507
+    "GitHubRelease": {
+      "UserName": "RyoTune",
+      "RepositoryName": "SharedScans",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
     }
   },
   "IsUniversalMod": true,

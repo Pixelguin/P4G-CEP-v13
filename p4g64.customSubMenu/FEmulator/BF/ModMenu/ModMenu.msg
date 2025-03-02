@@ -41,6 +41,7 @@
 [f 0 5 -258][f 2 1]Play Credits[e]
 [f 0 5 -258][f 2 1]Call BGM[e]
 [f 0 5 -258][f 2 1]Call SFX[e]
+[f 0 5 -258][f 2 1]Call Flow[e]
 
 [msg Player_Menu_Text_1]
 [f 0 5 -258][f 2 1]Player Menu (Page 1/2)[n][f 1 1][e]

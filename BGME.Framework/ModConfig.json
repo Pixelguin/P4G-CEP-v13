@@ -1,8 +1,8 @@
 {
   "ModId": "BGME.Framework",
   "ModName": "BGME Framework",
-  "ModAuthor": "zutomayofan50",
-  "ModVersion": "3.0.1",
+  "ModAuthor": "RyoTune",
+  "ModVersion": "4.0.5",
   "ModDescription": "Extends BGM functionality in Persona games.",
   "ModDll": "BGME.Framework.dll",
   "ModIcon": "Preview.png",
@@ -18,14 +18,23 @@
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {
-        "p5rpc.modloader": {
+        "BGME.Framework.API": {
           "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "p5rpc.modloader",
-            "UseReleaseTag": true,
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
             "AssetFileName": "Mod.zip"
           },
-          "ReleaseMetadataName": "p5rpc.modloader.ReleaseMetadata.json"
+          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
+        },
+        "crifs.v2.hook": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
         },
         "Reloaded.Memory.SigScan.ReloadedII": {
           "Config": {
@@ -45,127 +54,39 @@
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
         },
-        "crifs.v2.hook": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "CriFs.V2.Hook.ReleaseMetadata.json"
-        },
-        "p5rpc.lib": {
-          "Config": {
-            "UserName": "AnimatedSwine37",
-            "RepositoryName": "p5rpc.lib",
-            "UseReleaseTag": true,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
-        },
-        "CriFs.V2.Hook.Awb": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "CriFs.V2.Hook.ReloadedII",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "CriFs.V2.Hook.Awb.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework.pak": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "PAK.Stream.Emulator.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework.bmd": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "BMD.File.Emulator.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework.bf": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework.spd": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework.awb": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "AWB.Stream.Emulator.ReleaseMetadata.json"
-        },
-        "reloaded.universal.fileemulationframework": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
-        }
-      }
-    },
-    "GameBanana": {
-      "ItemType": "Mod",
-      "ItemId": 477399
-    },
-    "GameBananaDependencies": {
-      "IdToConfigMap": {
-        "BGME.Framework.API": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 477399
-          },
-          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
-        },
         "Ryo.Reloaded": {
           "Config": {
-            "ItemType": "Mod",
-            "ItemId": 495507
+            "UserName": "RyoTune",
+            "RepositoryName": "Ryo",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
         },
         "SharedScans.Reloaded": {
           "Config": {
-            "ItemType": "Mod",
-            "ItemId": 495507
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         }
       }
+    },
+    "GitHubRelease": {
+      "UserName": "RyoTune",
+      "RepositoryName": "BGME",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
     }
   },
   "IsUniversalMod": false,
   "ModDependencies": [
-    "p5rpc.modloader",
+    "BGME.Framework.API",
+    "crifs.v2.hook",
     "Reloaded.Memory.SigScan.ReloadedII",
     "reloaded.sharedlib.hooks",
-    "crifs.v2.hook",
-    "p5rpc.lib",
-    "BGME.Framework.API",
     "Ryo.Reloaded",
     "SharedScans.Reloaded"
   ],
@@ -173,7 +94,8 @@
   "SupportedAppId": [
     "p3p.exe",
     "p4g.exe",
-    "p5r.exe"
+    "p5r.exe",
+    "metaphor.exe"
   ],
   "ProjectUrl": ""
 }

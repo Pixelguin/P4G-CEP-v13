@@ -9,7 +9,7 @@
     ".NETCoreApp,Version=v7.0/win-x86": {
       "Reloaded.Hooks.ReloadedII/1.0.0": {
         "dependencies": {
-          "Reloaded.Hooks": "4.3.1",
+          "Reloaded.Hooks": "4.3.2",
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.14.0",
           "Reloaded.Hooks.ReloadedII.Interfaces": "1.14.0.0"
@@ -26,7 +26,7 @@
           }
         }
       },
-      "Reloaded.Assembler/1.0.14": {
+      "Reloaded.Assembler/1.0.14-mem-buffers-2.0": {
         "dependencies": {
           "Reloaded.Memory.Buffers": "2.0.0"
         },
@@ -37,17 +37,17 @@
           }
         }
       },
-      "Reloaded.Hooks/4.3.1": {
+      "Reloaded.Hooks/4.3.2": {
         "dependencies": {
           "Iced": "1.17.0",
-          "Reloaded.Assembler": "1.0.14",
+          "Reloaded.Assembler": "1.0.14-mem-buffers-2.0",
           "Reloaded.Hooks.Definitions": "1.15.0",
           "Reloaded.Memory.Buffers": "2.0.0"
         },
         "runtime": {
           "lib/net7.0/Reloaded.Hooks.dll": {
-            "assemblyVersion": "4.3.1.0",
-            "fileVersion": "4.3.1.0"
+            "assemblyVersion": "4.3.2.0",
+            "fileVersion": "4.3.2.0"
           }
         }
       },
@@ -117,19 +117,19 @@
       "path": "iced/1.17.0",
       "hashPath": "iced.1.17.0.nupkg.sha512"
     },
-    "Reloaded.Assembler/1.0.14": {
+    "Reloaded.Assembler/1.0.14-mem-buffers-2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-y4I1ktSnHPIz3t1JcWk5Xiu0C0BmrlJ6nDnQGwiyz65RH6hjn9vPCcKYjpQDveuTtsebBFdTdUjxTUSw+qtZ2w==",
-      "path": "reloaded.assembler/1.0.14",
-      "hashPath": "reloaded.assembler.1.0.14.nupkg.sha512"
+      "sha512": "sha512-AXbZLNAGI8UfgG+/xn5QbENA2CallQSd8/oCdHbnZ9EBGVkxsuOZwhlWle7aNekOwIsMI0OsAv6FmFQCIRWz2g==",
+      "path": "reloaded.assembler/1.0.14-mem-buffers-2.0",
+      "hashPath": "reloaded.assembler.1.0.14-mem-buffers-2.0.nupkg.sha512"
     },
-    "Reloaded.Hooks/4.3.1": {
+    "Reloaded.Hooks/4.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/VA5uv+ZUR2bCZGXl3H17NAgBDS/Ug5oYSgQSs9OTXe4qrsg6ZyXYVIbazNQzNeeGJOV1utVq9g29xMiXMNXNw==",
-      "path": "reloaded.hooks/4.3.1",
-      "hashPath": "reloaded.hooks.4.3.1.nupkg.sha512"
+      "sha512": "sha512-crqHN+6p0Q7aetBInqdKTevYaFGnVhd4DS5GozFlLOUt6gVZ8xpBex2yGoh3AsW0vGuTWGnm3nY4PevFIft+GQ==",
+      "path": "reloaded.hooks/4.3.2",
+      "hashPath": "reloaded.hooks.4.3.2.nupkg.sha512"
     },
     "Reloaded.Hooks.Definitions/1.15.0": {
       "type": "package",

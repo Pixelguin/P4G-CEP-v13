@@ -1,8 +1,8 @@
 {
   "ModId": "BGME.Framework.API",
   "ModName": "BGME Framework API",
-  "ModAuthor": "zutomayofan50",
-  "ModVersion": "1.0.1",
+  "ModAuthor": "RyoTune",
+  "ModVersion": "1.0.2",
   "ModDescription": "BGME Framework API.",
   "ModDll": "BGME.Framework.API.dll",
   "ModIcon": "Preview.png",
@@ -29,9 +29,11 @@
         }
       }
     },
-    "GameBanana": {
-      "ItemType": "Mod",
-      "ItemId": 477399
+    "GitHubRelease": {
+      "UserName": "RyoTune",
+      "RepositoryName": "BGME",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
     }
   },
   "IsUniversalMod": true,

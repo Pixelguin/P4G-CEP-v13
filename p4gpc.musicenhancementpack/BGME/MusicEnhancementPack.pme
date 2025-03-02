@@ -55,9 +55,9 @@ encounter["Adachi"]:
 	music = 692
 end
 
-// Marie: Just Like the Wind (manual replacement - 078)
+// Marie: Just Like the Wind
 encounter["Marie"]:
-	music = 78
+	music = 703
 end
 
 // Kusumi-no-Okami: I'll Face Myself -Reincarnation-
@@ -74,7 +74,7 @@ end
 
 // Void Quest Optional Boss: Shin Mitsuo Tensei
 encounter[529]:
-	music = 81
+	music = 59
 end
 
 // Hollow Forest Minibosses: Memory special

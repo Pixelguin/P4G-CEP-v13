@@ -1,420 +1,421 @@
-Game: P3P_PC
-Version: 1
-DefaultBaseReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm
-DefaultEncoder: ADX
-Songs:
-- Name: tartarus_0d01
-  Category: Location
-  Tags:
+name: Persona 3 Portable BGM (PC)
+tags: ['Persona 3 Portable', 'PC', 'BGM']
+default_output_path: P5REssentials/CPK/Yona/data/sound/bgm
+default_encoder: ADX
+default_loop_state: true
+tracks:
+- name: tartarus_0d01
+  category: Location
+  tags:
   - Tartarus
   - 1st Block
-  CueId: 1
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/1.adx
-  Encoder: ADX
-- Name: Shadow
-  Category: Story
-  Tags: []
-  CueId: 19
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/19.adx
-  Encoder: ADX
-- Name: Deep Breath Deep Breath
-  Category: Story
-  Tags: []
-  CueId: 20
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/20.adx
-  Encoder: ADX
-- Name: Basement
-  Category: Story
-  Tags: []
-  CueId: 21
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/21.adx
-  Encoder: ADX
-- Name: A Deep Mentality
-  Category: Story
-  Tags: []
-  CueId: 22
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/22.adx
-  Encoder: ADX
-- Name: When The Moon's Reaching Out Stars
-  Category: Overworld
-  Tags: []
-  CueId: 25
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/25.adx
-  Encoder: ADX
-- Name: Mass Destruction
-  Category: Normal Battle
-  Tags: []
-  CueId: 26
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/26.adx
-  Encoder: ADX
-- Name: Master Of Shadow
-  Category: Boss Battle
-  Tags: []
-  CueId: 27
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/27.adx
-  Encoder: ADX
-- Name: Unavoidable Battle
-  Category: Boss Battle
-  Tags: []
-  CueId: 28
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/28.adx
-  Encoder: ADX
-- Name: Burn My Dread -Last Battle-
-  Category: Boss Battle
-  Tags: []
-  CueId: 29
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/29.adx
-  Encoder: ADX
-- Name: The Battle For Everyone's Soul
-  Category: Boss Battle
-  Tags: []
-  CueId: 30
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/30.adx
-  Encoder: ADX
-- Name: Master Of Tartarus
-  Category: Boss Battle
-  Tags: []
-  CueId: 31
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/31.adx
-  Encoder: ADX
-- Name: Kyoto
-  Category: Location
-  Tags:
+  cue_id: 1
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/1.adx
+  encoder: ADX
+- name: Shadow
+  category: Story
+  tags: []
+  cue_id: 19
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/19.adx
+  encoder: ADX
+- name: Deep Breath Deep Breath
+  category: Story
+  tags: []
+  cue_id: 20
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/20.adx
+  encoder: ADX
+- name: Basement
+  category: Story
+  tags: []
+  cue_id: 21
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/21.adx
+  encoder: ADX
+- name: A Deep Mentality
+  category: Story
+  tags: []
+  cue_id: 22
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/22.adx
+  encoder: ADX
+- name: When The Moon's Reaching Out Stars
+  category: Overworld
+  tags: []
+  cue_id: 25
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/25.adx
+  encoder: ADX
+- name: Mass Destruction
+  category: Normal Battle
+  tags: []
+  cue_id: 26
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/26.adx
+  encoder: ADX
+- name: Master Of Shadow
+  category: Boss Battle
+  tags: []
+  cue_id: 27
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/27.adx
+  encoder: ADX
+- name: Unavoidable Battle
+  category: Boss Battle
+  tags: []
+  cue_id: 28
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/28.adx
+  encoder: ADX
+- name: Burn My Dread -Last Battle-
+  category: Boss Battle
+  tags: []
+  cue_id: 29
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/29.adx
+  encoder: ADX
+- name: The Battle For Everyone's Soul
+  category: Boss Battle
+  tags: []
+  cue_id: 30
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/30.adx
+  encoder: ADX
+- name: Master Of Tartarus
+  category: Boss Battle
+  tags: []
+  cue_id: 31
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/31.adx
+  encoder: ADX
+- name: Kyoto
+  category: Location
+  tags:
   - Kyoto
-  CueId: 32
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/32.adx
-  Encoder: ADX
-- Name: Troubled
-  Category: Story
-  Tags: []
-  CueId: 35
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/35.adx
-  Encoder: ADX
-- Name: That Which Comes From The Darkness
-  Category: Story
-  Tags: []
-  CueId: 36
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/36.adx
-  Encoder: ADX
-- Name: Living With Determination
-  Category: Story
-  Tags: []
-  CueId: 37
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/37.adx
-  Encoder: ADX
-- Name: Joy (Story)
-  Category: Story
-  Tags: []
-  CueId: 38
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/38.adx
-  Encoder: ADX
-- Name: Fearful Experience
-  Category: Story
-  Tags: []
-  CueId: 39
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/39.adx
-  Encoder: ADX
-- Name: Calamity
-  Category: Story
-  Tags: []
-  CueId: 40
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/40.adx
-  Encoder: ADX
-- Name: Memories of You
-  Category: Story
-  Tags:
+  cue_id: 32
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/32.adx
+  encoder: ADX
+- name: Troubled
+  category: Story
+  tags: []
+  cue_id: 35
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/35.adx
+  encoder: ADX
+- name: That Which Comes From The Darkness
+  category: Story
+  tags: []
+  cue_id: 36
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/36.adx
+  encoder: ADX
+- name: Living With Determination
+  category: Story
+  tags: []
+  cue_id: 37
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/37.adx
+  encoder: ADX
+- name: Joy (Story)
+  category: Story
+  tags: []
+  cue_id: 38
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/38.adx
+  encoder: ADX
+- name: Fearful Experience
+  category: Story
+  tags: []
+  cue_id: 39
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/39.adx
+  encoder: ADX
+- name: Calamity
+  category: Story
+  tags: []
+  cue_id: 40
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/40.adx
+  encoder: ADX
+- name: Memories of You
+  category: Story
+  tags:
   - Ending
-  CueId: 42
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/42.adx
-  Encoder: ADX
-- Name: Joy (Social Links)
-  Category: Story
-  Tags: []
-  CueId: 43
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/43.adx
-  Encoder: ADX
-- Name: This Strange Feeling
-  Category: Story
-  Tags: []
-  CueId: 44
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/44.adx
-  Encoder: ADX
-- Name: Crisis
-  Category: Story
-  Tags: []
-  CueId: 45
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/45.adx
-  Encoder: ADX
-- Name: The Path is Open
-  Category: Story
-  Tags: []
-  CueId: 46
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/46.adx
-  Encoder: ADX
-- Name: Want To Be Close
-  Category: Location
-  Tags:
+  cue_id: 42
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/42.adx
+  encoder: ADX
+- name: Joy (Social Links)
+  category: Story
+  tags: []
+  cue_id: 43
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/43.adx
+  encoder: ADX
+- name: This Strange Feeling
+  category: Story
+  tags: []
+  cue_id: 44
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/44.adx
+  encoder: ADX
+- name: Crisis
+  category: Story
+  tags: []
+  cue_id: 45
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/45.adx
+  encoder: ADX
+- name: The Path is Open
+  category: Story
+  tags: []
+  cue_id: 46
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/46.adx
+  encoder: ADX
+- name: Want To Be Close
+  category: Location
+  tags:
   - School
   - 1st Semester
-  CueId: 50
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/50.adx
-  Encoder: ADX
-- Name: Changing Seasons
-  Category: Location
-  Tags:
+  cue_id: 50
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/50.adx
+  encoder: ADX
+- name: Changing Seasons
+  category: Location
+  tags:
   - School
   - 2nd Semester
-  CueId: 51
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/51.adx
-  Encoder: ADX
-- Name: Memories of the School (Another Version)
-  Category: Location
-  Tags:
+  cue_id: 51
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/51.adx
+  encoder: ADX
+- name: Memories of the School (Another Version)
+  category: Location
+  tags:
   - School
   - January
-  CueId: 52
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/52.adx
-  Encoder: ADX
-- Name: Iwatodai Dorm
-  Category: Location
-  Tags:
+  cue_id: 52
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/52.adx
+  encoder: ADX
+- name: Iwatodai Dorm
+  category: Location
+  tags:
   - Iwatodai Dorm
-  CueId: 53
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/53.adx
-  Encoder: ADX
-- Name: Aria of the Soul
-  Category: Location
-  Tags:
+  cue_id: 53
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/53.adx
+  encoder: ADX
+- name: Aria of the Soul
+  category: Location
+  tags:
   - Velvet Room
-  CueId: 54
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/54.adx
-  Encoder: ADX
-- Name: Tanaka's Amazing Commodities
-  Category: Shop
-  Tags: []
-  CueId: 55
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/55.adx
-  Encoder: ADX
-- Name: Paulownia Mall
-  Category: Shop
-  Tags: []
-  CueId: 56
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/56.adx
-  Encoder: ADX
-- Name: After the Battle
-  Category: Victory Theme
-  Tags: []
-  CueId: 60
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/60.adx
-  Encoder: ADX
-- Name: The Path Was Closed
-  Category: Story
-  Tags: []
-  CueId: 62
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/62.adx
-  Encoder: ADX
-- Name: tartarus_0d02
-  Category: Location
-  Tags:
+  cue_id: 54
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/54.adx
+  encoder: ADX
+- name: Tanaka's Amazing Commodities
+  category: Shop
+  tags: []
+  cue_id: 55
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/55.adx
+  encoder: ADX
+- name: Paulownia Mall
+  category: Shop
+  tags: []
+  cue_id: 56
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/56.adx
+  encoder: ADX
+- name: After the Battle
+  category: Victory Theme
+  tags: []
+  cue_id: 60
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/60.adx
+  encoder: ADX
+- name: The Path Was Closed
+  category: Story
+  tags: []
+  cue_id: 62
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/62.adx
+  encoder: ADX
+- name: tartarus_0d02
+  category: Location
+  tags:
   - Tartarus
   - 2nd Block
-  CueId: 70
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/70.adx
-  Encoder: ADX
-- Name: The Voice Someone Calls
-  Category: Location
-  Tags:
+  cue_id: 70
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/70.adx
+  encoder: ADX
+- name: The Voice Someone Calls
+  category: Location
+  tags:
   - Tartarus
   - Entrance
-  CueId: 71
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/71.adx
-  Encoder: ADX
-- Name: tartarus_0d04
-  Category: Location
-  Tags:
+  cue_id: 71
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/71.adx
+  encoder: ADX
+- name: tartarus_0d04
+  category: Location
+  tags:
   - Tartarus
   - 4th Block
-  CueId: 72
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/72.adx
-  Encoder: ADX
-- Name: tartarus_0d05
-  Category: Location
-  Tags:
+  cue_id: 72
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/72.adx
+  encoder: ADX
+- name: tartarus_0d05
+  category: Location
+  tags:
   - Tartarus
   - 5th Block
-  CueId: 73
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/73.adx
-  Encoder: ADX
-- Name: tartarus_0d06 (Tartarus)
-  Category: Location
-  Tags:
+  cue_id: 73
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/73.adx
+  encoder: ADX
+- name: tartarus_0d06 (Tartarus)
+  category: Location
+  tags:
   - Tartarus
   - 6th Block
-  CueId: 74
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/74.adx
-  Encoder: ADX
-- Name: tartarus_0d06 (Story)
-  Category: Story
-  Tags: []
-  CueId: 75
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/75.adx
-  Encoder: ADX
-- Name: Living With Determination -Iwatodai Dormitory Arrange-
-  Category: Location
-  Tags:
+  cue_id: 74
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/74.adx
+  encoder: ADX
+- name: tartarus_0d06 (Story)
+  category: Story
+  tags: []
+  cue_id: 75
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/75.adx
+  encoder: ADX
+- name: Living With Determination -Iwatodai Dormitory Arrange-
+  category: Location
+  tags:
   - Iwatodai Dorm
-  CueId: 77
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/77.adx
-  Encoder: ADX
-- Name: Mistic
-  Category: Story
-  Tags: []
-  CueId: 79
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/79.adx
-  Encoder: ADX
-- Name: Memories Of The City
-  Category: Location
-  Tags:
+  cue_id: 77
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/77.adx
+  encoder: ADX
+- name: Mistic
+  category: Story
+  tags: []
+  cue_id: 79
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/79.adx
+  encoder: ADX
+- name: Memories Of The City
+  category: Location
+  tags:
   - Port Island
-  CueId: 80
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/80.adx
-  Encoder: ADX
-- Name: tartarus_0d03
-  Category: Location
-  Tags:
+  cue_id: 80
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/80.adx
+  encoder: ADX
+- name: tartarus_0d03
+  category: Location
+  tags:
   - Tartarus
   - 3rd Block
-  CueId: 81
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/81.adx
-  Encoder: ADX
-- Name: Peace
-  Category: Story
-  Tags: []
-  CueId: 85
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/85.adx
-  Encoder: ADX
-- Name: The Power of the Heart
-  Category: Story
-  Tags: []
-  CueId: 86
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/86.adx
-  Encoder: ADX
-- Name: Adventured act
-  Category: Story
-  Tags: []
-  CueId: 87
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/87.adx
-  Encoder: ADX
-- Name: Memories of the School
-  Category: Location
-  Tags:
+  cue_id: 81
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/81.adx
+  encoder: ADX
+- name: Peace
+  category: Story
+  tags: []
+  cue_id: 85
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/85.adx
+  encoder: ADX
+- name: The Power of the Heart
+  category: Story
+  tags: []
+  cue_id: 86
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/86.adx
+  encoder: ADX
+- name: Adventured act
+  category: Story
+  tags: []
+  cue_id: 87
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/87.adx
+  encoder: ADX
+- name: Memories of the School
+  category: Location
+  tags:
   - School
-  CueId: 88
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/88.adx
-  Encoder: ADX
-- Name: During the Exams...
-  Category: Daily Life
-  Tags: []
-  CueId: 89
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/89.adx
-  Encoder: ADX
-- Name: An Unpleasant Premonition
-  Category: Story
-  Tags: []
-  CueId: 90
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/90.adx
-  Encoder: ADX
-- Name: Afternoon Break
-  Category: Daily Life
-  Tags: []
-  CueId: 91
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/91.adx
-  Encoder: ADX
-- Name: Between Doors
-  Category: Location
-  Tags:
+  cue_id: 88
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/88.adx
+  encoder: ADX
+- name: During the Exams...
+  category: Daily Life
+  tags: []
+  cue_id: 89
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/89.adx
+  encoder: ADX
+- name: An Unpleasant Premonition
+  category: Story
+  tags: []
+  cue_id: 90
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/90.adx
+  encoder: ADX
+- name: Afternoon Break
+  category: Daily Life
+  tags: []
+  cue_id: 91
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/91.adx
+  encoder: ADX
+- name: Between Doors
+  category: Location
+  tags:
   - Vision Quest
-  CueId: 101
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/101.adx
-  Encoder: ADX
-- Name: The Snow Queen
-  Category: Fuuka BGM
-  Tags: []
-  CueId: 102
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/102.adx
-  Encoder: ADX
-- Name: Maya Theme
-  Category: Fuuka BGM
-  Tags: []
-  CueId: 103
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/103.adx
-  Encoder: ADX
-- Name: Persona
-  Category: Fuuka BGM
-  Tags: []
-  CueId: 104
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/104.adx
-  Encoder: ADX
-- Name: Time Castle
-  Category: Fuuka BGM
-  Tags: []
-  CueId: 105
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/105.adx
-  Encoder: ADX
-- Name: Brand New Days
-  Category: Story
-  Tags:
+  cue_id: 101
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/101.adx
+  encoder: ADX
+- name: The Snow Queen
+  category: Fuuka BGM
+  tags: []
+  cue_id: 102
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/102.adx
+  encoder: ADX
+- name: Maya Theme
+  category: Fuuka BGM
+  tags: []
+  cue_id: 103
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/103.adx
+  encoder: ADX
+- name: Persona
+  category: Fuuka BGM
+  tags: []
+  cue_id: 104
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/104.adx
+  encoder: ADX
+- name: Time Castle
+  category: Fuuka BGM
+  tags: []
+  cue_id: 105
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/105.adx
+  encoder: ADX
+- name: Brand New Days
+  category: Story
+  tags:
   - The Answer Ending Theme
-  CueId: 115
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/115.adx
-  Encoder: ADX
-- Name: Time
-  Category: Location
-  Tags:
+  cue_id: 115
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/115.adx
+  encoder: ADX
+- name: Time
+  category: Location
+  tags:
   - School
   - 1st Semester
   - FEMC
-  CueId: 120
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/120.adx
-  Encoder: ADX
-- Name: Sun
-  Category: Location
-  Tags:
+  cue_id: 120
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/120.adx
+  encoder: ADX
+- name: Sun
+  category: Location
+  tags:
   - School
   - 2nd Semester
   - FEMC
-  CueId: 121
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/121.adx
-  Encoder: ADX
-- Name: Wiping All Out
-  Category: Normal Battle
-  Tags: []
-  CueId: 122
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/122.adx
-  Encoder: ADX
-- Name: Danger Zone
-  Category: Boss Battle
-  Tags: []
-  CueId: 123
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/123.adx
-  Encoder: ADX
-- Name: Way of Life
-  Category: Location
-  Tags:
+  cue_id: 121
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/121.adx
+  encoder: ADX
+- name: Wiping All Out
+  category: Normal Battle
+  tags: []
+  cue_id: 122
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/122.adx
+  encoder: ADX
+- name: Danger Zone
+  category: Boss Battle
+  tags: []
+  cue_id: 123
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/123.adx
+  encoder: ADX
+- name: Way of Life
+  category: Location
+  tags:
   - Port Island
   - FEMC
-  CueId: 124
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/124.adx
-  Encoder: ADX
-- Name: After School
-  Category: Story
-  Tags: []
-  CueId: 125
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/125.adx
-  Encoder: ADX
-- Name: Tender Feeling
-  Category: Story
-  Tags: []
-  CueId: 126
-  ReplacementPath: P5REssentials/CPK/Phos Music Manager/data/sound/bgm/126.adx
-  Encoder: ADX
+  cue_id: 124
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/124.adx
+  encoder: ADX
+- name: After School
+  category: Story
+  tags: []
+  cue_id: 125
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/125.adx
+  encoder: ADX
+- name: Tender Feeling
+  category: Story
+  tags: []
+  cue_id: 126
+  output_path: P5REssentials/CPK/Yona/data/sound/bgm/126.adx
+  encoder: ADX

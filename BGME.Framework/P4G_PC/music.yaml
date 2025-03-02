@@ -1,387 +1,388 @@
-Game: P4G_PC
-Version: 1
-DefaultBaseReplacementPath: FEmulator/AWB/snd00_bgm.awb
-DefaultEncoder: HCA
-Songs:
-- Name: Memory
-  Category: Story
-  Tags: []
-  CueId: 54
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/28.hca
-  Encoder: HCA
-- Name: The Genesis
-  Category: Boss Battle
-  Tags: []
-  CueId: 6
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/29.hca
-  Encoder: HCA
-- Name: Reach Out To The Truth
-  Category: Normal Battle
-  Tags:
+name: Persona 4 Golden BGM (PC)
+tags: ['Persona 4 Golden', 'PC', 'BGM']
+default_output_path: FEmulator/AWB/snd00_bgm.awb
+default_encoder: HCA
+default_loop_state: true
+tracks:
+- name: Memory
+  category: Story
+  tags: []
+  cue_id: 54
+  output_path: FEmulator/AWB/snd00_bgm.awb/28.hca
+  encoder: HCA
+- name: The Genesis
+  category: Boss Battle
+  tags: []
+  cue_id: 6
+  output_path: FEmulator/AWB/snd00_bgm.awb/29.hca
+  encoder: HCA
+- name: Reach Out To The Truth
+  category: Normal Battle
+  tags:
   - 'Context: Normal'
-  CueId: 1
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/30.hca
-  Encoder: HCA
-- Name: I'll Face Myself -Battle-
-  Category: Boss Battle
-  Tags:
+  cue_id: 1
+  output_path: FEmulator/AWB/snd00_bgm.awb/30.hca
+  encoder: HCA
+- name: I'll Face Myself -Battle-
+  category: Boss Battle
+  tags:
   - Shadow Bosses
   - Mini-bosses
   - Optional Bosses
-  CueId: 2
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/31.hca
-  Encoder: HCA
-- Name: A New World Fool
-  Category: Boss Battle
-  Tags: []
-  CueId: 3
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/32.hca
-  Encoder: HCA
-- Name: The Almighty
-  Category: Boss Battle
-  Tags:
+  cue_id: 2
+  output_path: FEmulator/AWB/snd00_bgm.awb/31.hca
+  encoder: HCA
+- name: A New World Fool
+  category: Boss Battle
+  tags: []
+  cue_id: 3
+  output_path: FEmulator/AWB/snd00_bgm.awb/32.hca
+  encoder: HCA
+- name: The Almighty
+  category: Boss Battle
+  tags:
   - Ameno-sagiri
-  CueId: 4
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/33.hca
-  Encoder: HCA
-- Name: The Fog
-  Category: Boss Battle
-  Tags: []
-  CueId: 5
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/34.hca
-  Encoder: HCA
-- Name: Period
-  Category: Victory Theme
-  Tags: []
-  CueId: 7
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/35.hca
-  Encoder: HCA
-- Name: New Days
-  Category: Story
-  Tags: []
-  CueId: 8
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/36.hca
-  Encoder: HCA
-- Name: I'll Face Myself
-  Category: Story
-  Tags: []
-  CueId: 9
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/37.hca
-  Encoder: HCA
-- Name: Borderline of Madness
-  Category: Story
-  Tags: []
-  CueId: 10
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/38.hca
-  Encoder: HCA
-- Name: Who's There?
-  Category: Story
-  Tags: []
-  CueId: 11
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/39.hca
-  Encoder: HCA
-- Name: SMILE
-  Category: Story
-  Tags: []
-  CueId: 12
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/40.hca
-  Encoder: HCA
-- Name: Reasoning
-  Category: Story
-  Tags: []
-  CueId: 13
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/41.hca
-  Encoder: HCA
-- Name: The Power of the Heart
-  Category: Story
-  Tags: []
-  CueId: 14
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/42.hca
-  Encoder: HCA
-- Name: The Path is Open
-  Category: Story
-  Tags: []
-  CueId: 15
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/43.hca
-  Encoder: HCA
-- Name: Jika Net Tanaka
-  Category: Shop
-  Tags: []
-  CueId: 16
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/44.hca
-  Encoder: HCA
-- Name: youthful lunch
-  Category: Daily Life
-  Tags: []
-  CueId: 17
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/45.hca
-  Encoder: HCA
-- Name: specialist
-  Category: Daily Life
-  Tags: []
-  CueId: 18
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/46.hca
-  Encoder: HCA
-- Name: A Corner of Memories
-  Category: Title Screen
-  Tags:
+  cue_id: 4
+  output_path: FEmulator/AWB/snd00_bgm.awb/33.hca
+  encoder: HCA
+- name: The Fog
+  category: Boss Battle
+  tags: []
+  cue_id: 5
+  output_path: FEmulator/AWB/snd00_bgm.awb/34.hca
+  encoder: HCA
+- name: Period
+  category: Victory Theme
+  tags: []
+  cue_id: 7
+  output_path: FEmulator/AWB/snd00_bgm.awb/35.hca
+  encoder: HCA
+- name: New Days
+  category: Story
+  tags: []
+  cue_id: 8
+  output_path: FEmulator/AWB/snd00_bgm.awb/36.hca
+  encoder: HCA
+- name: I'll Face Myself
+  category: Story
+  tags: []
+  cue_id: 9
+  output_path: FEmulator/AWB/snd00_bgm.awb/37.hca
+  encoder: HCA
+- name: Borderline of Madness
+  category: Story
+  tags: []
+  cue_id: 10
+  output_path: FEmulator/AWB/snd00_bgm.awb/38.hca
+  encoder: HCA
+- name: Who's There?
+  category: Story
+  tags: []
+  cue_id: 11
+  output_path: FEmulator/AWB/snd00_bgm.awb/39.hca
+  encoder: HCA
+- name: SMILE
+  category: Story
+  tags: []
+  cue_id: 12
+  output_path: FEmulator/AWB/snd00_bgm.awb/40.hca
+  encoder: HCA
+- name: Reasoning
+  category: Story
+  tags: []
+  cue_id: 13
+  output_path: FEmulator/AWB/snd00_bgm.awb/41.hca
+  encoder: HCA
+- name: The Power of the Heart
+  category: Story
+  tags: []
+  cue_id: 14
+  output_path: FEmulator/AWB/snd00_bgm.awb/42.hca
+  encoder: HCA
+- name: The Path is Open
+  category: Story
+  tags: []
+  cue_id: 15
+  output_path: FEmulator/AWB/snd00_bgm.awb/43.hca
+  encoder: HCA
+- name: Jika Net Tanaka
+  category: Shop
+  tags: []
+  cue_id: 16
+  output_path: FEmulator/AWB/snd00_bgm.awb/44.hca
+  encoder: HCA
+- name: youthful lunch
+  category: Daily Life
+  tags: []
+  cue_id: 17
+  output_path: FEmulator/AWB/snd00_bgm.awb/45.hca
+  encoder: HCA
+- name: specialist
+  category: Daily Life
+  tags: []
+  cue_id: 18
+  output_path: FEmulator/AWB/snd00_bgm.awb/46.hca
+  encoder: HCA
+- name: A Corner of Memories
+  category: Title Screen
+  tags:
   - Main Menu
-  CueId: 19
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/47.hca
-  Encoder: HCA
-- Name: Poem for Everyone's Souls
-  Category: Location
-  Tags:
+  cue_id: 19
+  output_path: FEmulator/AWB/snd00_bgm.awb/47.hca
+  encoder: HCA
+- name: Poem for Everyone's Souls
+  category: Location
+  tags:
   - Velvet Room
-  CueId: 20
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/48.hca
-  Encoder: HCA
-- Name: How much?
-  Category: Shop
-  Tags: []
-  CueId: 21
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/49.hca
-  Encoder: HCA
-- Name: Your Affection
-  Category: Overworld
-  Tags:
+  cue_id: 20
+  output_path: FEmulator/AWB/snd00_bgm.awb/48.hca
+  encoder: HCA
+- name: How much?
+  category: Shop
+  tags: []
+  cue_id: 21
+  output_path: FEmulator/AWB/snd00_bgm.awb/49.hca
+  encoder: HCA
+- name: Your Affection
+  category: Overworld
+  tags:
   - Clear
   - Sunny
-  CueId: 22
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/50.hca
-  Encoder: HCA
-- Name: Heartbeat,Heartbreak
-  Category: Overworld
-  Tags:
+  cue_id: 22
+  output_path: FEmulator/AWB/snd00_bgm.awb/50.hca
+  encoder: HCA
+- name: Heartbeat,Heartbreak
+  category: Overworld
+  tags:
   - Cloudy
-  CueId: 23
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/51.hca
-  Encoder: HCA
-- Name: Omen
-  Category: Overworld
-  Tags:
+  cue_id: 23
+  output_path: FEmulator/AWB/snd00_bgm.awb/51.hca
+  encoder: HCA
+- name: Omen
+  category: Overworld
+  tags:
   - Foggy
-  CueId: 24
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/52.hca
-  Encoder: HCA
-- Name: Signs of Love
-  Category: Location
-  Tags:
+  cue_id: 24
+  output_path: FEmulator/AWB/snd00_bgm.awb/52.hca
+  encoder: HCA
+- name: Signs of Love
+  category: Location
+  tags:
   - Dojima Residence
-  CueId: 25
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/53.hca
-  Encoder: HCA
-- Name: Alone
-  Category: Location
-  Tags:
+  cue_id: 25
+  output_path: FEmulator/AWB/snd00_bgm.awb/53.hca
+  encoder: HCA
+- name: Alone
+  category: Location
+  tags:
   - Dojima Residence
-  CueId: 26
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/54.hca
-  Encoder: HCA
-- Name: Backside of the TV
-  Category: Location
-  Tags:
+  cue_id: 26
+  output_path: FEmulator/AWB/snd00_bgm.awb/54.hca
+  encoder: HCA
+- name: Backside of the TV
+  category: Location
+  tags:
   - Midnight Channel
   - Entrance
-  CueId: 27
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/55.hca
-  Encoder: HCA
-- Name: Castle
-  Category: Location
-  Tags:
+  cue_id: 27
+  output_path: FEmulator/AWB/snd00_bgm.awb/55.hca
+  encoder: HCA
+- name: Castle
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 28
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/56.hca
-  Encoder: HCA
-- Name: Sauna
-  Category: Location
-  Tags:
+  cue_id: 28
+  output_path: FEmulator/AWB/snd00_bgm.awb/56.hca
+  encoder: HCA
+- name: Sauna
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 29
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/57.hca
-  Encoder: HCA
-- Name: Theater
-  Category: Location
-  Tags:
+  cue_id: 29
+  output_path: FEmulator/AWB/snd00_bgm.awb/57.hca
+  encoder: HCA
+- name: Theater
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 30
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/58.hca
-  Encoder: HCA
-- Name: Game
-  Category: Location
-  Tags:
+  cue_id: 30
+  output_path: FEmulator/AWB/snd00_bgm.awb/58.hca
+  encoder: HCA
+- name: Game
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 31
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/59.hca
-  Encoder: HCA
-- Name: Secret Base
-  Category: Location
-  Tags:
+  cue_id: 31
+  output_path: FEmulator/AWB/snd00_bgm.awb/59.hca
+  encoder: HCA
+- name: Secret Base
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 32
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/60.hca
-  Encoder: HCA
-- Name: Heaven
-  Category: Location
-  Tags:
+  cue_id: 32
+  output_path: FEmulator/AWB/snd00_bgm.awb/60.hca
+  encoder: HCA
+- name: Heaven
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 33
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/61.hca
-  Encoder: HCA
-- Name: Long Way
-  Category: Location
-  Tags:
+  cue_id: 33
+  output_path: FEmulator/AWB/snd00_bgm.awb/61.hca
+  encoder: HCA
+- name: Long Way
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 34
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/62.hca
-  Encoder: HCA
-- Name: Corridor
-  Category: Location
-  Tags:
+  cue_id: 34
+  output_path: FEmulator/AWB/snd00_bgm.awb/62.hca
+  encoder: HCA
+- name: Corridor
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 35
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/63.hca
-  Encoder: HCA
-- Name: Joy (Persona 3)
-  Category: Story
-  Tags: []
-  CueId: 36
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/64.hca
-  Encoder: HCA
-- Name: Fearful Experience (Persona 3)
-  Category: Story
-  Tags: []
-  CueId: 37
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/65.hca
-  Encoder: HCA
-- Name: Crisis (Persona 3)
-  Category: Story
-  Tags: []
-  CueId: 38
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/66.hca
-  Encoder: HCA
-- Name: P3 fes (Persona 3)
-  Category: Story
-  Tags: []
-  CueId: 39
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/67.hca
-  Encoder: HCA
-- Name: Like a dream come true
-  Category: Story
-  Tags: []
-  CueId: 40
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/68.hca
-  Encoder: HCA
-- Name: Borderline of Madness (2nd loop)
-  Category: Boss Battle
-  Tags: []
-  CueId: 41
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/69.hca
-  Encoder: HCA
-- Name: Borderline of Madness (3rd loop)
-  Category: Boss Battle
-  Tags: []
-  CueId: 42
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/70.hca
-  Encoder: HCA
-- Name: ZONE TIME
-  Category: Story
-  Tags: []
-  CueId: 43
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/71.hca
-  Encoder: HCA
-- Name: Reasoning -another version-
-  Category: Story
-  Tags: []
-  CueId: 44
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/72.hca
-  Encoder: HCA
-- Name: I'll Face Myself -another version-
-  Category: Story
-  Tags: []
-  CueId: 46
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/73.hca
-  Encoder: HCA
-- Name: Reach Out To The Truth -First Battle-
-  Category: Boss Battle
-  Tags: []
-  CueId: 47
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/74.hca
-  Encoder: HCA
-- Name: Traumerei
-  Category: Story
-  Tags: []
-  CueId: 48
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/75.hca
-  Encoder: HCA
-- Name: SNOWFLAKES
-  Category: Overworld
-  Tags:
+  cue_id: 35
+  output_path: FEmulator/AWB/snd00_bgm.awb/63.hca
+  encoder: HCA
+- name: Joy (Persona 3)
+  category: Story
+  tags: []
+  cue_id: 36
+  output_path: FEmulator/AWB/snd00_bgm.awb/64.hca
+  encoder: HCA
+- name: Fearful Experience (Persona 3)
+  category: Story
+  tags: []
+  cue_id: 37
+  output_path: FEmulator/AWB/snd00_bgm.awb/65.hca
+  encoder: HCA
+- name: Crisis (Persona 3)
+  category: Story
+  tags: []
+  cue_id: 38
+  output_path: FEmulator/AWB/snd00_bgm.awb/66.hca
+  encoder: HCA
+- name: P3 fes (Persona 3)
+  category: Story
+  tags: []
+  cue_id: 39
+  output_path: FEmulator/AWB/snd00_bgm.awb/67.hca
+  encoder: HCA
+- name: Like a dream come true
+  category: Story
+  tags: []
+  cue_id: 40
+  output_path: FEmulator/AWB/snd00_bgm.awb/68.hca
+  encoder: HCA
+- name: Borderline of Madness (2nd loop)
+  category: Boss Battle
+  tags: []
+  cue_id: 41
+  output_path: FEmulator/AWB/snd00_bgm.awb/69.hca
+  encoder: HCA
+- name: Borderline of Madness (3rd loop)
+  category: Boss Battle
+  tags: []
+  cue_id: 42
+  output_path: FEmulator/AWB/snd00_bgm.awb/70.hca
+  encoder: HCA
+- name: ZONE TIME
+  category: Story
+  tags: []
+  cue_id: 43
+  output_path: FEmulator/AWB/snd00_bgm.awb/71.hca
+  encoder: HCA
+- name: Reasoning -another version-
+  category: Story
+  tags: []
+  cue_id: 44
+  output_path: FEmulator/AWB/snd00_bgm.awb/72.hca
+  encoder: HCA
+- name: I'll Face Myself -another version-
+  category: Story
+  tags: []
+  cue_id: 46
+  output_path: FEmulator/AWB/snd00_bgm.awb/73.hca
+  encoder: HCA
+- name: Reach Out To The Truth -First Battle-
+  category: Boss Battle
+  tags: []
+  cue_id: 47
+  output_path: FEmulator/AWB/snd00_bgm.awb/74.hca
+  encoder: HCA
+- name: Traumerei
+  category: Story
+  tags: []
+  cue_id: 48
+  output_path: FEmulator/AWB/snd00_bgm.awb/75.hca
+  encoder: HCA
+- name: SNOWFLAKES
+  category: Overworld
+  tags:
   - Snow
-  CueId: 53
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/76.hca
-  Encoder: HCA
-- Name: Time To Make History
-  Category: Normal Battle
-  Tags:
+  cue_id: 53
+  output_path: FEmulator/AWB/snd00_bgm.awb/76.hca
+  encoder: HCA
+- name: Time To Make History
+  category: Normal Battle
+  tags:
   - 'Context: Advantage'
-  CueId: 55
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/77.hca
-  Encoder: HCA
-- Name: I'll Face Myself -Battle- (Reincarnation) Phase 1
-  Category: Boss Battle
-  Tags: []
-  CueId: 56
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/78.hca
-  Encoder: HCA
-- Name: I'll Face Myself -Battle- (Reincarnation) Phase 2
-  Category: Boss Battle
-  Tags: []
-  CueId: 57
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/79.hca
-  Encoder: HCA
-- Name: Girl of the Hollow Forest (unused)
-  Category: Location
-  Tags:
+  cue_id: 55
+  output_path: FEmulator/AWB/snd00_bgm.awb/77.hca
+  encoder: HCA
+- name: I'll Face Myself -Battle- (Reincarnation) Phase 1
+  category: Boss Battle
+  tags: []
+  cue_id: 56
+  output_path: FEmulator/AWB/snd00_bgm.awb/78.hca
+  encoder: HCA
+- name: I'll Face Myself -Battle- (Reincarnation) Phase 2
+  category: Boss Battle
+  tags: []
+  cue_id: 57
+  output_path: FEmulator/AWB/snd00_bgm.awb/79.hca
+  encoder: HCA
+- name: Girl of the Hollow Forest (unused)
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 58
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/80.hca
-  Encoder: HCA
-- Name: Shin Mitsuo Tensei
-  Category: Boss Battle
-  Tags: []
-  CueId: 59
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/81.hca
-  Encoder: HCA
-- Name: Electronica in Velvet Room (filtered)
-  Category: Boss Battle
-  Tags: []
-  CueId: 61
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/82.hca
-  Encoder: HCA
-- Name: Everyday Sunshine
-  Category: Story
-  Tags: []
-  CueId: 49
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/83.hca
-  Encoder: HCA
-- Name: Girl of the Hollow Forest
-  Category: Location
-  Tags:
+  cue_id: 58
+  output_path: FEmulator/AWB/snd00_bgm.awb/80.hca
+  encoder: HCA
+- name: Shin Mitsuo Tensei
+  category: Boss Battle
+  tags: []
+  cue_id: 59
+  output_path: FEmulator/AWB/snd00_bgm.awb/81.hca
+  encoder: HCA
+- name: Electronica in Velvet Room (filtered)
+  category: Boss Battle
+  tags: []
+  cue_id: 61
+  output_path: FEmulator/AWB/snd00_bgm.awb/82.hca
+  encoder: HCA
+- name: Everyday Sunshine
+  category: Story
+  tags: []
+  cue_id: 49
+  output_path: FEmulator/AWB/snd00_bgm.awb/83.hca
+  encoder: HCA
+- name: Girl of the Hollow Forest
+  category: Location
+  tags:
   - Midnight Channel
-  CueId: 50
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/84.hca
-  Encoder: HCA
-- Name: A Sky Full Of Stars
-  Category: Overworld
-  Tags:
+  cue_id: 50
+  output_path: FEmulator/AWB/snd00_bgm.awb/84.hca
+  encoder: HCA
+- name: A Sky Full Of Stars
+  category: Overworld
+  tags:
   - Night
-  CueId: 51
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/85.hca
-  Encoder: HCA
-- Name: Let's Hit the Beach!
-  Category: Story
-  Tags: []
-  CueId: 52
-  ReplacementPath: FEmulator/AWB/snd00_bgm.awb/86.hca
-  Encoder: HCA
+  cue_id: 51
+  output_path: FEmulator/AWB/snd00_bgm.awb/85.hca
+  encoder: HCA
+- name: Let's Hit the Beach!
+  category: Story
+  tags: []
+  cue_id: 52
+  output_path: FEmulator/AWB/snd00_bgm.awb/86.hca
+  encoder: HCA

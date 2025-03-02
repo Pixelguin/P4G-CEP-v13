@@ -1,0 +1,19 @@
+import("FlowRunner.msg");
+import("UserFlow.flow");
+
+void flowrunner()
+{
+    int runflowyesno;
+	OPEN_MSG_WIN();
+        MSG(ConfirmFlowCall);
+        runflowyesno = SEL(confirmflow);
+        if ( runflowyesno == 0)
+            {
+            runthisflowpls();
+            return;
+            }
+        else
+            {
+            return;
+            }
+}

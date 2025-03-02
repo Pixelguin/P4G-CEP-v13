@@ -96,7 +96,7 @@
         },
         "runtime": {
           "Ryo.Interfaces.dll": {
-            "assemblyVersion": "2.4.0",
+            "assemblyVersion": "2.4.0.0",
             "fileVersion": "2.4.0.0"
           }
         }

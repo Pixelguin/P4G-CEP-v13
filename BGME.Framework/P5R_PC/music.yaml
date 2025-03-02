@@ -1,836 +1,837 @@
-Game: P5R_PC
-Version: 1
-DefaultBaseReplacementPath: FEmulator/AWB/BGM.AWB
-DefaultEncoder: ADX (Persona 5 Royal PC)
-Songs:
-- Name: Endless Days
-  Category: Daily Life
-  Tags: []
-  CueId: 28
-  ReplacementPath: FEmulator/AWB/BGM.AWB/0.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Ideal and the Real
-  Category: Story
-  Tags: []
-  CueId: 44
-  ReplacementPath: FEmulator/AWB/BGM.AWB/1.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: No More What Ifs -instrumental version-
-  Category: Location
-  Tags:
+name: Persona 5 Royal BGM (PC)
+tags: ['Persona 5 Royal', 'PC', 'BGM']
+default_output_path: FEmulator/AWB/BGM.AWB
+default_encoder: ADX (Persona 5 Royal PC)
+default_loop_state: true
+tracks:
+- name: Endless Days
+  category: Daily Life
+  tags: []
+  cue_id: 28
+  output_path: FEmulator/AWB/BGM.AWB/0.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Ideal and the Real
+  category: Story
+  tags: []
+  cue_id: 44
+  output_path: FEmulator/AWB/BGM.AWB/1.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: No More What Ifs -instrumental version-
+  category: Location
+  tags:
   - Thieve's Den
-  CueId: 939
-  ReplacementPath: FEmulator/AWB/BGM.AWB/2.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: No More What Ifs
-  Category: Location
-  Tags:
+  cue_id: 939
+  output_path: FEmulator/AWB/BGM.AWB/2.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: No More What Ifs
+  category: Location
+  tags:
   - Jazz Club
-  CueId: 923
-  ReplacementPath: FEmulator/AWB/BGM.AWB/3.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: No More What Ifs (filtered)
-  Category: Unknown
-  Tags: []
-  CueId: 922
-  ReplacementPath: FEmulator/AWB/BGM.AWB/4.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: I believe
-  Category: Story
-  Tags: []
-  CueId: 904
-  ReplacementPath: FEmulator/AWB/BGM.AWB/5.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Take Over
-  Category: Normal Battle
-  Tags:
+  cue_id: 923
+  output_path: FEmulator/AWB/BGM.AWB/3.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: No More What Ifs (filtered)
+  category: Unknown
+  tags: []
+  cue_id: 922
+  output_path: FEmulator/AWB/BGM.AWB/4.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: I believe
+  category: Story
+  tags: []
+  cue_id: 904
+  output_path: FEmulator/AWB/BGM.AWB/5.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Take Over
+  category: Normal Battle
+  tags:
   - 'Context: Advantage'
-  CueId: 907
-  ReplacementPath: FEmulator/AWB/BGM.AWB/6.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Keep Your Faith
-  Category: Boss Battle
-  Tags: []
-  CueId: 908
-  ReplacementPath: FEmulator/AWB/BGM.AWB/7.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Throw Away Your Mask
-  Category: Boss Battle
-  Tags: []
-  CueId: 909
-  ReplacementPath: FEmulator/AWB/BGM.AWB/8.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Our Light (Intro Only)
-  Category: Unknown
-  Tags: []
-  CueId: 961
-  ReplacementPath: FEmulator/AWB/BGM.AWB/9.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Gentle Madman
-  Category: Location
-  Tags:
+  cue_id: 907
+  output_path: FEmulator/AWB/BGM.AWB/6.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Keep Your Faith
+  category: Boss Battle
+  tags: []
+  cue_id: 908
+  output_path: FEmulator/AWB/BGM.AWB/7.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Throw Away Your Mask
+  category: Boss Battle
+  tags: []
+  cue_id: 909
+  output_path: FEmulator/AWB/BGM.AWB/8.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Our Light (Intro Only)
+  category: Unknown
+  tags: []
+  cue_id: 961
+  output_path: FEmulator/AWB/BGM.AWB/9.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Gentle Madman
+  category: Location
+  tags:
   - Palace
-  CueId: 905
-  ReplacementPath: FEmulator/AWB/BGM.AWB/10.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Out of Kindness
-  Category: Location
-  Tags:
+  cue_id: 905
+  output_path: FEmulator/AWB/BGM.AWB/10.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Out of Kindness
+  category: Location
+  tags:
   - Palace
-  CueId: 906
-  ReplacementPath: FEmulator/AWB/BGM.AWB/11.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: So Happy World
-  Category: Location
-  Tags:
+  cue_id: 906
+  output_path: FEmulator/AWB/BGM.AWB/11.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: So Happy World
+  category: Location
+  tags:
   - Third Semester
-  CueId: 931
-  ReplacementPath: FEmulator/AWB/BGM.AWB/12.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: 'Mementos: Mid Area'
-  Category: Location
-  Tags:
+  cue_id: 931
+  output_path: FEmulator/AWB/BGM.AWB/12.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: 'Mementos: Mid Area'
+  category: Location
+  tags:
   - Mementos
-  CueId: 934
-  ReplacementPath: FEmulator/AWB/BGM.AWB/13.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: 'Mementos: Lower Area'
-  Category: Location
-  Tags:
+  cue_id: 934
+  output_path: FEmulator/AWB/BGM.AWB/13.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: 'Mementos: Lower Area'
+  category: Location
+  tags:
   - Mementos
-  CueId: 935
-  ReplacementPath: FEmulator/AWB/BGM.AWB/14.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: 'Mementos: Upper Area'
-  Category: Location
-  Tags:
+  cue_id: 935
+  output_path: FEmulator/AWB/BGM.AWB/14.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: 'Mementos: Upper Area'
+  category: Location
+  tags:
   - Mementos
-  CueId: 933
-  ReplacementPath: FEmulator/AWB/BGM.AWB/15.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Our Light
-  Category: Story
-  Tags:
+  cue_id: 933
+  output_path: FEmulator/AWB/BGM.AWB/15.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Our Light
+  category: Story
+  tags:
   - Ending
-  CueId: 957
-  ReplacementPath: FEmulator/AWB/BGM.AWB/16.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Wake Up, Get Up, Get Out There (Extended)
-  Category: Title Screen
-  Tags:
+  cue_id: 957
+  output_path: FEmulator/AWB/BGM.AWB/16.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Wake Up, Get Up, Get Out There (Extended)
+  category: Title Screen
+  tags:
   - Intro Movie
   - Original
-  CueId: 800
-  ReplacementPath: FEmulator/AWB/BGM.AWB/17.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Hoshi To Bokura To
-  Category: Story
-  Tags:
+  cue_id: 800
+  output_path: FEmulator/AWB/BGM.AWB/17.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Hoshi To Bokura To
+  category: Story
+  tags:
   - Ending
-  CueId: 802
-  ReplacementPath: FEmulator/AWB/BGM.AWB/18.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Wake Up, Get Up, Get Out There
-  Category: Title Screen
-  Tags:
+  cue_id: 802
+  output_path: FEmulator/AWB/BGM.AWB/18.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Wake Up, Get Up, Get Out There
+  category: Title Screen
+  tags:
   - Intro Movie
   - Original
-  CueId: 801
-  ReplacementPath: FEmulator/AWB/BGM.AWB/19.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Colors Flying High -opening movie version- (Extended)
-  Category: Title Screen
-  Tags:
+  cue_id: 801
+  output_path: FEmulator/AWB/BGM.AWB/19.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Colors Flying High -opening movie version- (Extended)
+  category: Title Screen
+  tags:
   - Intro Movie
-  CueId: 956
-  ReplacementPath: FEmulator/AWB/BGM.AWB/20.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: He's a Trickster
-  Category: Story
-  Tags: []
-  CueId: 960
-  ReplacementPath: FEmulator/AWB/BGM.AWB/21.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Ideal and the Real -end version- (Extended)
-  Category: Story
-  Tags:
+  cue_id: 956
+  output_path: FEmulator/AWB/BGM.AWB/20.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: He's a Trickster
+  category: Story
+  tags: []
+  cue_id: 960
+  output_path: FEmulator/AWB/BGM.AWB/21.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Ideal and the Real -end version- (Extended)
+  category: Story
+  tags:
   - Ending
-  CueId: 958
-  ReplacementPath: FEmulator/AWB/BGM.AWB/22.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Prison Labor
-  Category: Boss Battle
-  Tags:
+  cue_id: 958
+  output_path: FEmulator/AWB/BGM.AWB/22.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Prison Labor
+  category: Boss Battle
+  tags:
   - Challenges
-  CueId: 940
-  ReplacementPath: FEmulator/AWB/BGM.AWB/23.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Colors Flying High -opening movie version-
-  Category: Title Screen
-  Tags:
+  cue_id: 940
+  output_path: FEmulator/AWB/BGM.AWB/23.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Colors Flying High -opening movie version-
+  category: Title Screen
+  tags:
   - Intro Movie
-  CueId: 900
-  ReplacementPath: FEmulator/AWB/BGM.AWB/24.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Unknown Song 1
-  Category: Unknown
-  Tags: []
-  CueId: 919
-  ReplacementPath: FEmulator/AWB/BGM.AWB/25.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Kichijoji 199X
-  Category: Location
-  Tags:
+  cue_id: 900
+  output_path: FEmulator/AWB/BGM.AWB/24.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Unknown Song 1
+  category: Unknown
+  tags: []
+  cue_id: 919
+  output_path: FEmulator/AWB/BGM.AWB/25.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Kichijoji 199X
+  category: Location
+  tags:
   - Kichijoji
-  CueId: 924
-  ReplacementPath: FEmulator/AWB/BGM.AWB/26.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Royal Days - another version
-  Category: Story
-  Tags:
+  cue_id: 924
+  output_path: FEmulator/AWB/BGM.AWB/26.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Royal Days - another version
+  category: Story
+  tags:
   - Ending
-  CueId: 902
-  ReplacementPath: FEmulator/AWB/BGM.AWB/27.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: wish come true
-  Category: Story
-  Tags: []
-  CueId: 920
-  ReplacementPath: FEmulator/AWB/BGM.AWB/28.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Ideal and the Real (duplicate)
-  Category: Story
-  Tags: []
-  CueId: 915
-  ReplacementPath: FEmulator/AWB/BGM.AWB/29.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Royal Days
-  Category: Title Screen
-  Tags:
+  cue_id: 902
+  output_path: FEmulator/AWB/BGM.AWB/27.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: wish come true
+  category: Story
+  tags: []
+  cue_id: 920
+  output_path: FEmulator/AWB/BGM.AWB/28.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Ideal and the Real (duplicate)
+  category: Story
+  tags: []
+  cue_id: 915
+  output_path: FEmulator/AWB/BGM.AWB/29.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Royal Days
+  category: Title Screen
+  tags:
   - Main Menu
-  CueId: 901
-  ReplacementPath: FEmulator/AWB/BGM.AWB/30.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Mass Destruction
-  Category: Boss Battle
-  Tags:
+  cue_id: 901
+  output_path: FEmulator/AWB/BGM.AWB/30.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Mass Destruction
+  category: Boss Battle
+  tags:
   - Challenge Battle
-  CueId: 941
-  ReplacementPath: FEmulator/AWB/BGM.AWB/31.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Reach Out to the Truth
-  Category: Boss Battle
-  Tags:
+  cue_id: 941
+  output_path: FEmulator/AWB/BGM.AWB/31.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Reach Out to the Truth
+  category: Boss Battle
+  tags:
   - Challenge Battle
-  CueId: 942
-  ReplacementPath: FEmulator/AWB/BGM.AWB/32.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: 'Mementos: New Area'
-  Category: Location
-  Tags:
+  cue_id: 942
+  output_path: FEmulator/AWB/BGM.AWB/32.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: 'Mementos: New Area'
+  category: Location
+  tags:
   - Mementos
-  CueId: 936
-  ReplacementPath: FEmulator/AWB/BGM.AWB/33.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: He's a Trickster (duplicate)
-  Category: Story
-  Tags: []
-  CueId: 959
-  ReplacementPath: FEmulator/AWB/BGM.AWB/34.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Another Ideology
-  Category: Story
-  Tags:
+  cue_id: 936
+  output_path: FEmulator/AWB/BGM.AWB/33.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: He's a Trickster (duplicate)
+  category: Story
+  tags: []
+  cue_id: 959
+  output_path: FEmulator/AWB/BGM.AWB/34.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Another Ideology
+  category: Story
+  tags:
   - Ending
-  CueId: 913
-  ReplacementPath: FEmulator/AWB/BGM.AWB/35.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Another Ideology (Cut)
-  Category: Story
-  Tags:
+  cue_id: 913
+  output_path: FEmulator/AWB/BGM.AWB/35.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Another Ideology (Cut)
+  category: Story
+  tags:
   - Ending
-  CueId: 914
-  ReplacementPath: FEmulator/AWB/BGM.AWB/36.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Ideal and the Real -end version-
-  Category: Story
-  Tags:
+  cue_id: 914
+  output_path: FEmulator/AWB/BGM.AWB/36.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Ideal and the Real -end version-
+  category: Story
+  tags:
   - Ending
-  CueId: 903
-  ReplacementPath: FEmulator/AWB/BGM.AWB/37.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Unknown Song 2
-  Category: Unknown
-  Tags: []
-  CueId: 918
-  ReplacementPath: FEmulator/AWB/BGM.AWB/38.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Rivers in the Desert -instrumental version- (Cut)
-  Category: ''
-  Tags: []
-  CueId: 337
-  ReplacementPath: FEmulator/AWB/BGM.AWB/39.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Crane Game
-  Category: Location
-  Tags:
+  cue_id: 903
+  output_path: FEmulator/AWB/BGM.AWB/37.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Unknown Song 2
+  category: Unknown
+  tags: []
+  cue_id: 918
+  output_path: FEmulator/AWB/BGM.AWB/38.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Rivers in the Desert -instrumental version- (Cut)
+  category: ''
+  tags: []
+  cue_id: 337
+  output_path: FEmulator/AWB/BGM.AWB/39.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Crane Game
+  category: Location
+  tags:
   - Arcade
-  CueId: 217
-  ReplacementPath: FEmulator/AWB/BGM.AWB/40.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Crossroads
-  Category: Location
-  Tags:
+  cue_id: 217
+  output_path: FEmulator/AWB/BGM.AWB/40.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Crossroads
+  category: Location
+  tags:
   - Crossroads
-  CueId: 209
-  ReplacementPath: FEmulator/AWB/BGM.AWB/41.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Triple Seven
-  Category: Location
-  Tags:
+  cue_id: 209
+  output_path: FEmulator/AWB/BGM.AWB/41.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Triple Seven
+  category: Location
+  tags:
   - Convience Store
-  CueId: 215
-  ReplacementPath: FEmulator/AWB/BGM.AWB/42.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Destinyland
-  Category: Location
-  Tags:
+  cue_id: 215
+  output_path: FEmulator/AWB/BGM.AWB/42.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Destinyland
+  category: Location
+  tags:
   - Destinyland
-  CueId: 213
-  ReplacementPath: FEmulator/AWB/BGM.AWB/43.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Big Bang Burger March
-  Category: Location
-  Tags:
+  cue_id: 213
+  output_path: FEmulator/AWB/BGM.AWB/43.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Big Bang Burger March
+  category: Location
+  tags:
   - Big Bang Burger
-  CueId: 216
-  ReplacementPath: FEmulator/AWB/BGM.AWB/44.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Planetarium
-  Category: Location
-  Tags:
+  cue_id: 216
+  output_path: FEmulator/AWB/BGM.AWB/44.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Planetarium
+  category: Location
+  tags:
   - Planetarium
-  CueId: 210
-  ReplacementPath: FEmulator/AWB/BGM.AWB/45.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Welcome Home, Master!
-  Category: Location
-  Tags:
+  cue_id: 210
+  output_path: FEmulator/AWB/BGM.AWB/45.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Welcome Home, Master!
+  category: Location
+  tags:
   - Maid Cafe
-  CueId: 214
-  ReplacementPath: FEmulator/AWB/BGM.AWB/46.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Time to Repent
-  Category: Location
-  Tags:
+  cue_id: 214
+  output_path: FEmulator/AWB/BGM.AWB/46.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Time to Repent
+  category: Location
+  tags:
   - Church
-  CueId: 212
-  ReplacementPath: FEmulator/AWB/BGM.AWB/47.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Meiji Shrine
-  Category: Location
-  Tags:
+  cue_id: 212
+  output_path: FEmulator/AWB/BGM.AWB/47.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Meiji Shrine
+  category: Location
+  tags:
   - Meiji Shrine
-  CueId: 211
-  ReplacementPath: FEmulator/AWB/BGM.AWB/48.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Tanaka's Shady Commodities
-  Category: Shop
-  Tags:
+  cue_id: 211
+  output_path: FEmulator/AWB/BGM.AWB/48.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Tanaka's Shady Commodities
+  category: Shop
+  tags:
   - Tanaka's Shady Commodities
-  CueId: 207
-  ReplacementPath: FEmulator/AWB/BGM.AWB/49.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Home Electronics Store
-  Category: Location
-  Tags:
+  cue_id: 207
+  output_path: FEmulator/AWB/BGM.AWB/49.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Home Electronics Store
+  category: Location
+  tags:
   - Home Electronics Store
-  CueId: 208
-  ReplacementPath: FEmulator/AWB/BGM.AWB/50.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: New Beginning (Quiet)
-  Category: Story
-  Tags: []
-  CueId: 40
-  ReplacementPath: FEmulator/AWB/BGM.AWB/51.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: New Beginning (Quiet / No Intro)
-  Category: Story
-  Tags: []
-  CueId: 41
-  ReplacementPath: FEmulator/AWB/BGM.AWB/52.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Erosion
-  Category: Story
-  Tags: []
-  CueId: 35
-  ReplacementPath: FEmulator/AWB/BGM.AWB/54.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: My Homie
-  Category: Story
-  Tags: []
-  CueId: 0
-  ReplacementPath: FEmulator/AWB/BGM.AWB/55.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: The Spirit
-  Category: Story
-  Tags: []
-  CueId: 700
-  ReplacementPath: FEmulator/AWB/BGM.AWB/56.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: What's Going On?
-  Category: Story
-  Tags: []
-  CueId: 4
-  ReplacementPath: FEmulator/AWB/BGM.AWB/57.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Blood of Villain
-  Category: Story
-  Tags: []
-  CueId: 23
-  ReplacementPath: FEmulator/AWB/BGM.AWB/58.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Regret
-  Category: Story
-  Tags: []
-  CueId: 24
-  ReplacementPath: FEmulator/AWB/BGM.AWB/59.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: New Beginning
-  Category: Story
-  Tags: []
-  CueId: 6
-  ReplacementPath: FEmulator/AWB/BGM.AWB/60.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: New Beginning (No Intro)
-  Category: Story
-  Tags: []
-  CueId: 7
-  ReplacementPath: FEmulator/AWB/BGM.AWB/61.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Interrogation Room
-  Category: Story
-  Tags: []
-  CueId: 19
-  ReplacementPath: FEmulator/AWB/BGM.AWB/62.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Desire
-  Category: Story
-  Tags: []
-  CueId: 20
-  ReplacementPath: FEmulator/AWB/BGM.AWB/63.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Suspicion
-  Category: Story
-  Tags: []
-  CueId: 22
-  ReplacementPath: FEmulator/AWB/BGM.AWB/64.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Confession / Secret (No Intro)
-  Category: Story
-  Tags: []
-  CueId: 21
-  ReplacementPath: FEmulator/AWB/BGM.AWB/65.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Confession / Secret
-  Category: Story
-  Tags: []
-  CueId: 32
-  ReplacementPath: FEmulator/AWB/BGM.AWB/66.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Alleycat (No Intro)
-  Category: Story
-  Tags: []
-  CueId: 5
-  ReplacementPath: FEmulator/AWB/BGM.AWB/67.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Alleycat
-  Category: Story
-  Tags: []
-  CueId: 33
-  ReplacementPath: FEmulator/AWB/BGM.AWB/68.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: So Boring
-  Category: Daily Life
-  Tags: []
-  CueId: 36
-  ReplacementPath: FEmulator/AWB/BGM.AWB/69.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Wicked Plan (No Intro)
-  Category: Story
-  Tags: []
-  CueId: 2
-  ReplacementPath: FEmulator/AWB/BGM.AWB/70.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Wicked Plan
-  Category: Story
-  Tags: []
-  CueId: 30
-  ReplacementPath: FEmulator/AWB/BGM.AWB/71.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Days of Sisters
-  Category: Story
-  Tags: []
-  CueId: 39
-  ReplacementPath: FEmulator/AWB/BGM.AWB/72.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Alright
-  Category: Story
-  Tags: []
-  CueId: 14
-  ReplacementPath: FEmulator/AWB/BGM.AWB/73.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Alright -elp version-
-  Category: Story
-  Tags: []
-  CueId: 15
-  ReplacementPath: FEmulator/AWB/BGM.AWB/74.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Break it Down
-  Category: Story
-  Tags: []
-  CueId: 8
-  ReplacementPath: FEmulator/AWB/BGM.AWB/75.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Break it Down -elp version-
-  Category: Story
-  Tags: []
-  CueId: 9
-  ReplacementPath: FEmulator/AWB/BGM.AWB/76.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Swear to My Bones
-  Category: Story
-  Tags: []
-  CueId: 38
-  ReplacementPath: FEmulator/AWB/BGM.AWB/77.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Life Will Change
-  Category: Location
-  Tags:
+  cue_id: 208
+  output_path: FEmulator/AWB/BGM.AWB/50.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: New Beginning (Quiet)
+  category: Story
+  tags: []
+  cue_id: 40
+  output_path: FEmulator/AWB/BGM.AWB/51.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: New Beginning (Quiet / No Intro)
+  category: Story
+  tags: []
+  cue_id: 41
+  output_path: FEmulator/AWB/BGM.AWB/52.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Erosion
+  category: Story
+  tags: []
+  cue_id: 35
+  output_path: FEmulator/AWB/BGM.AWB/54.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: My Homie
+  category: Story
+  tags: []
+  cue_id: 0
+  output_path: FEmulator/AWB/BGM.AWB/55.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: The Spirit
+  category: Story
+  tags: []
+  cue_id: 700
+  output_path: FEmulator/AWB/BGM.AWB/56.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: What's Going On?
+  category: Story
+  tags: []
+  cue_id: 4
+  output_path: FEmulator/AWB/BGM.AWB/57.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Blood of Villain
+  category: Story
+  tags: []
+  cue_id: 23
+  output_path: FEmulator/AWB/BGM.AWB/58.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Regret
+  category: Story
+  tags: []
+  cue_id: 24
+  output_path: FEmulator/AWB/BGM.AWB/59.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: New Beginning
+  category: Story
+  tags: []
+  cue_id: 6
+  output_path: FEmulator/AWB/BGM.AWB/60.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: New Beginning (No Intro)
+  category: Story
+  tags: []
+  cue_id: 7
+  output_path: FEmulator/AWB/BGM.AWB/61.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Interrogation Room
+  category: Story
+  tags: []
+  cue_id: 19
+  output_path: FEmulator/AWB/BGM.AWB/62.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Desire
+  category: Story
+  tags: []
+  cue_id: 20
+  output_path: FEmulator/AWB/BGM.AWB/63.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Suspicion
+  category: Story
+  tags: []
+  cue_id: 22
+  output_path: FEmulator/AWB/BGM.AWB/64.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Confession / Secret (No Intro)
+  category: Story
+  tags: []
+  cue_id: 21
+  output_path: FEmulator/AWB/BGM.AWB/65.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Confession / Secret
+  category: Story
+  tags: []
+  cue_id: 32
+  output_path: FEmulator/AWB/BGM.AWB/66.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Alleycat (No Intro)
+  category: Story
+  tags: []
+  cue_id: 5
+  output_path: FEmulator/AWB/BGM.AWB/67.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Alleycat
+  category: Story
+  tags: []
+  cue_id: 33
+  output_path: FEmulator/AWB/BGM.AWB/68.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: So Boring
+  category: Daily Life
+  tags: []
+  cue_id: 36
+  output_path: FEmulator/AWB/BGM.AWB/69.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Wicked Plan (No Intro)
+  category: Story
+  tags: []
+  cue_id: 2
+  output_path: FEmulator/AWB/BGM.AWB/70.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Wicked Plan
+  category: Story
+  tags: []
+  cue_id: 30
+  output_path: FEmulator/AWB/BGM.AWB/71.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Days of Sisters
+  category: Story
+  tags: []
+  cue_id: 39
+  output_path: FEmulator/AWB/BGM.AWB/72.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Alright
+  category: Story
+  tags: []
+  cue_id: 14
+  output_path: FEmulator/AWB/BGM.AWB/73.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Alright -elp version-
+  category: Story
+  tags: []
+  cue_id: 15
+  output_path: FEmulator/AWB/BGM.AWB/74.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Break it Down
+  category: Story
+  tags: []
+  cue_id: 8
+  output_path: FEmulator/AWB/BGM.AWB/75.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Break it Down -elp version-
+  category: Story
+  tags: []
+  cue_id: 9
+  output_path: FEmulator/AWB/BGM.AWB/76.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Swear to My Bones
+  category: Story
+  tags: []
+  cue_id: 38
+  output_path: FEmulator/AWB/BGM.AWB/77.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Life Will Change
+  category: Location
+  tags:
   - Palace
   - Infiltration
-  CueId: 471
-  ReplacementPath: FEmulator/AWB/BGM.AWB/78.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Life Will Change -instrumental version-
-  Category: Location
-  Tags:
+  cue_id: 471
+  output_path: FEmulator/AWB/BGM.AWB/78.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Life Will Change -instrumental version-
+  category: Location
+  tags:
   - Palace
   - Infiltration
-  CueId: 630
-  ReplacementPath: FEmulator/AWB/BGM.AWB/79.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Life Will Change -instrumental version- (Intro Only)
-  Category: Location
-  Tags:
+  cue_id: 630
+  output_path: FEmulator/AWB/BGM.AWB/79.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Life Will Change -instrumental version- (Intro Only)
+  category: Location
+  tags:
   - Palace
   - Infiltration
-  CueId: 43
-  ReplacementPath: FEmulator/AWB/BGM.AWB/80.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Sunset Bridge (No Intro)
-  Category: Story
-  Tags: []
-  CueId: 3
-  ReplacementPath: FEmulator/AWB/BGM.AWB/81.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Sunset Bridge
-  Category: Story
-  Tags: []
-  CueId: 31
-  ReplacementPath: FEmulator/AWB/BGM.AWB/82.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Sweet
-  Category: Story
-  Tags: []
-  CueId: 16
-  ReplacementPath: FEmulator/AWB/BGM.AWB/83.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Run,Run,Run!
-  Category: Story
-  Tags: []
-  CueId: 12
-  ReplacementPath: FEmulator/AWB/BGM.AWB/84.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Tension
-  Category: Story
-  Tags: []
-  CueId: 10
-  ReplacementPath: FEmulator/AWB/BGM.AWB/85.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: High Pressure
-  Category: Location
-  Tags:
+  cue_id: 43
+  output_path: FEmulator/AWB/BGM.AWB/80.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Sunset Bridge (No Intro)
+  category: Story
+  tags: []
+  cue_id: 3
+  output_path: FEmulator/AWB/BGM.AWB/81.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Sunset Bridge
+  category: Story
+  tags: []
+  cue_id: 31
+  output_path: FEmulator/AWB/BGM.AWB/82.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Sweet
+  category: Story
+  tags: []
+  cue_id: 16
+  output_path: FEmulator/AWB/BGM.AWB/83.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Run,Run,Run!
+  category: Story
+  tags: []
+  cue_id: 12
+  output_path: FEmulator/AWB/BGM.AWB/84.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Tension
+  category: Story
+  tags: []
+  cue_id: 10
+  output_path: FEmulator/AWB/BGM.AWB/85.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: High Pressure
+  category: Location
+  tags:
   - Palace
-  CueId: 18
-  ReplacementPath: FEmulator/AWB/BGM.AWB/86.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Awakening
-  Category: Story
-  Tags: []
-  CueId: 26
-  ReplacementPath: FEmulator/AWB/BGM.AWB/87.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Awakening (Alternate Version)
-  Category: Story
-  Tags: []
-  CueId: 11
-  ReplacementPath: FEmulator/AWB/BGM.AWB/88.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Life Goes On
-  Category: Daily Life
-  Tags: []
-  CueId: 37
-  ReplacementPath: FEmulator/AWB/BGM.AWB/89.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Layer Cake
-  Category: Shop
-  Tags: []
-  CueId: 503
-  ReplacementPath: FEmulator/AWB/BGM.AWB/90.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Butterfly Kiss
-  Category: Shop
-  Tags: []
-  CueId: 502
-  ReplacementPath: FEmulator/AWB/BGM.AWB/91.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Phantom
-  Category: Title Screen
-  Tags:
+  cue_id: 18
+  output_path: FEmulator/AWB/BGM.AWB/86.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Awakening
+  category: Story
+  tags: []
+  cue_id: 26
+  output_path: FEmulator/AWB/BGM.AWB/87.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Awakening (Alternate Version)
+  category: Story
+  tags: []
+  cue_id: 11
+  output_path: FEmulator/AWB/BGM.AWB/88.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Life Goes On
+  category: Daily Life
+  tags: []
+  cue_id: 37
+  output_path: FEmulator/AWB/BGM.AWB/89.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Layer Cake
+  category: Shop
+  tags: []
+  cue_id: 503
+  output_path: FEmulator/AWB/BGM.AWB/90.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Butterfly Kiss
+  category: Shop
+  tags: []
+  cue_id: 502
+  output_path: FEmulator/AWB/BGM.AWB/91.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Phantom
+  category: Title Screen
+  tags:
   - Main Menu
   - Original
-  CueId: 101
-  ReplacementPath: FEmulator/AWB/BGM.AWB/92.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Sweatshop -another version-
-  Category: Location
-  Tags:
+  cue_id: 101
+  output_path: FEmulator/AWB/BGM.AWB/92.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Sweatshop -another version-
+  category: Location
+  tags:
   - Palace
-  CueId: 441
-  ReplacementPath: FEmulator/AWB/BGM.AWB/93.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Sweatshop
-  Category: Location
-  Tags:
+  cue_id: 441
+  output_path: FEmulator/AWB/BGM.AWB/93.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Sweatshop
+  category: Location
+  tags:
   - Palace
-  CueId: 440
-  ReplacementPath: FEmulator/AWB/BGM.AWB/94.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Price -another version-
-  Category: Location
-  Tags:
+  cue_id: 440
+  output_path: FEmulator/AWB/BGM.AWB/94.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Price -another version-
+  category: Location
+  tags:
   - Palace
-  CueId: 422
-  ReplacementPath: FEmulator/AWB/BGM.AWB/95.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Price
-  Category: Location
-  Tags:
+  cue_id: 422
+  output_path: FEmulator/AWB/BGM.AWB/95.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Price
+  category: Location
+  tags:
   - Palace
-  CueId: 420
-  ReplacementPath: FEmulator/AWB/BGM.AWB/96.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: King, Queen, And Slaves -another version-
-  Category: Location
-  Tags:
+  cue_id: 420
+  output_path: FEmulator/AWB/BGM.AWB/96.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: King, Queen, And Slaves -another version-
+  category: Location
+  tags:
   - Palace
-  CueId: 17
-  ReplacementPath: FEmulator/AWB/BGM.AWB/97.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: King, Queen, And Slaves
-  Category: Location
-  Tags:
+  cue_id: 17
+  output_path: FEmulator/AWB/BGM.AWB/97.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: King, Queen, And Slaves
+  category: Location
+  tags:
   - Palace
-  CueId: 400
-  ReplacementPath: FEmulator/AWB/BGM.AWB/98.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Have a Short Rest
-  Category: Location
-  Tags:
+  cue_id: 400
+  output_path: FEmulator/AWB/BGM.AWB/98.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Have a Short Rest
+  category: Location
+  tags:
   - Safe Room
-  CueId: 495
-  ReplacementPath: FEmulator/AWB/BGM.AWB/99.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: When Mother Was There -another version-
-  Category: Location
-  Tags:
+  cue_id: 495
+  output_path: FEmulator/AWB/BGM.AWB/99.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: When Mother Was There -another version-
+  category: Location
+  tags:
   - Palace
-  CueId: 432
-  ReplacementPath: FEmulator/AWB/BGM.AWB/100.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: When Mother Was There
-  Category: Location
-  Tags:
+  cue_id: 432
+  output_path: FEmulator/AWB/BGM.AWB/100.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: When Mother Was There
+  category: Location
+  tags:
   - Palace
-  CueId: 430
-  ReplacementPath: FEmulator/AWB/BGM.AWB/101.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: A Woman -another version-
-  Category: Location
-  Tags:
+  cue_id: 430
+  output_path: FEmulator/AWB/BGM.AWB/101.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: A Woman -another version-
+  category: Location
+  tags:
   - Palace
-  CueId: 411
-  ReplacementPath: FEmulator/AWB/BGM.AWB/102.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: A Woman
-  Category: Location
-  Tags:
+  cue_id: 411
+  output_path: FEmulator/AWB/BGM.AWB/102.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: A Woman
+  category: Location
+  tags:
   - Palace
-  CueId: 410
-  ReplacementPath: FEmulator/AWB/BGM.AWB/103.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Mementos
-  Category: Location
-  Tags:
+  cue_id: 410
+  output_path: FEmulator/AWB/BGM.AWB/103.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Mementos
+  category: Location
+  tags:
   - Mementos
-  CueId: 480
-  ReplacementPath: FEmulator/AWB/BGM.AWB/104.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Freedom and Peace
-  Category: Location
-  Tags:
+  cue_id: 480
+  output_path: FEmulator/AWB/BGM.AWB/104.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Freedom and Peace
+  category: Location
+  tags:
   - Depths of Mementos
-  CueId: 102
-  ReplacementPath: FEmulator/AWB/BGM.AWB/105.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: The Whims of Fate
-  Category: Location
-  Tags:
+  cue_id: 102
+  output_path: FEmulator/AWB/BGM.AWB/105.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: The Whims of Fate
+  category: Location
+  tags:
   - Palace
-  CueId: 450
-  ReplacementPath: FEmulator/AWB/BGM.AWB/106.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Ark
-  Category: Location
-  Tags:
+  cue_id: 450
+  output_path: FEmulator/AWB/BGM.AWB/106.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Ark
+  category: Location
+  tags:
   - Palace
-  CueId: 460
-  ReplacementPath: FEmulator/AWB/BGM.AWB/107.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Will Power
-  Category: Story
-  Tags:
+  cue_id: 460
+  output_path: FEmulator/AWB/BGM.AWB/107.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Will Power
+  category: Story
+  tags:
   - Special Battles
-  CueId: 335
-  ReplacementPath: FEmulator/AWB/BGM.AWB/108.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Jaldabaoth
-  Category: Boss Battle
-  Tags: []
-  CueId: 333
-  ReplacementPath: FEmulator/AWB/BGM.AWB/109.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Our Beginning
-  Category: Boss Battle
-  Tags: []
-  CueId: 334
-  ReplacementPath: FEmulator/AWB/BGM.AWB/110.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Triumph
-  Category: Victory Theme
-  Tags: []
-  CueId: 340
-  ReplacementPath: FEmulator/AWB/BGM.AWB/111.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Keeper of Lust
-  Category: Boss Battle
-  Tags: []
-  CueId: 330
-  ReplacementPath: FEmulator/AWB/BGM.AWB/112.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Talk
-  Category: Normal Battle
-  Tags:
+  cue_id: 335
+  output_path: FEmulator/AWB/BGM.AWB/108.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Jaldabaoth
+  category: Boss Battle
+  tags: []
+  cue_id: 333
+  output_path: FEmulator/AWB/BGM.AWB/109.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Our Beginning
+  category: Boss Battle
+  tags: []
+  cue_id: 334
+  output_path: FEmulator/AWB/BGM.AWB/110.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Triumph
+  category: Victory Theme
+  tags: []
+  cue_id: 340
+  output_path: FEmulator/AWB/BGM.AWB/111.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Keeper of Lust
+  category: Boss Battle
+  tags: []
+  cue_id: 330
+  output_path: FEmulator/AWB/BGM.AWB/112.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Talk
+  category: Normal Battle
+  tags:
   - Hold Up
-  CueId: 341
-  ReplacementPath: FEmulator/AWB/BGM.AWB/113.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Blooming Villian
-  Category: Boss Battle
-  Tags: []
-  CueId: 13
-  ReplacementPath: FEmulator/AWB/BGM.AWB/114.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Blooming Villian (Cut)
-  Category: Boss Battle
-  Tags: []
-  CueId: 42
-  ReplacementPath: FEmulator/AWB/BGM.AWB/115.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Rivers in the Desert -instrumental version-
-  Category: Boss Battle
-  Tags: []
-  CueId: 332
-  ReplacementPath: FEmulator/AWB/BGM.AWB/116.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Rivers In the Desert
-  Category: Boss Battle
-  Tags: []
-  CueId: 336
-  ReplacementPath: FEmulator/AWB/BGM.AWB/117.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Last Surprise
-  Category: Normal Battle
-  Tags:
+  cue_id: 341
+  output_path: FEmulator/AWB/BGM.AWB/113.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Blooming Villian
+  category: Boss Battle
+  tags: []
+  cue_id: 13
+  output_path: FEmulator/AWB/BGM.AWB/114.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Blooming Villian (Cut)
+  category: Boss Battle
+  tags: []
+  cue_id: 42
+  output_path: FEmulator/AWB/BGM.AWB/115.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Rivers in the Desert -instrumental version-
+  category: Boss Battle
+  tags: []
+  cue_id: 332
+  output_path: FEmulator/AWB/BGM.AWB/116.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Rivers In the Desert
+  category: Boss Battle
+  tags: []
+  cue_id: 336
+  output_path: FEmulator/AWB/BGM.AWB/117.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Last Surprise
+  category: Normal Battle
+  tags:
   - 'Context: Normal'
-  CueId: 300
-  ReplacementPath: FEmulator/AWB/BGM.AWB/118.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Hymn of the Soul
-  Category: Location
-  Tags:
+  cue_id: 300
+  output_path: FEmulator/AWB/BGM.AWB/118.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Hymn of the Soul
+  category: Location
+  tags:
   - Velvet Room
-  CueId: 500
-  ReplacementPath: FEmulator/AWB/BGM.AWB/119.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Tokyo Emergency
-  Category: Overworld
-  Tags:
+  cue_id: 500
+  output_path: FEmulator/AWB/BGM.AWB/119.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Tokyo Emergency
+  category: Overworld
+  tags:
   - Mission Start
-  CueId: 1
-  ReplacementPath: FEmulator/AWB/BGM.AWB/120.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Tokyo Daylight
-  Category: Overworld
-  Tags:
+  cue_id: 1
+  output_path: FEmulator/AWB/BGM.AWB/120.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Tokyo Daylight
+  category: Overworld
+  tags:
   - Sunny
-  CueId: 610
-  ReplacementPath: FEmulator/AWB/BGM.AWB/121.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Beneath the Mask -instrumental version-
-  Category: Overworld
-  Tags:
+  cue_id: 610
+  output_path: FEmulator/AWB/BGM.AWB/121.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Beneath the Mask -instrumental version-
+  category: Overworld
+  tags:
   - Clear
-  CueId: 600
-  ReplacementPath: FEmulator/AWB/BGM.AWB/122.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Beneath the Mask
-  Category: Overworld
-  Tags:
+  cue_id: 600
+  output_path: FEmulator/AWB/BGM.AWB/122.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Beneath the Mask
+  category: Overworld
+  tags:
   - Clear
   - Night
-  CueId: 640
-  ReplacementPath: FEmulator/AWB/BGM.AWB/123.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Beneath the Mask -rain, instrumental version-
-  Category: Overworld
-  Tags:
+  cue_id: 640
+  output_path: FEmulator/AWB/BGM.AWB/123.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Beneath the Mask -rain, instrumental version-
+  category: Overworld
+  tags:
   - Rainy
-  CueId: 641
-  ReplacementPath: FEmulator/AWB/BGM.AWB/124.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Beneath the Mask -rain-
-  Category: Overworld
-  Tags:
+  cue_id: 641
+  output_path: FEmulator/AWB/BGM.AWB/124.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Beneath the Mask -rain-
+  category: Overworld
+  tags:
   - Rainy
   - Night
-  CueId: 642
-  ReplacementPath: FEmulator/AWB/BGM.AWB/125.adx
-  Encoder: ADX (Persona 5 Royal PC)
-- Name: Swear to My Bones (Cut)
-  Category: Story
-  Tags: []
-  CueId: 710
-  ReplacementPath: FEmulator/AWB/BGM.AWB/126.adx
-  Encoder: ADX (Persona 5 Royal PC)
+  cue_id: 642
+  output_path: FEmulator/AWB/BGM.AWB/125.adx
+  encoder: ADX (Persona 5 Royal PC)
+- name: Swear to My Bones (Cut)
+  category: Story
+  tags: []
+  cue_id: 710
+  output_path: FEmulator/AWB/BGM.AWB/126.adx
+  encoder: ADX (Persona 5 Royal PC)

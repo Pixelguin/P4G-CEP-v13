@@ -17,3 +17,7 @@ replacement = "been\nthrough"
 [replacement Name Change Fix]
 search =      "fixed as"
 replacement = "changed to"
+
+[replacement TexWrap Fix]
+pattern =           F7 41 28 00 C0 00 00 74 4E 8B 41 2C 0F 28 CF 0F 28 C7 0F BA E0 0E 73 05 0F 28 CE EB 09 0F BA E0 0F 73 03
+replacement = bytes(F7 41 28 00 C0 00 00 74 4E 8B 41 2C 0F 28 CF 0F 28 C7 0F BA E0 0E 74 05 0F 28 CE 90 90 0F BA E0 0F 74 03)

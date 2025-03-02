@@ -1,3 +1,5 @@
+import("CallFlow/FlowRunner.flow");
+
 bool BackToModMenu;
 
 int CallMenuDisplay()
@@ -98,6 +100,9 @@ int CallMenuDisplay2()
 					break;
 				else
 					return 0;
+			case 5: 
+				CallFlow();
+				return 0;
 			case 10:
 				return -1;
 			case 11:
@@ -472,5 +477,15 @@ int CallDungeon()
 	FADE( 1, 10 );
 	FADE_SYNC();
 	CALL_DUNGEON(major, minor);
+	return 0;
+}
+
+int CallFlow()
+{
+	//in here add msg saying if you wanna call flow in modmenu/callflow folder 
+	//then if yes it will call a flow thats just import the user flow and some shit like
+	//void calluserflow
+	//		runthisflowpls()
+	flowrunner();
 	return 0;
 }

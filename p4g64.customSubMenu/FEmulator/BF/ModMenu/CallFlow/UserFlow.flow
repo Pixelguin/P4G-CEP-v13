@@ -1,0 +1,17 @@
+import( "UserFlow.msg" );
+void runthisflowpls()
+{
+    //Add // at the start of the next line if you want to use the flow caller.
+    //otherwise, leave as is.
+    MSG(UnchangedUserFlow);
+    return;
+    //in here, call your procedure, like:
+    //myflow()
+}
+
+//in here, put your new procedure and your code, like:
+//void myflow()
+//{
+//(your code here)
+//return;
+//}

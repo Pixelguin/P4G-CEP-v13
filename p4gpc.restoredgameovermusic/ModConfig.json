@@ -22,6 +22,15 @@
     },
     "GitHubDependencies": {
       "IdToConfigMap": {
+        "BGME.Framework": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.ReleaseMetadata.json"
+        },
         "crifs.v2.hook": {
           "Config": {
             "UserName": "Sewer56",
@@ -39,6 +48,15 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "p5rpc.modloader.ReleaseMetadata.json"
+        },
+        "BGME.Framework.API": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "BGME",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
         },
         "Reloaded.Memory.SigScan.ReloadedII": {
           "Config": {
@@ -58,14 +76,23 @@
           },
           "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
         },
-        "p5rpc.lib": {
+        "Ryo.Reloaded": {
           "Config": {
-            "UserName": "AnimatedSwine37",
-            "RepositoryName": "p5rpc.lib",
-            "UseReleaseTag": true,
+            "UserName": "RyoTune",
+            "RepositoryName": "Ryo",
+            "UseReleaseTag": false,
             "AssetFileName": "Mod.zip"
           },
-          "ReleaseMetadataName": "p5rpc.lib.ReleaseMetadata.json"
+          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         },
         "CriFs.V2.Hook.Awb": {
           "Config": {
@@ -129,38 +156,6 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
-        }
-      }
-    },
-    "GameBananaDependencies": {
-      "IdToConfigMap": {
-        "BGME.Framework": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 477399
-          },
-          "ReleaseMetadataName": "BGME.Framework.ReleaseMetadata.json"
-        },
-        "BGME.Framework.API": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 477399
-          },
-          "ReleaseMetadataName": "BGME.Framework.API.ReleaseMetadata.json"
-        },
-        "Ryo.Reloaded": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 495507
-          },
-          "ReleaseMetadataName": "Ryo.Reloaded.ReleaseMetadata.json"
-        },
-        "SharedScans.Reloaded": {
-          "Config": {
-            "ItemType": "Mod",
-            "ItemId": 495507
-          },
-          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
         }
       }
     }
