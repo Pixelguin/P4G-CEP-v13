@@ -1,4 +1,4 @@
 // Margaret: The Battle For Everyone's Souls
 encounter["Margaret"]:
-	music = 693
+	music = 10114
 end

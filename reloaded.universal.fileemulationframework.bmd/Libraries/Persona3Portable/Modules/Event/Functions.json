@@ -192,34 +192,27 @@
   {
     "Index": "0x300f",
     "ReturnType": "int",
-    "Name": "CMM_CHK_LVUP",
-    "Description": "Check if a social link is ready to rank up. Does not check if they are actually available.",
+    "Name": "EVT_FUNCTION_000F",
+    "Description": "Address: 0x08A5F44C",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "EVT_FUNCTION_000F",
-      "CMM_CHK_LVLUP"
     ]
   },
   {
     "Index": "0x3010",
     "ReturnType": "int",
-    "Name": "CMM_CHK_REV",
-    "Description": "Check if social link is reversed",
+    "Name": "EVT_FUNCTION_0010",
+    "Description": "Address: 0x08A5F554",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "EVT_FUNCTION_0010"
     ]
   },
   {
@@ -345,17 +338,14 @@
   {
     "Index": "0x301a",
     "ReturnType": "int",
-    "Name": "CMM_CHK_PS",
-    "Description": "Checks whether or not you have a Persona of the matching arcana.",
+    "Name": "EVT_FUNCTION_001A",
+    "Description": "Address: 0x08A601E8",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "EVT_FUNCTION_001A"
     ]
   },
   {

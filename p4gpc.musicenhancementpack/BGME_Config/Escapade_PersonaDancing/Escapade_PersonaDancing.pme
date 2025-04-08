@@ -1,3 +1,8 @@
 global_bgm[39]:
-  music = 700
+  music = 10121
+end
+
+// Anime Music Expansion compatibility
+global_bgm[9023]:
+  music = 10121
 end

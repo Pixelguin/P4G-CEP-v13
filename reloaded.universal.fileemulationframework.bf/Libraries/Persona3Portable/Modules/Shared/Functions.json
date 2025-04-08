@@ -41,17 +41,14 @@
   {
     "Index": "0x5002",
     "ReturnType": "int",
-    "Name": "GET_PC_STAT",
-    "Description": "Checks social stat level.",
+    "Name": "SHD_FUNCTION_0002",
+    "Description": "Address: 0x089731A0",
     "Parameters": [
       {
         "Type": "int",
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "SHD_FUNCTION_0002"
     ]
   },
   {

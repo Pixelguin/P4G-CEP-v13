@@ -2,7 +2,7 @@
   "ModId": "p4gpc.restoredgameovermusic",
   "ModName": "Restored Game Over Music",
   "ModAuthor": "Brawler",
-  "ModVersion": "1.1.2",
+  "ModVersion": "1.2.0",
   "ModDescription": "Restores \u0022The Path Was Closed\u0022 when getting a game over.",
   "ModDll": "p4gpc.restoredgameovermusic.dll",
   "ModIcon": "thumb_r2.png",

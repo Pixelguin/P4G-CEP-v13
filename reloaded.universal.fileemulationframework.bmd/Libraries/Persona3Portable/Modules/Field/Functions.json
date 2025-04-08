@@ -67,12 +67,9 @@
   {
     "Index": "0x1004",
     "ReturnType": "int",
-    "Name": "GET_FLOOR_ID",
+    "Name": "FLD_FUNCTION_0004",
     "Description": "Address: 0x088C1678",
-    "Parameters": [],
-    "Aliases": [
-      "FLD_FUNCTION_0004"
-    ]
+    "Parameters": []
   },
   {
     "Index": "0x1005",
@@ -223,7 +220,7 @@
   {
     "Index": "0x1013",
     "ReturnType": "int",
-    "Name": "SET_PARTY_SPLITUP",
+    "Name": "FLD_FUNCTION_0013",
     "Description": "Address: 0x088C3584",
     "Parameters": [
       {
@@ -231,15 +228,12 @@
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "FLD_FUNCTION_0013"
     ]
   },
   {
     "Index": "0x1014",
     "ReturnType": "int",
-    "Name": "SET_PARTY_PRIORITY",
+    "Name": "FLD_FUNCTION_0014",
     "Description": "Address: 0x088C35E8",
     "Parameters": [
       {
@@ -247,9 +241,6 @@
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "FLD_FUNCTION_0014"
     ]
   },
   {
@@ -939,12 +930,9 @@
   {
     "Index": "0x1046",
     "ReturnType": "int",
-    "Name": "IS_ANSWER",
+    "Name": "FLD_FUNCTION_0046",
     "Description": "Address: 0x088C3DC4",
-    "Parameters": [],
-    "Aliases": [
-      "FLD_FUNCTION_0046"
-    ]
+    "Parameters": []
   },
   {
     "Index": "0x1047",

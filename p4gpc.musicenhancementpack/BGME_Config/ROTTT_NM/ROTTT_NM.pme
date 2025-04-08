@@ -1,8 +1,8 @@
 // Normal Battles: ROTTT rudiger, TTMH rudiger
 encounter["Normal Battles"]:
-	music = random_song(679, 680)
+	music = random_song(10100, 10101)
 end
 
 global_bgm["Reach Out To The Truth"]:
-  music = 679
+  music = 10100
 end

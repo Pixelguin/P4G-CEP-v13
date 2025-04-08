@@ -76,7 +76,7 @@
   {
     "Index": "0x0006",
     "ReturnType": "void",
-    "Name": "SET_MASK",
+    "Name": "FUNCTION_0006",
     "Description": "Address: 0x08982784",
     "Parameters": [
       {
@@ -84,9 +84,6 @@
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "FUNCTION_0006"
     ]
   },
   {
@@ -216,12 +213,9 @@
   {
     "Index": "0x000f",
     "ReturnType": "int",
-    "Name": "FADE_SYNC",
+    "Name": "FUNCTION_000F",
     "Description": "Address: 0x08978F28",
-    "Parameters": [],
-    "Aliases": [
-      "FUNCTION_000F"
-    ]
+    "Parameters": []
   },
   {
     "Index": "0x0010",
@@ -738,7 +732,7 @@
   {
     "Index": "0x002d",
     "ReturnType": "void",
-    "Name": "MSG_HELP",
+    "Name": "FUNCTION_002D",
     "Description": "Address: 0x08986A78",
     "Parameters": [
       {
@@ -746,9 +740,6 @@
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "FUNCTION_002D"
     ]
   },
   {
@@ -791,22 +782,16 @@
   {
     "Index": "0x0030",
     "ReturnType": "int",
-    "Name": "GET_MONTH",
-    "Description": "Gets the month number",
-    "Parameters": [],
-    "Aliases": [
-      "FUNCTION_0030"
-    ]
+    "Name": "FUNCTION_0030",
+    "Description": "Address: 0x089729B0",
+    "Parameters": []
   },
   {
     "Index": "0x0031",
     "ReturnType": "int",
-    "Name": "GET_DATE",
-    "Description": "Gets the day number",
-    "Parameters": [],
-    "Aliases": [
-      "FUNCTION_0031"
-    ]
+    "Name": "FUNCTION_0031",
+    "Description": "Address: 0x089729EC",
+    "Parameters": []
   },
   {
     "Index": "0x0032",
@@ -1029,7 +1014,7 @@
   {
     "Index": "0x0042",
     "ReturnType": "int",
-    "Name": "GET_PARTY_ID",
+    "Name": "FUNCTION_0042",
     "Description": "Address: 0x08973878",
     "Parameters": [
       {
@@ -1037,9 +1022,6 @@
         "Name": "param1",
         "Description": ""
       }
-    ],
-    "Aliases": [
-      "FUNCTION_0042"
     ]
   },
   {
@@ -1468,8 +1450,7 @@
       }
     ],
     "Aliases": [
-      "FUNCTION_0064",
-      "CUTIN_DISPLAY"
+      "FUNCTION_0064"
     ]
   },
   {
@@ -1485,8 +1466,7 @@
       }
     ],
     "Aliases": [
-      "FUNCTION_0065",
-      "CUTIN_CLEAR"
+      "FUNCTION_0065"
     ]
   },
   {

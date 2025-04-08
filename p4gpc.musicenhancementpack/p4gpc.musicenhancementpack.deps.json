@@ -17,6 +17,25 @@
           "p4gpc.musicenhancementpack.dll": {}
         }
       },
+      "BGME.Framework.Interfaces/1.0.0": {
+        "runtime": {
+          "lib/net7.0/BGME.Framework.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "CriFs.V2.Hook.Interfaces/1.0.0": {
+        "dependencies": {
+          "CriFsV2Lib.Definitions": "1.1.0"
+        },
+        "runtime": {
+          "lib/net7.0/CriFs.V2.Hook.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "CriFsV2Lib.Definitions/1.1.0": {
         "runtime": {
           "lib/net7.0/CriFsV2Lib.Definitions.dll": {
@@ -44,19 +63,6 @@
             "fileVersion": "1.9.0.0"
           }
         }
-      },
-      "BGME.Framework.Interfaces/1.0.0": {
-        "runtime": {
-          "BGME.Framework.Interfaces.dll": {}
-        }
-      },
-      "CriFs.V2.Hook.Interfaces/1.0.0": {
-        "dependencies": {
-          "CriFsV2Lib.Definitions": "1.1.0"
-        },
-        "runtime": {
-          "CriFs.V2.Hook.Interfaces.dll": {}
-        }
       }
     }
   },
@@ -65,6 +71,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BGME.Framework.Interfaces/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ScLbNr92X5jnBoRbzbSUJ+PcTVK6bSP7FITPi4u1VDVIyxmYpHa4VnYNqzHkrSaCVW34Iphi5dlrbbI0LWdeSA==",
+      "path": "bgme.framework.interfaces/1.0.0",
+      "hashPath": "bgme.framework.interfaces.1.0.0.nupkg.sha512"
+    },
+    "CriFs.V2.Hook.Interfaces/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jCfxl9B6j04s7j+++eTEaq1Z4n3XvjogC1w32Mnbn5S5pHUQe5sBQHRlvU5eazEc/0t7zOAMawpQaciAL0SgTw==",
+      "path": "crifs.v2.hook.interfaces/1.0.0",
+      "hashPath": "crifs.v2.hook.interfaces.1.0.0.nupkg.sha512"
     },
     "CriFsV2Lib.Definitions/1.1.0": {
       "type": "package",
@@ -93,16 +113,6 @@
       "sha512": "sha512-AEDTDhCnYxJGuLrdZCZPoiqrdl/lW4XwA6bb5dntOvkyw4RBBm/gqoNlHS7RJS7k+kt36ES+UFZAtBeyusYtgw==",
       "path": "reloaded.sharedlib.hooks/1.9.0",
       "hashPath": "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
-    },
-    "BGME.Framework.Interfaces/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "CriFs.V2.Hook.Interfaces/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
