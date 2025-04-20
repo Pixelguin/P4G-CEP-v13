@@ -11,11 +11,19 @@
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
-          "RyoTune.Reloaded": "1.0.0",
+          "RyoTune.Reloaded": "2.1.1",
           "SharedScans.Interfaces": "1.2.0"
         },
         "runtime": {
           "SharedScans.Reloaded.dll": {}
+        }
+      },
+      "ini-parser-netstandard/2.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/INIFileParser.dll": {
+            "assemblyVersion": "2.5.2.0",
+            "fileVersion": "2.5.2.0"
+          }
         }
       },
       "Reloaded.Hooks.Definitions/1.15.0": {
@@ -57,16 +65,17 @@
           }
         }
       },
-      "RyoTune.Reloaded/1.0.0": {
+      "RyoTune.Reloaded/2.1.1": {
         "dependencies": {
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
-          "Reloaded.SharedLib.Hooks": "1.9.0"
+          "Reloaded.SharedLib.Hooks": "1.9.0",
+          "ini-parser-netstandard": "2.5.2"
         },
         "runtime": {
           "lib/net8.0/RyoTune.Reloaded.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
           }
         }
       },
@@ -76,7 +85,7 @@
         },
         "runtime": {
           "SharedScans.Interfaces.dll": {
-            "assemblyVersion": "1.2.0",
+            "assemblyVersion": "1.2.0.0",
             "fileVersion": "1.2.0.0"
           }
         }
@@ -88,6 +97,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ini-parser-netstandard/2.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTyGzgT/a+mD2HxopOGpb/yWWhu5TTPgF59XUlHjhlNv7dbt9DME/qozIR7HreVAVpNnZSqP9A8TeViK5s949g==",
+      "path": "ini-parser-netstandard/2.5.2",
+      "hashPath": "ini-parser-netstandard.2.5.2.nupkg.sha512"
     },
     "Reloaded.Hooks.Definitions/1.15.0": {
       "type": "package",
@@ -124,12 +140,12 @@
       "path": "reloaded.sharedlib.hooks/1.9.0",
       "hashPath": "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
     },
-    "RyoTune.Reloaded/1.0.0": {
+    "RyoTune.Reloaded/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hM4c73oc190pZ2e3KX2/oeSVikVHWB8O5fic6zV1kTJlqfdlAI2ddOvdbPsq6B7f/55sZqUa/J7U0hHlkum/VA==",
-      "path": "ryotune.reloaded/1.0.0",
-      "hashPath": "ryotune.reloaded.1.0.0.nupkg.sha512"
+      "sha512": "sha512-095YACvEYNpyBY0jZwhQu5HK/xlqmxIw9RVk35w5MagRytU8K5ppmqakLcT7yjWcJTnmO6VRSZExCmyaXyjd5Q==",
+      "path": "ryotune.reloaded/2.1.1",
+      "hashPath": "ryotune.reloaded.2.1.1.nupkg.sha512"
     },
     "SharedScans.Interfaces/1.2.0": {
       "type": "project",

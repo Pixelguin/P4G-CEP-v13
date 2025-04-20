@@ -1,8 +1,8 @@
 {
-  "ModId": "p4gpc.animatedcutins",
+  "ModId": "p4g64.animatedcutins.next",
   "ModName": "P4TA Animated Cut-ins",
-  "ModAuthor": "Dexxtrip, Brawler, \u0026 friends",
-  "ModVersion": "1.3.3",
+  "ModAuthor": "Anonymous, Brawler, \u0026 friends",
+  "ModVersion": "2.0.0",
   "ModDescription": "Adds animated cut-ins from P4TA. Cut-in size can be configured to be sized similarly to P4G or more accurately to P4A.",
   "ModDll": "p4gpc.animatedcutins.dll",
   "ModIcon": "R2_PREVIEW_2.png",
@@ -14,11 +14,11 @@
   "CanUnload": false,
   "HasExports": false,
   "IsLibrary": false,
-  "ReleaseMetadataFileName": "p4gpc.animatedcutins.ReleaseMetadata.json",
+  "ReleaseMetadataFileName": "p4g64.animatedcutins.next.ReleaseMetadata.json",
   "PluginData": {
     "GameBanana": {
       "ItemType": "Mod",
-      "ItemId": 475099
+      "ItemId": 589344
     },
     "GitHubDependencies": {
       "IdToConfigMap": {
@@ -94,15 +94,6 @@
           },
           "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
         },
-        "reloaded.universal.fileemulationframework.spd": {
-          "Config": {
-            "UserName": "Sewer56",
-            "RepositoryName": "FileEmulationFramework",
-            "UseReleaseTag": false,
-            "AssetFileName": "Mod.zip"
-          },
-          "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
-        },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {
             "UserName": "Sewer56",
@@ -134,5 +125,5 @@
   "SupportedAppId": [
     "p4g.exe"
   ],
-  "ProjectUrl": ""
+  "ProjectUrl": "https://gamebanana.com/mods/589344"
 }

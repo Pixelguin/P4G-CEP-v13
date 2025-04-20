@@ -2,7 +2,7 @@
   "ModId": "BGME.Framework",
   "ModName": "BGME Framework",
   "ModAuthor": "RyoTune",
-  "ModVersion": "4.0.5",
+  "ModVersion": "4.1.0",
   "ModDescription": "Extends BGM functionality in Persona games.",
   "ModDll": "BGME.Framework.dll",
   "ModIcon": "Preview.png",

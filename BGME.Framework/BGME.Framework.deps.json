@@ -9,7 +9,7 @@
       "BGME.Framework/1.0.0": {
         "dependencies": {
           "BGME.Framework.Interfaces": "1.0.0",
-          "CommunityToolkit.Mvvm": "8.3.2",
+          "CommunityToolkit.Mvvm": "8.4.0",
           "CriFs.V2.Hook.Interfaces": "1.0.0",
           "PersonaMusicScript.Library": "1.0.0",
           "PersonaMusicScript.Types": "1.0.0",
@@ -17,7 +17,7 @@
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
           "Ryo.Interfaces": "2.4.0",
-          "RyoTune.Reloaded": "1.0.1",
+          "RyoTune.Reloaded": "2.1.1",
           "SharedScans.Interfaces": "1.2.0",
           "p5rpc.lib.interfaces": "1.0.1",
           "Libellus Library": "1.0.0.0"
@@ -48,11 +48,11 @@
           }
         }
       },
-      "CommunityToolkit.Mvvm/8.3.2": {
+      "CommunityToolkit.Mvvm/8.4.0": {
         "runtime": {
           "lib/net8.0/CommunityToolkit.Mvvm.dll": {
-            "assemblyVersion": "8.3.0.0",
-            "fileVersion": "8.3.2.1"
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.1"
           }
         }
       },
@@ -72,6 +72,14 @@
           "lib/net7.0/CriFsV2Lib.Definitions.dll": {
             "assemblyVersion": "1.1.0.0",
             "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "ini-parser-netstandard/2.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/INIFileParser.dll": {
+            "assemblyVersion": "2.5.2.0",
+            "fileVersion": "2.5.2.0"
           }
         }
       },
@@ -232,16 +240,17 @@
           }
         }
       },
-      "RyoTune.Reloaded/1.0.1": {
+      "RyoTune.Reloaded/2.1.1": {
         "dependencies": {
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.4.0",
-          "Reloaded.SharedLib.Hooks": "1.9.0"
+          "Reloaded.SharedLib.Hooks": "1.9.0",
+          "ini-parser-netstandard": "2.5.2"
         },
         "runtime": {
           "lib/net8.0/RyoTune.Reloaded.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
           }
         }
       },
@@ -716,7 +725,7 @@
       "BGME.Framework.Interfaces/1.0.0": {
         "runtime": {
           "BGME.Framework.Interfaces.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -729,7 +738,7 @@
         },
         "runtime": {
           "PersonaMusicScript.Library.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -740,7 +749,7 @@
         },
         "runtime": {
           "PersonaMusicScript.Types.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -775,12 +784,12 @@
       "path": "antlr4buildtasks/12.8.0",
       "hashPath": "antlr4buildtasks.12.8.0.nupkg.sha512"
     },
-    "CommunityToolkit.Mvvm/8.3.2": {
+    "CommunityToolkit.Mvvm/8.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-m8EolE1A0Updj68WTsZSGI6VWb6mUqHPh7QFo0kt7+JPhYMNXRS1ch8TS/oITAdcxTLrwMOp3ku1KjeG1/Zdpg==",
-      "path": "communitytoolkit.mvvm/8.3.2",
-      "hashPath": "communitytoolkit.mvvm.8.3.2.nupkg.sha512"
+      "sha512": "sha512-tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
     },
     "CriFs.V2.Hook.Interfaces/1.0.0": {
       "type": "package",
@@ -795,6 +804,13 @@
       "sha512": "sha512-hPvJ4DR16lVSYHSddUsMTUQLajCALhNA+GDfAY0VMa4xSvBOEbZeCuj2tYO8GqeQMyiosL0/aRaFZ2OgFefRKA==",
       "path": "crifsv2lib.definitions/1.1.0",
       "hashPath": "crifsv2lib.definitions.1.1.0.nupkg.sha512"
+    },
+    "ini-parser-netstandard/2.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTyGzgT/a+mD2HxopOGpb/yWWhu5TTPgF59XUlHjhlNv7dbt9DME/qozIR7HreVAVpNnZSqP9A8TeViK5s949g==",
+      "path": "ini-parser-netstandard/2.5.2",
+      "hashPath": "ini-parser-netstandard.2.5.2.nupkg.sha512"
     },
     "Microsoft.Build.Framework/17.8.3": {
       "type": "package",
@@ -999,12 +1015,12 @@
       "path": "ryo.interfaces/2.4.0",
       "hashPath": "ryo.interfaces.2.4.0.nupkg.sha512"
     },
-    "RyoTune.Reloaded/1.0.1": {
+    "RyoTune.Reloaded/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x+Br4ryab3sW29mgJ1oygNLJT+5HHOJVYL8+UxcmeMovhESygwIddTFRffOAcujnAAk1YN+WQAiWCKTsG6zdyA==",
-      "path": "ryotune.reloaded/1.0.1",
-      "hashPath": "ryotune.reloaded.1.0.1.nupkg.sha512"
+      "sha512": "sha512-095YACvEYNpyBY0jZwhQu5HK/xlqmxIw9RVk35w5MagRytU8K5ppmqakLcT7yjWcJTnmO6VRSZExCmyaXyjd5Q==",
+      "path": "ryotune.reloaded/2.1.1",
+      "hashPath": "ryotune.reloaded.2.1.1.nupkg.sha512"
     },
     "SharedScans.Interfaces/1.2.0": {
       "type": "package",
