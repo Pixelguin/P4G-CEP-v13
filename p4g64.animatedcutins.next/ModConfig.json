@@ -1,13 +1,13 @@
 {
   "ModId": "p4g64.animatedcutins.next",
-  "ModName": "P4TA Animated Cut-ins",
-  "ModAuthor": "Anonymous, Brawler, \u0026 friends",
-  "ModVersion": "2.0.0",
-  "ModDescription": "Adds animated cut-ins from P4TA. Cut-in size can be configured to be sized similarly to P4G or more accurately to P4A.",
-  "ModDll": "p4gpc.animatedcutins.dll",
+  "ModName": "P4A Animated Cut-ins",
+  "ModAuthor": "Brawler \u0026 friends",
+  "ModVersion": "3.0.0",
+  "ModDescription": "Adds animated cut-ins from P4A. Cut-in size can be configured to be sized similarly to P4G or more accurately to P4A.",
+  "ModDll": "p4g64.animatedcutins.next.dll",
   "ModIcon": "R2_PREVIEW_2.png",
-  "ModR2RManagedDll32": "x86/p4gpc.animatedcutins.dll",
-  "ModR2RManagedDll64": "x64/p4gpc.animatedcutins.dll",
+  "ModR2RManagedDll32": "x86/p4g64.animatedcutins.next.dll",
+  "ModR2RManagedDll64": "x64/p4g64.animatedcutins.next.dll",
   "ModNativeDll32": "",
   "ModNativeDll64": "",
   "Tags": [],
@@ -93,6 +93,42 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "BF.File.Emulator.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework.spd": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Steam": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Steam.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Windows": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {

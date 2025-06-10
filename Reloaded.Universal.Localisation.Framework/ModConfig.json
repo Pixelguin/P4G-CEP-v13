@@ -1,0 +1,62 @@
+{
+  "ModId": "Reloaded.Universal.Localisation.Framework",
+  "ModName": "Localisation Framework",
+  "ModAuthor": "AnimatedSwine37",
+  "ModVersion": "1.0.1",
+  "ModDescription": "A framework that helps localise mods into multiple languages",
+  "ModDll": "Reloaded.Universal.Localisation.Framework.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/Reloaded.Universal.Localisation.Framework.dll",
+  "ModR2RManagedDll64": "x64/Reloaded.Universal.Localisation.Framework.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json",
+  "PluginData": {
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "AnimatedSwine37",
+      "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": true,
+  "ModDependencies": [
+    "reloaded.sharedlib.hooks",
+    "reloaded.universal.fileemulationframework"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": "https://github.com/AnimatedSwine37/Reloaded.Universal.Localisation.Framework"
+}

@@ -1,0 +1,71 @@
+{
+  "ModId": "Reloaded.Universal.Localisation.Provider.Windows",
+  "ModName": "Localisation Framework - Windows Support",
+  "ModAuthor": "AnimatedSwine37",
+  "ModVersion": "1.0.1",
+  "ModDescription": "Allows localisation framework to check the language Windows is running in",
+  "ModDll": "Reloaded.Universal.Localisation.Provider.Windows.dll",
+  "ModIcon": "Preview.png",
+  "ModR2RManagedDll32": "x86/Reloaded.Universal.Localisation.Provider.Windows.dll",
+  "ModR2RManagedDll64": "x64/Reloaded.Universal.Localisation.Provider.Windows.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": true,
+  "ReleaseMetadataFileName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json",
+  "PluginData": {
+    "NuGet": {
+      "AllowUpdateFromAnyRepository": false,
+      "DefaultRepositoryUrls": [
+        "http://packages.sewer56.moe:5000/v3/index.json"
+      ]
+    },
+    "GitHubRelease": {
+      "UserName": "AnimatedSwine37",
+      "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+      "UseReleaseTag": false,
+      "AssetFileName": "Mod.zip"
+    },
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "reloaded.universal.fileemulationframework": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "FileEmulationFramework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.FileEmulationFramework.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": true,
+  "ModDependencies": [
+    "reloaded.sharedlib.hooks",
+    "Reloaded.Universal.Localisation.Framework"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [],
+  "ProjectUrl": "https://github.com/AnimatedSwine37/Reloaded.Universal.Localisation.Framework"
+}

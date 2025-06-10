@@ -10,9 +10,10 @@
         "dependencies": {
           "Reloaded.Mod.Interfaces": "2.4.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
-          "Ryo.Interfaces": "2.4.0",
+          "Ryo.Interfaces": "2.5.0",
           "RyoTune.Reloaded": "2.1.1",
           "SharedScans.Interfaces": "1.2.0",
+          "System.IO.Hashing": "9.0.4",
           "YamlDotNet": "16.3.0"
         },
         "runtime": {
@@ -91,6 +92,14 @@
           }
         }
       },
+      "System.IO.Hashing/9.0.4": {
+        "runtime": {
+          "lib/net8.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "9.0.0.4",
+            "fileVersion": "9.0.425.16305"
+          }
+        }
+      },
       "YamlDotNet/16.3.0": {
         "runtime": {
           "lib/net8.0/YamlDotNet.dll": {
@@ -99,14 +108,14 @@
           }
         }
       },
-      "Ryo.Interfaces/2.4.0": {
+      "Ryo.Interfaces/2.5.0": {
         "dependencies": {
           "Reloaded.Hooks.Definitions": "1.15.0"
         },
         "runtime": {
           "Ryo.Interfaces.dll": {
-            "assemblyVersion": "2.4.0.0",
-            "fileVersion": "2.4.0.0"
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.0.0"
           }
         }
       }
@@ -174,6 +183,13 @@
       "path": "sharedscans.interfaces/1.2.0",
       "hashPath": "sharedscans.interfaces.1.2.0.nupkg.sha512"
     },
+    "System.IO.Hashing/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WogPvgAFqQORFD8Iyha6RZ+/1QB3dsWRWxbwi8/HHVgiGQ8z0oMWpwe8Kk3Ti+Roe+P6a3sBg+WwBfEsyziZKg==",
+      "path": "system.io.hashing/9.0.4",
+      "hashPath": "system.io.hashing.9.0.4.nupkg.sha512"
+    },
     "YamlDotNet/16.3.0": {
       "type": "package",
       "serviceable": true,
@@ -181,7 +197,7 @@
       "path": "yamldotnet/16.3.0",
       "hashPath": "yamldotnet.16.3.0.nupkg.sha512"
     },
-    "Ryo.Interfaces/2.4.0": {
+    "Ryo.Interfaces/2.5.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,5 @@
+[msg FOX_FIRST_KUMA [Teddie]]
+[f 0 5 -258][f 2 1][f 4 6 8 3 0 1]¡¿Mmm?! ¿Qué es esa cosa rara que lleva[n]un delantal rojo?[n][f 1 1][e]
+[f 0 5 -258][f 2 1][f 4 6 8 5 0 1]¿Eh? ¿El ayudante del maestro?[n][f 1 1][e]
+[f 0 5 -258][f 2 1]¡Alucinante! ¡Tú sí que conoces[n]a gente increíble![n][f 1 1][e]
+[f 0 5 -258][f 2 1][f 4 6 8 2 0 1]¡Encantado, señor zorro![n]¡Vamos a darlo todo![n][f 1 1][e]

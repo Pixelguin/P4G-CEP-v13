@@ -2,7 +2,7 @@
   "ModId": "p4gpc.musicenhancementpack",
   "ModName": "Music Enhancement Pack",
   "ModAuthor": "Pixelguin, rudiger__gb, Brawler",
-  "ModVersion": "8.2.0",
+  "ModVersion": "8.2.1",
   "ModDescription": "A small collection of carefully-selected music enhancements.",
   "ModDll": "p4gpc.musicenhancementpack.dll",
   "ModIcon": "Preview.png",
@@ -138,6 +138,33 @@
             "AssetFileName": "Mod.zip"
           },
           "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Steam": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Steam.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Windows": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json"
         },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {

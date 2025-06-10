@@ -2,7 +2,7 @@
   "ModId": "p5rpc.modloader",
   "ModName": "Persona Essentials",
   "ModAuthor": "Sewer56",
-  "ModVersion": "2.9.1",
+  "ModVersion": "2.9.2",
   "ModDescription": "Mod which provides base modding support as well as miscellaneous basic quality of life fixes. See readme for Special Thanks!",
   "ModDll": "p5rpc.modloader.dll",
   "ModIcon": "Preview.png",
@@ -90,6 +90,33 @@
           },
           "ReleaseMetadataName": "SPD.File.Emulator.ReleaseMetadata.json"
         },
+        "Reloaded.Universal.Localisation.Framework": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Framework.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Steam": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Steam.ReleaseMetadata.json"
+        },
+        "Reloaded.Universal.Localisation.Provider.Windows": {
+          "Config": {
+            "UserName": "AnimatedSwine37",
+            "RepositoryName": "Reloaded.Universal.Localisation.Framework",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Universal.Localisation.Provider.Windows.ReleaseMetadata.json"
+        },
         "reloaded.universal.fileemulationframework.awb": {
           "Config": {
             "UserName": "Sewer56",
@@ -132,7 +159,10 @@
     "reloaded.universal.fileemulationframework.pak",
     "reloaded.universal.fileemulationframework.bmd",
     "reloaded.universal.fileemulationframework.bf",
-    "reloaded.universal.fileemulationframework.spd"
+    "reloaded.universal.fileemulationframework.spd",
+    "Reloaded.Universal.Localisation.Framework",
+    "Reloaded.Universal.Localisation.Provider.Steam",
+    "Reloaded.Universal.Localisation.Provider.Windows"
   ],
   "OptionalDependencies": [],
   "SupportedAppId": [

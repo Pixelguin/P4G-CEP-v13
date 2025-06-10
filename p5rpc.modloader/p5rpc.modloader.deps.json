@@ -1,22 +1,24 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v7.0",
+    "name": ".NETCoreApp,Version=v9.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v7.0": {
+    ".NETCoreApp,Version=v9.0": {
       "p5rpc.modloader/1.0.0": {
         "dependencies": {
           "BF.File.Emulator.Interfaces": "1.0.0",
           "BMD.File.Emulator.Interfaces": "1.0.0",
           "CriFs.V2.Hook.Interfaces": "1.0.0",
+          "Microsoft.NET.ILLink.Tasks": "9.0.3",
           "PAK.Stream.Emulator.Interfaces": "1.0.0",
           "Persona.Merger.Common": "1.0.0",
           "Reloaded.Memory": "8.0.1",
           "Reloaded.Memory.SigScan.ReloadedII.Interfaces": "1.2.0",
           "Reloaded.Mod.Interfaces": "2.3.0",
           "Reloaded.SharedLib.Hooks": "1.9.0",
+          "Reloaded.Universal.Localisation.Framework.Interfaces": "1.0.0",
           "SPD.File.Emulator.Interfaces": "1.0.0"
         },
         "runtime": {
@@ -42,6 +44,7 @@
           }
         }
       },
+      "Microsoft.NET.ILLink.Tasks/9.0.3": {},
       "Reloaded.Hooks.Definitions/1.11.0": {
         "runtime": {
           "lib/net6.0/Reloaded.Hooks.Definitions.dll": {
@@ -89,6 +92,14 @@
           }
         }
       },
+      "Reloaded.Universal.Localisation.Framework.Interfaces/1.0.0": {
+        "runtime": {
+          "lib/net7.0/Reloaded.Universal.Localisation.Framework.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Sewer56.StructuredDiff/2.0.0": {
         "runtime": {
           "lib/net7.0/Sewer56.StructuredDiff.dll": {
@@ -99,12 +110,18 @@
       },
       "BF.File.Emulator.Interfaces/1.0.0": {
         "runtime": {
-          "BF.File.Emulator.Interfaces.dll": {}
+          "BF.File.Emulator.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "BMD.File.Emulator.Interfaces/1.0.0": {
         "runtime": {
-          "BMD.File.Emulator.Interfaces.dll": {}
+          "BMD.File.Emulator.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "CriFs.V2.Hook.Interfaces/1.0.0": {
@@ -112,12 +129,18 @@
           "CriFsV2Lib.Definitions": "1.1.0"
         },
         "runtime": {
-          "CriFs.V2.Hook.Interfaces.dll": {}
+          "CriFs.V2.Hook.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "PAK.Stream.Emulator.Interfaces/1.0.0": {
         "runtime": {
-          "PAK.Stream.Emulator.Interfaces.dll": {}
+          "PAK.Stream.Emulator.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Persona.Merger.Common/1.0.0": {
@@ -127,12 +150,18 @@
           "Sewer56.StructuredDiff": "2.0.0"
         },
         "runtime": {
-          "Persona.Merger.Common.dll": {}
+          "Persona.Merger.Common.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SPD.File.Emulator.Interfaces/1.0.0": {
         "runtime": {
-          "SPD.File.Emulator.Interfaces.dll": {}
+          "SPD.File.Emulator.Interfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -156,6 +185,13 @@
       "sha512": "sha512-ip4MNI6ikPA3BeVLCky7nTcC3T4OsPnWVUGvaczIYv9xlHQhKT+K/CSqsH486uNmvoCKY32iB0P6Y9quIyG5BA==",
       "path": "fileemulationframework.lib/1.0.0",
       "hashPath": "fileemulationframework.lib.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1rqGTfubVg0qj2PsK6esyq3PIxtYJYrN3LsYUV9RrvH3anmt3fT3ozYdAZZH4U8JU/pt5pPIUk8NBSu26wtekA==",
+      "path": "microsoft.net.illink.tasks/9.0.3",
+      "hashPath": "microsoft.net.illink.tasks.9.0.3.nupkg.sha512"
     },
     "Reloaded.Hooks.Definitions/1.11.0": {
       "type": "package",
@@ -198,6 +234,13 @@
       "sha512": "sha512-AEDTDhCnYxJGuLrdZCZPoiqrdl/lW4XwA6bb5dntOvkyw4RBBm/gqoNlHS7RJS7k+kt36ES+UFZAtBeyusYtgw==",
       "path": "reloaded.sharedlib.hooks/1.9.0",
       "hashPath": "reloaded.sharedlib.hooks.1.9.0.nupkg.sha512"
+    },
+    "Reloaded.Universal.Localisation.Framework.Interfaces/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2KIlXneUh9u+ptpP4eFC6iIhkKAq2qgInEBlpXMw7e01M7mZXeYJQb//qJx9yu9WlurT+UvrTTzz9p1iIL31/g==",
+      "path": "reloaded.universal.localisation.framework.interfaces/1.0.0",
+      "hashPath": "reloaded.universal.localisation.framework.interfaces.1.0.0.nupkg.sha512"
     },
     "Sewer56.StructuredDiff/2.0.0": {
       "type": "package",
