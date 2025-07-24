@@ -2,7 +2,7 @@
   "ModId": "p4g64.animatedcutins.next",
   "ModName": "P4A Animated Cut-ins",
   "ModAuthor": "Brawler \u0026 friends",
-  "ModVersion": "3.0.0",
+  "ModVersion": "3.1.0",
   "ModDescription": "Adds animated cut-ins from P4A. Cut-in size can be configured to be sized similarly to P4G or more accurately to P4A.",
   "ModDll": "p4g64.animatedcutins.next.dll",
   "ModIcon": "R2_PREVIEW_2.png",
