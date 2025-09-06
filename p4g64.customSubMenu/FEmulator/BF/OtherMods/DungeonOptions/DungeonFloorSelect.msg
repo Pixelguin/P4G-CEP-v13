@@ -5,7 +5,7 @@
 [s]You can now fast travel in the Steamy Bathhouse![n][w][e]
 
 [msg RiseTravelAvailable]
-[s]You can now fast travel in Marakyu Striptease![n][w][e]
+[s]You can now fast travel in Marukyu Striptease![n][w][e]
 
 [msg MitsuoTravelAvailable]
 [s]You can now fast travel in Void Quest![n][w][e]

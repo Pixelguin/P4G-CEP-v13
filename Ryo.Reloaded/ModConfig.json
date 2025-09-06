@@ -2,7 +2,7 @@
   "ModId": "Ryo.Reloaded",
   "ModName": "Ryo Framework",
   "ModAuthor": "RyoTune",
-  "ModVersion": "2.9.5",
+  "ModVersion": "2.10.0",
   "ModDescription": "Ryo Framework adds the ability to add or replace game audio and movies with zero file editing.",
   "ModDll": "Ryo.Reloaded.dll",
   "ModIcon": "Preview.png",

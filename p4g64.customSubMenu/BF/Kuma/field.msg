@@ -77,7 +77,7 @@
 [f 0 5 -258][f 2 1]Return to the entrance of the Steamy Bathhouse?[e]
 
 [msg RiseReturnConfirmTeddie [Kuma]]
-[f 0 5 -258][f 2 1]Return to the entrance of Marakyu Striptease?[e]
+[f 0 5 -258][f 2 1]Return to the entrance of Marukyu Striptease?[e]
 
 [msg MitsuoReturnConfirmTeddie [Kuma]]
 [f 0 5 -258][f 2 1]Return to the entrance of Void Quest?[e]
